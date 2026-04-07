@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/comments/layout,_N_T_/comments/add/layout,_N_T_/comments/add/page,_N_T_/comments/add"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/comments/add/__PAGE__",
+    "/comments/add",
+    "/comments",
+    "/_index",
+    "/_head"
+  ]
+}

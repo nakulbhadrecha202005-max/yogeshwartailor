@@ -1,0 +1,7 @@
+{
+  "/admin/ManageCustomernameUI/page": "app/admin/ManageCustomernameUI/page.js",
+  "/admin/measurements/Indianblowse/page": "app/admin/measurements/Indianblowse/page.js",
+  "/admin/measurements/page": "app/admin/measurements/page.js",
+  "/login/page": "app/login/page.js",
+  "/page": "app/page.js"
+}
