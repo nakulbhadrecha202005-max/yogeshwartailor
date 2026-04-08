@@ -1,4 +1,6 @@
 {
+  "/comments/HomedisplayComments/page": "app/comments/HomedisplayComments/page.js",
+  "/comments/UserUploadedComments/page": "app/comments/UserUploadedComments/page.js",
   "/comments/add/page": "app/comments/add/page.js",
   "/login/page": "app/login/page.js",
   "/page": "app/page.js"
