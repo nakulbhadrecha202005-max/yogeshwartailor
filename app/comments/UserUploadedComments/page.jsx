@@ -89,10 +89,17 @@ export default function CommentSection() {
   // Access Denied if not authenticated
   if (!user) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-white">
-        <div className="text-center p-8 border border-red-200 rounded-2xl bg-red-50">
-          <h2 className="text-2xl font-bold text-red-600">Access Denied</h2>
-          <p className="text-slate-600">
+      <div className="min-h-screen w-full flex items-center justify-center bg-white p-4">
+        {/* 1. Added w-full and p-4 to the outer container to prevent the box 
+         from hitting the screen edges.
+      2. Changed p-8 to p-6 md:p-10 to be more flexible.
+      3. Added max-w-md to ensure the box doesn't get too wide.
+  */}
+        <div className="w-full max-w-md text-center p-6 sm:p-8 border border-red-200 rounded-2xl bg-red-50 shadow-sm">
+          <h2 className="text-xl sm:text-2xl font-bold text-red-600 mb-2">
+            Access Denied
+          </h2>
+          <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
             Please log in to view and manage comments.
           </p>
         </div>
