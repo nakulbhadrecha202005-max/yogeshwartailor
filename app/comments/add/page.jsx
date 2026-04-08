@@ -29,13 +29,13 @@ const page = () => {
   if (!user) {
     return (
       <>
-        <div className="w-90  bg-slate-200 rounded-2xl m-auto mt-45 mb-13 ml-auto mr-auto shadow-xl border border-stone-300 p-8 relative overflow-hidden font-sans">
+        <div className="mx-w-md w-80   bg-slate-200 rounded-2xl m-auto mt-45 mb-13 ml-auto mr-auto shadow-xl border border-stone-300 p-8 relative overflow-hidden font-sans">
           {/* Top Accent line to match Login Page */}
           <div className="absolute top-0 left-0 w-full h-2 bg-rose-900"></div>
           <div className="mb-6">
-            <h3 className="text-sm font-extrabold text-blue-900 tracking-tight">
+            <h4 className="text-sm font-extrabold text-blue-900 tracking-tight">
               Please Login to post a comments and rating.
-            </h3>
+            </h4>
             <p className="text-stone-500 text-xs mt-1 font-medium italic">
               You need to be logged in to share your feedback with us.
             </p>
@@ -87,7 +87,7 @@ const page = () => {
   };
 
   return (
-    <div className="w-95 max-w-md bg-slate-300 rounded-2xl mt-40 mb-10 ml-auto mr-auto shadow-xl border border-stone-200 p-8 relative overflow-hidden font-sans">
+    <div className="w-[90%] max-w-md bg-slate-300 rounded-2xl mt-40 mb-10 ml-auto mr-auto shadow-xl border border-stone-200 p-8 relative overflow-hidden font-sans">
       {/* Top Accent line to match Login Page */}
       <div className="absolute top-0 left-0 w-full h-2 bg-rose-900"></div>
 

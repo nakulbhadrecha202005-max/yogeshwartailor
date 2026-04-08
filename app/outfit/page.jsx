@@ -22,12 +22,12 @@ const page = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-5">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-5">
             {/* 1. Bridal Blouse */}
             <div className="group bg-offwhite rounded-2xl overflow-hidden border border-stone-100 shadow-sm hover:-translate-y-2 hover:shadow-xl hover:shadow-red-800/10 transition-all duration-300 cursor-default">
               <div className="aspect-square overflow-hidden bg-slate-100">
                 <img
-                  src="https://images.unsplash.com/photo-1620733723572-11c53f73a2ad?q=80&w=500&auto=format&fit=crop"
+                  src="/images/Bridalblouse.avif"
                   alt="Bridal Blouse"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
@@ -41,31 +41,29 @@ const page = () => {
                 </p>
               </div>
             </div>
-
             {/* 2. Designer Lehenga */}
             <div className="group bg-offwhite rounded-2xl overflow-hidden border border-stone-100 shadow-sm hover:-translate-y-2 hover:shadow-xl hover:shadow-red-800/10 transition-all duration-300 cursor-default">
               <div className="aspect-square overflow-hidden bg-slate-100">
                 <img
-                  src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?q=80&w=500&auto=format&fit=crop"
+                  src="/images/Bridal-Lehenga.jpg"
                   alt="Designer Lehenga"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
               <div className="p-4">
                 <h4 className="font-outfit font-extrabold text-midnight text-sm mb-1 leading-tight">
-                  Designer Lehenga
+                  Bride chaniya choli fitting
                 </h4>
                 <p className="text-slate-400 text-[11px] font-medium">
                   Festival & wedding wear
                 </p>
               </div>
             </div>
-
             {/* 3. Kurti with Pant */}
             <div className="group bg-offwhite rounded-2xl overflow-hidden border border-stone-100 shadow-sm hover:-translate-y-2 hover:shadow-xl hover:shadow-red-800/10 transition-all duration-300 cursor-default">
               <div className="aspect-square overflow-hidden bg-slate-100">
                 <img
-                  src="https://images.unsplash.com/photo-1663162383792-710899f92931?q=80&w=500&auto=format&fit=crop"
+                  src="/images/Kurtipant.jpg"
                   alt="Kurti Pant"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
@@ -79,12 +77,11 @@ const page = () => {
                 </p>
               </div>
             </div>
-
             {/* 4. Kurti with Salwar */}
             <div className="group bg-offwhite rounded-2xl overflow-hidden border border-stone-100 shadow-sm hover:-translate-y-2 hover:shadow-xl hover:shadow-red-800/10 transition-all duration-300 cursor-default">
               <div className="aspect-square overflow-hidden bg-slate-100">
                 <img
-                  src="https://images.unsplash.com/photo-1589131408576-ac7833f6a6ca?q=80&w=500&auto=format&fit=crop"
+                  src="/images/krtipant.webp"
                   alt="Salwar"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
@@ -98,8 +95,7 @@ const page = () => {
                 </p>
               </div>
             </div>
-
-            {/* 5. Chaniya Choli */}
+            {/* 5. Chaniya Choli
             <div className="group bg-offwhite rounded-2xl overflow-hidden border border-stone-100 shadow-sm hover:-translate-y-2 hover:shadow-xl hover:shadow-red-800/10 transition-all duration-300 cursor-default">
               <div className="aspect-square overflow-hidden bg-slate-100">
                 <img
@@ -116,7 +112,7 @@ const page = () => {
                   Gujarati Garba special
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div className="text-center mt-10">

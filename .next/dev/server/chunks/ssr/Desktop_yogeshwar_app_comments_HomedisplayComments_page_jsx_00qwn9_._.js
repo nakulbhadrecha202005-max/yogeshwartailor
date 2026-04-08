@@ -49,6 +49,39 @@ const Page = ()=>{
     const filter_comments = ()=>{
         return comments.filter((e)=>e.textComments.toLowerCase().includes(search.toLowerCase()) || e.userName.toLowerCase().includes(search.toLowerCase()));
     };
+    const getAvatarColor = (name)=>{
+        const firstLetter = name?.charAt(0).toUpperCase() || "U";
+        // Map letters to specific Tailwind colors
+        const colors = {
+            A: "bg-red-800",
+            B: "bg-blue-800",
+            C: "bg-green-800",
+            D: "bg-yellow-700",
+            E: "bg-indigo-800",
+            F: "bg-purple-800",
+            G: "bg-pink-800",
+            H: "bg-orange-700",
+            I: "bg-teal-800",
+            J: "bg-cyan-800",
+            K: "bg-lime-700",
+            L: "bg-amber-700",
+            M: "bg-emerald-800",
+            N: "bg-violet-800",
+            O: "bg-fuchsia-800",
+            P: "bg-rose-800",
+            Q: "bg-sky-800",
+            R: "bg-stone-700",
+            S: "bg-neutral-700",
+            T: "bg-zinc-700",
+            U: "bg-gray-700",
+            V: "bg-slate-700",
+            W: "bg-red-600",
+            X: "bg-blue-600",
+            Y: "bg-green-600",
+            Z: "bg-yellow-600"
+        };
+        return colors[firstLetter] || "bg-slate-700"; // Default color
+    };
     return(// Page background is now pure white
     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "min-h-screen mt-30 bg-white py-10 px-4",
@@ -66,7 +99,7 @@ const Page = ()=>{
                                         className: "h-2 w-2 rounded-full bg-emerald-500 animate-pulse"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/yogeshwar/app/comments/HomedisplayComments/page.jsx",
-                                        lineNumber: 49,
+                                        lineNumber: 87,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -74,26 +107,26 @@ const Page = ()=>{
                                         children: "Search and see you comments and other's"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/yogeshwar/app/comments/HomedisplayComments/page.jsx",
-                                        lineNumber: 50,
+                                        lineNumber: 88,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Desktop/yogeshwar/app/comments/HomedisplayComments/page.jsx",
-                                lineNumber: 48,
+                                lineNumber: 86,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "hidden sm:block h-[1px] flex-1 mx-8 bg-slate-100 group-focus-within:bg-blue-900/10 transition-colors"
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/yogeshwar/app/comments/HomedisplayComments/page.jsx",
-                                lineNumber: 54,
+                                lineNumber: 92,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Desktop/yogeshwar/app/comments/HomedisplayComments/page.jsx",
-                        lineNumber: 47,
+                        lineNumber: 85,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -106,12 +139,12 @@ const Page = ()=>{
                                     children: "receipt_long"
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/yogeshwar/app/comments/HomedisplayComments/page.jsx",
-                                    lineNumber: 60,
+                                    lineNumber: 98,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0))
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/yogeshwar/app/comments/HomedisplayComments/page.jsx",
-                                lineNumber: 59,
+                                lineNumber: 97,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -124,7 +157,7 @@ const Page = ()=>{
                                 className: "flex-1 min-w-0 px-3 md:px-6 bg-transparent text-blue-900 font-bold md:font-extrabold text-base md:text-lg placeholder:text-slate-600 placeholder:font-medium outline-none"
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/yogeshwar/app/comments/HomedisplayComments/page.jsx",
-                                lineNumber: 66,
+                                lineNumber: 104,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -134,18 +167,18 @@ const Page = ()=>{
                                     children: "swap_vert"
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/yogeshwar/app/comments/HomedisplayComments/page.jsx",
-                                    lineNumber: 78,
+                                    lineNumber: 116,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0))
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/yogeshwar/app/comments/HomedisplayComments/page.jsx",
-                                lineNumber: 77,
+                                lineNumber: 115,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Desktop/yogeshwar/app/comments/HomedisplayComments/page.jsx",
-                        lineNumber: 57,
+                        lineNumber: 95,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -157,74 +190,73 @@ const Page = ()=>{
                                     className: "w-1 h-1 rounded-full bg-blue-900/10"
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/yogeshwar/app/comments/HomedisplayComments/page.jsx",
-                                    lineNumber: 86,
+                                    lineNumber: 124,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "w-1 h-1 rounded-full bg-blue-900/20"
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/yogeshwar/app/comments/HomedisplayComments/page.jsx",
-                                    lineNumber: 87,
+                                    lineNumber: 125,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "w-1 h-1 rounded-full bg-blue-900/40"
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/yogeshwar/app/comments/HomedisplayComments/page.jsx",
-                                    lineNumber: 88,
+                                    lineNumber: 126,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Desktop/yogeshwar/app/comments/HomedisplayComments/page.jsx",
-                            lineNumber: 85,
+                            lineNumber: 123,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/Desktop/yogeshwar/app/comments/HomedisplayComments/page.jsx",
-                        lineNumber: 84,
+                        lineNumber: 122,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/Desktop/yogeshwar/app/comments/HomedisplayComments/page.jsx",
-                lineNumber: 46,
+                lineNumber: 84,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "max-w-2xl mx-auto space-y-4",
                 children: [
                     filter_comments().map((comment)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            // Card background set to slate-300
                             className: "bg-slate-300 rounded-2xl p-5 md:p-6 shadow-sm border border-slate-400/20",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "flex flex-col md:flex-row gap-4",
+                                    className: "flex flex-col gap-4",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex items-center md:items-start gap-4",
+                                            className: "flex items-center gap-4",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "shrink-0",
                                                     children: comment.avatar ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                                         src: comment.avatar,
                                                         alt: comment.userName,
-                                                        className: "w-12 h-12 rounded-full object-cover border border-slate-400"
+                                                        className: `w-12 h-12 rounded-full object-cover border ${getAvatarColor(comment.userName)}`
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/comments/HomedisplayComments/page.jsx",
-                                                        lineNumber: 104,
+                                                        lineNumber: 142,
                                                         columnNumber: 21
                                                     }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "w-12 h-12 rounded-full bg-slate-500 flex items-center justify-center text-white font-bold",
+                                                        className: `w-12 h-12 rounded-full ${getAvatarColor(comment.userName)} flex items-center justify-center text-white font-bold`,
                                                         children: comment.userName?.charAt(0).toUpperCase() || "U"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/comments/HomedisplayComments/page.jsx",
-                                                        lineNumber: 110,
+                                                        lineNumber: 148,
                                                         columnNumber: 21
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/comments/HomedisplayComments/page.jsx",
-                                                    lineNumber: 102,
+                                                    lineNumber: 140,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -235,27 +267,31 @@ const Page = ()=>{
                                                             children: comment.userName || "Anonymous"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/comments/HomedisplayComments/page.jsx",
-                                                            lineNumber: 117,
+                                                            lineNumber: 157,
                                                             columnNumber: 19
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                             className: "text-slate-600 text-[10px] uppercase tracking-wider",
-                                                            children: comment.date || "March 31, 2026"
+                                                            children: comment.createdAt?.toDate ? comment.createdAt.toDate().toLocaleDateString("en-US", {
+                                                                year: "numeric",
+                                                                month: "long",
+                                                                day: "numeric"
+                                                            }) : "March 31, 2026"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/comments/HomedisplayComments/page.jsx",
-                                                            lineNumber: 120,
+                                                            lineNumber: 160,
                                                             columnNumber: 19
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/comments/HomedisplayComments/page.jsx",
-                                                    lineNumber: 116,
+                                                    lineNumber: 156,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/yogeshwar/app/comments/HomedisplayComments/page.jsx",
-                                            lineNumber: 101,
+                                            lineNumber: 139,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -265,18 +301,18 @@ const Page = ()=>{
                                                 children: comment.textComments || "No comment provided."
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/comments/HomedisplayComments/page.jsx",
-                                                lineNumber: 128,
+                                                lineNumber: 174,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0))
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/yogeshwar/app/comments/HomedisplayComments/page.jsx",
-                                            lineNumber: 127,
+                                            lineNumber: 173,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/yogeshwar/app/comments/HomedisplayComments/page.jsx",
-                                    lineNumber: 99,
+                                    lineNumber: 137,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -293,23 +329,23 @@ const Page = ()=>{
                                                 children: "star"
                                             }, i, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/comments/HomedisplayComments/page.jsx",
-                                                lineNumber: 138,
+                                                lineNumber: 184,
                                                 columnNumber: 19
                                             }, ("TURBOPACK compile-time value", void 0)))
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/yogeshwar/app/comments/HomedisplayComments/page.jsx",
-                                        lineNumber: 136,
+                                        lineNumber: 182,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/yogeshwar/app/comments/HomedisplayComments/page.jsx",
-                                    lineNumber: 135,
+                                    lineNumber: 181,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, comment.id, true, {
                             fileName: "[project]/Desktop/yogeshwar/app/comments/HomedisplayComments/page.jsx",
-                            lineNumber: 94,
+                            lineNumber: 132,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))),
                     comments.length === 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -317,19 +353,19 @@ const Page = ()=>{
                         children: "No comments yet."
                     }, void 0, false, {
                         fileName: "[project]/Desktop/yogeshwar/app/comments/HomedisplayComments/page.jsx",
-                        lineNumber: 156,
+                        lineNumber: 202,
                         columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/Desktop/yogeshwar/app/comments/HomedisplayComments/page.jsx",
-                lineNumber: 92,
+                lineNumber: 130,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/Desktop/yogeshwar/app/comments/HomedisplayComments/page.jsx",
-        lineNumber: 45,
+        lineNumber: 83,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0)));
 };

@@ -2,6 +2,7 @@
 import React, { Suspense } from "react";
 import { useState } from "react";
 import { useEffect } from "react";
+import { useRef } from "react";
 import { useSearchParams } from "next/navigation";
 import { db } from "@/app/lib/firebase";
 import { collection, getDoc, addDoc, onSnapshot } from "firebase/firestore";
@@ -17,7 +18,10 @@ const PageContent = () => {
   const [customer, setCustomer] = useState("");
   const [Error, setError] = useState("");
   const [editId, setEditId] = useState("");
-
+  //voice recognization input
+  const recognitionRef = useRef(null);
+  const activeFieldRef = useRef(null);
+  const isListeningRef = useRef(false);
   //all measurement record display
   const [allMeasurements, setAllMeasurements] = useState([]);
 
@@ -451,6 +455,86 @@ const PageContent = () => {
     </div>
   );
 
+  //voice recognization input
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const SpeechRecognition =
+        window.SpeechRecognition || window.webkitSpeechRecognition;
+
+      if (!SpeechRecognition) {
+        alert("Speech Recognition not supported");
+        return;
+      }
+
+      const recognition = new SpeechRecognition();
+      recognition.continuous = true;
+      recognition.interimResults = false;
+      recognition.lang = "en-IN";
+
+      recognition.onstart = () => {
+        isListeningRef.current = true;
+      };
+
+      recognition.onend = () => {
+        isListeningRef.current = false;
+      };
+
+      recognition.onerror = (e) => {
+        console.log("Speech error:", e.error);
+        isListeningRef.current = false;
+      };
+
+      recognition.onresult = (event) => {
+        const transcript =
+          event.results[event.results.length - 1][0].transcript;
+
+        if (activeFieldRef.current) {
+          setMeasurements((prev) => ({
+            ...prev,
+            [activeFieldRef.current]: transcript,
+          }));
+        }
+      };
+
+      recognitionRef.current = recognition;
+    }
+  }, []);
+  const startListening = (fieldName) => {
+    if (!recognitionRef.current) return;
+
+    const recognition = recognitionRef.current;
+
+    // If already listening → stop first
+    if (isListeningRef.current) {
+      recognition.stop();
+
+      // Wait a bit before restarting (prevents crash)
+      setTimeout(() => {
+        activeFieldRef.current = fieldName;
+        try {
+          recognition.start();
+        } catch (err) {
+          console.log("Start error:", err);
+        }
+      }, 200);
+    } else {
+      activeFieldRef.current = fieldName;
+      try {
+        recognition.start();
+      } catch (err) {
+        console.log("Start error:", err);
+      }
+    }
+  };
+  const stopListening = () => {
+    if (!recognitionRef.current) return;
+
+    if (isListeningRef.current) {
+      recognitionRef.current.stop();
+    }
+
+    activeFieldRef.current = null;
+  };
   return (
     <main className="max-w-7xl overflow-x-hidden px-4 sm:px-6 lg:px-8 py-10 md:py-14">
       <style>{`
@@ -781,6 +865,8 @@ const PageContent = () => {
               <input
                 type="number"
                 name="bust"
+                onFocus={() => startListening("bust")}
+                onBlur={stopListening}
                 value={measurements.bust}
                 onChange={handleChange}
                 placeholder="Bust"
@@ -789,6 +875,8 @@ const PageContent = () => {
               <input
                 type="number"
                 name="waist"
+                onFocus={() => startListening("waist")}
+                onBlur={stopListening}
                 value={measurements.waist}
                 onChange={handleChange}
                 placeholder="Waist"
@@ -800,6 +888,8 @@ const PageContent = () => {
               <input
                 type="number"
                 name="shoulder"
+                onFocus={() => startListening("shoulder")}
+                onBlur={stopListening}
                 value={measurements.shoulder}
                 onChange={handleChange}
                 placeholder="Shldr"
@@ -808,6 +898,8 @@ const PageContent = () => {
               <input
                 type="number"
                 name="sleeveLength"
+                onFocus={() => startListening("sleeveLength")}
+                onBlur={stopListening}
                 value={measurements.sleeveLength}
                 onChange={handleChange}
                 placeholder="Slve"
@@ -816,6 +908,8 @@ const PageContent = () => {
               <input
                 type="number"
                 name="blouseLength"
+                onFocus={() => startListening("blouseLength")}
+                onBlur={stopListening}
                 value={measurements.blouseLength}
                 onChange={handleChange}
                 placeholder="Bl-L"
@@ -833,6 +927,8 @@ const PageContent = () => {
                 <input
                   type="number"
                   name="armRound"
+                  onFocus={() => startListening("armRound")}
+                  onBlur={stopListening}
                   value={measurements.armRound}
                   onChange={handleChange}
                   placeholder="0"
@@ -846,6 +942,8 @@ const PageContent = () => {
                 <input
                   type="number"
                   name="m7"
+                  onFocus={() => startListening("m7")}
+                  onBlur={stopListening}
                   value={measurements.m7}
                   onChange={handleChange}
                   placeholder="0"
@@ -859,6 +957,8 @@ const PageContent = () => {
                 <input
                   type="number"
                   name="m8"
+                  onFocus={() => startListening("m8")}
+                  onBlur={stopListening}
                   value={measurements.m8}
                   onChange={handleChange}
                   placeholder="0"
@@ -874,6 +974,8 @@ const PageContent = () => {
                 <input
                   type="number"
                   name="m9"
+                  onFocus={() => startListening("m9")}
+                  onBlur={stopListening}
                   value={measurements.m9}
                   onChange={handleChange}
                   placeholder="0"
@@ -887,6 +989,8 @@ const PageContent = () => {
                 <input
                   type="number"
                   name="m10"
+                  onFocus={() => startListening("m10")}
+                  onBlur={stopListening}
                   value={measurements.m10}
                   onChange={handleChange}
                   placeholder="0"
@@ -901,6 +1005,8 @@ const PageContent = () => {
                 <input
                   type="number"
                   name="m11"
+                  onFocus={() => startListening("m11")}
+                  onBlur={stopListening}
                   value={measurements.m11}
                   onChange={handleChange}
                   placeholder="0"
@@ -916,6 +1022,8 @@ const PageContent = () => {
                 <input
                   type="number"
                   name="m15"
+                  onFocus={() => startListening("m15")}
+                  onBlur={stopListening}
                   value={measurements.m15}
                   onChange={handleChange}
                   placeholder="0"
@@ -930,6 +1038,8 @@ const PageContent = () => {
                 <input
                   type="number"
                   name="m12"
+                  onFocus={() => startListening("m12")}
+                  onBlur={stopListening}
                   value={measurements.m12}
                   onChange={handleChange}
                   placeholder="0"
@@ -943,6 +1053,8 @@ const PageContent = () => {
                 <input
                   type="number"
                   name="m13"
+                  onFocus={() => startListening("m13")}
+                  onBlur={stopListening}
                   value={measurements.m13}
                   onChange={handleChange}
                   placeholder="0"
@@ -957,6 +1069,8 @@ const PageContent = () => {
                 <input
                   type="number"
                   name="m14"
+                  onFocus={() => startListening("m14")}
+                  onBlur={stopListening}
                   value={measurements.m14}
                   onChange={handleChange}
                   placeholder="0"
@@ -970,6 +1084,8 @@ const PageContent = () => {
               <textarea
                 name="specialNotes"
                 rows="2"
+                onFocus={() => startListening("specialNotes")}
+                onBlur={stopListening}
                 value={measurements.specialNotes}
                 onChange={handleChange}
                 className="w-full p-4 rounded-2xl bg-white border border-slate-200 text-sm outline-none italic mb-6 shadow-inner focus:border-blue-900"

@@ -608,77 +608,80 @@ export default function page() {
       </p>
     </div>
 
-    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-5">
+    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-5">
 
-      {/* 1. Bridal Blouse */}
-      <div className="group bg-offwhite rounded-2xl overflow-hidden border border-stone-100 shadow-sm hover:-translate-y-2 hover:shadow-xl hover:shadow-red-800/10 transition-all duration-300 cursor-default">
-        <div className="aspect-square overflow-hidden bg-slate-100">
-          <img 
-            src="/images/Bridalblouse.avif" 
-            alt="Bridal Blouse" 
-            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-          />
-        </div>
-        <div className="p-4 md:p-5">
-          <h4 className="font-outfit font-extrabold text-midnight text-sm md:text-base mb-1 leading-tight">
-            Bridal Blouse
-          </h4>
-          <p className="text-slate-400 text-[10px] md:text-xs font-medium leading-relaxed">
-            Custom fit with intricate embroidery
-          </p>
-        </div>
-      </div>
-
-      {/* 2. Designer Lehenga */}
-      <div className="group bg-offwhite rounded-2xl overflow-hidden border border-stone-100 shadow-sm hover:-translate-y-2 hover:shadow-xl hover:shadow-red-800/10 transition-all duration-300 cursor-default">
-        <div className="aspect-square overflow-hidden bg-slate-100">
-          <img 
-            src="/images/Bridal-Lehenga.jpg" 
-            alt="Designer Lehenga" 
-            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-          />
-        </div>
-        <div className="p-4">
-          <h4 className="font-outfit font-extrabold text-midnight text-sm mb-1 leading-tight">
-            Bride Lehenga Fitting
-          </h4>
-          <p className="text-slate-400 text-[11px] font-medium">Festival & wedding wear</p>
-        </div>
-      </div>
-
-      {/* 3. Kurti with Pant */}
-      <div className="group bg-offwhite rounded-2xl overflow-hidden border border-stone-100 shadow-sm hover:-translate-y-2 hover:shadow-xl hover:shadow-red-800/10 transition-all duration-300 cursor-default">
-        <div className="aspect-square overflow-hidden bg-slate-100">
-          <img 
-            src="/images/Kurtipant.jpg" 
-            alt="Kurti Pant" 
-            className="w-full h-full object-cover object-bottom transition-transform duration-500 group-hover:scale-110"
-          />
-        </div>
-        <div className="p-4">
-          <h4 className="font-outfit font-extrabold text-midnight text-sm mb-1 leading-tight">
-            Kurti with Pant
-          </h4>
-          <p className="text-slate-400 text-[11px] font-medium">Indo-western style</p>
-        </div>
-      </div>
-
-      {/* 4. Kurti with Salwar */}
-      <div className="group bg-offwhite rounded-2xl overflow-hidden border border-stone-100 shadow-sm hover:-translate-y-2 hover:shadow-xl hover:shadow-red-800/10 transition-all duration-300 cursor-default">
-        <div className="aspect-square overflow-hidden bg-slate-100">
-          <img 
-            src="https://assets.myntassets.com/w_360,q_50,,dpr_2,fl_progressive,f_webp/assets/images/2025/FEBRUARY/11/sYy0mNXt_05e539c7801e411d8dda6a8f268b8e0d.jpg" 
-            alt="Salwar Kameez" 
-            className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-110"
-          />
-        </div>
-        <div className="p-4">
-          <h4 className="font-outfit font-extrabold text-midnight text-sm mb-1 leading-tight">
-            Kurti with Salwar
-          </h4>
-          <p className="text-slate-400 text-[11px] font-medium">Classic modern comfort</p>
-        </div>
-      </div>
+     {/* 1. Bridal Blouse */}
+            <div className="group bg-offwhite rounded-2xl overflow-hidden border border-stone-100 shadow-sm hover:-translate-y-2 hover:shadow-xl hover:shadow-red-800/10 transition-all duration-300 cursor-default">
+              <div className="aspect-square overflow-hidden bg-slate-100">
+                <img
+                  src="/images/Bridalblouse.avif"
+                  alt="Bridal Blouse"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+              <div className="p-4 md:p-5">
+                <h4 className="font-outfit font-extrabold text-midnight text-sm md:text-base mb-1 leading-tight">
+                  Bridal Blouse
+                </h4>
+                <p className="text-slate-400 text-[10px] md:text-xs font-medium leading-relaxed">
+                  Custom fit with intricate embroidery
+                </p>
+              </div>
+            </div>
+            {/* 2. Designer Lehenga */}
+            <div className="group bg-offwhite rounded-2xl overflow-hidden border border-stone-100 shadow-sm hover:-translate-y-2 hover:shadow-xl hover:shadow-red-800/10 transition-all duration-300 cursor-default">
+              <div className="aspect-square overflow-hidden bg-slate-100">
+                <img
+                  src="/images/Bridal-Lehenga.jpg"
+                  alt="Designer Lehenga"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+              <div className="p-4">
+                <h4 className="font-outfit font-extrabold text-midnight text-sm mb-1 leading-tight">
+                  Bride chaniya choli fitting 
+                </h4>
+                <p className="text-slate-400 text-[11px] font-medium">
+                  Festival & wedding wear
+                </p>
+              </div>
+            </div>
+            {/* 3. Kurti with Pant */}
+            <div className="group bg-offwhite rounded-2xl overflow-hidden border border-stone-100 shadow-sm hover:-translate-y-2 hover:shadow-xl hover:shadow-red-800/10 transition-all duration-300 cursor-default">
+              <div className="aspect-square overflow-hidden bg-slate-100">
+                <img
+                  src="/images/Kurtipant.jpg"
+                  alt="Kurti Pant"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+              <div className="p-4">
+                <h4 className="font-outfit font-extrabold text-midnight text-sm mb-1 leading-tight">
+                  Kurti with Pant
+                </h4>
+                <p className="text-slate-400 text-[11px] font-medium">
+                  Indo-western style
+                </p>
+              </div>
+            </div>
+            {/* 4. Kurti with Salwar */}
+            <div className="group bg-offwhite rounded-2xl overflow-hidden border border-stone-100 shadow-sm hover:-translate-y-2 hover:shadow-xl hover:shadow-red-800/10 transition-all duration-300 cursor-default">
+              <div className="aspect-square overflow-hidden bg-slate-100">
+                <img
+                  src="/images/krtipant.webp"
+                  alt="Salwar"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+              <div className="p-4">
+                <h4 className="font-outfit font-extrabold text-midnight text-sm mb-1 leading-tight">
+                  Kurti with Salwar
+                </h4>
+                <p className="text-slate-400 text-[11px] font-medium">
+                  Classic modern comfort
+                </p>
+              </div>
+            </div>
 
 
     </div>
@@ -1069,7 +1072,7 @@ export default function page() {
                     </div>
                 </details>
 
-                <details className="group bg-offwhite rounded-2xl border bg-gray-300 border-stone-100 overflow-hidden">
+                <details className="group bg-offwhite rounded-2xl border bg-white border-stone-100 overflow-hidden">
                     <summary
                         className="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer list-none select-none bg-gray-300  hover:bg-stone-100 transition-colors duration-200">
                         <div className="flex items-center gap-4">

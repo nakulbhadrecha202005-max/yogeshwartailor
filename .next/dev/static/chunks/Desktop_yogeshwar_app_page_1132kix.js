@@ -2071,7 +2071,7 @@ function page() {
                             columnNumber: 5
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-5",
+                            className: "grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-5",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "group bg-offwhite rounded-2xl overflow-hidden border border-stone-100 shadow-sm hover:-translate-y-2 hover:shadow-xl hover:shadow-red-800/10 transition-all duration-300 cursor-default",
@@ -2085,12 +2085,12 @@ function page() {
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
                                                 lineNumber: 616,
-                                                columnNumber: 11
+                                                columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
                                             lineNumber: 615,
-                                            columnNumber: 9
+                                            columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "p-4 md:p-5",
@@ -2101,7 +2101,7 @@ function page() {
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/page.js",
                                                     lineNumber: 623,
-                                                    columnNumber: 11
+                                                    columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                     className: "text-slate-400 text-[10px] md:text-xs font-medium leading-relaxed",
@@ -2109,19 +2109,19 @@ function page() {
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/page.js",
                                                     lineNumber: 626,
-                                                    columnNumber: 11
+                                                    columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
                                             lineNumber: 622,
-                                            columnNumber: 9
+                                            columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/yogeshwar/app/page.js",
                                     lineNumber: 614,
-                                    columnNumber: 7
+                                    columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "group bg-offwhite rounded-2xl overflow-hidden border border-stone-100 shadow-sm hover:-translate-y-2 hover:shadow-xl hover:shadow-red-800/10 transition-all duration-300 cursor-default",
@@ -2134,44 +2134,44 @@ function page() {
                                                 className: "w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 635,
-                                                columnNumber: 11
+                                                lineNumber: 634,
+                                                columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                            lineNumber: 634,
-                                            columnNumber: 9
+                                            lineNumber: 633,
+                                            columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "p-4",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
                                                     className: "font-outfit font-extrabold text-midnight text-sm mb-1 leading-tight",
-                                                    children: "Bride Lehenga Fitting"
+                                                    children: "Bride chaniya choli fitting"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                    lineNumber: 642,
-                                                    columnNumber: 11
+                                                    lineNumber: 641,
+                                                    columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                     className: "text-slate-400 text-[11px] font-medium",
                                                     children: "Festival & wedding wear"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                    lineNumber: 645,
-                                                    columnNumber: 11
+                                                    lineNumber: 644,
+                                                    columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                            lineNumber: 641,
-                                            columnNumber: 9
+                                            lineNumber: 640,
+                                            columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                    lineNumber: 633,
-                                    columnNumber: 7
+                                    lineNumber: 632,
+                                    columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "group bg-offwhite rounded-2xl overflow-hidden border border-stone-100 shadow-sm hover:-translate-y-2 hover:shadow-xl hover:shadow-red-800/10 transition-all duration-300 cursor-default",
@@ -2181,16 +2181,16 @@ function page() {
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                                 src: "/images/Kurtipant.jpg",
                                                 alt: "Kurti Pant",
-                                                className: "w-full h-full object-cover object-bottom transition-transform duration-500 group-hover:scale-110"
+                                                className: "w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
                                                 lineNumber: 652,
-                                                columnNumber: 11
+                                                columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
                                             lineNumber: 651,
-                                            columnNumber: 9
+                                            columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "p-4",
@@ -2201,7 +2201,7 @@ function page() {
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/page.js",
                                                     lineNumber: 659,
-                                                    columnNumber: 11
+                                                    columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                     className: "text-slate-400 text-[11px] font-medium",
@@ -2209,19 +2209,19 @@ function page() {
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/page.js",
                                                     lineNumber: 662,
-                                                    columnNumber: 11
+                                                    columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
                                             lineNumber: 658,
-                                            columnNumber: 9
+                                            columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/yogeshwar/app/page.js",
                                     lineNumber: 650,
-                                    columnNumber: 7
+                                    columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "group bg-offwhite rounded-2xl overflow-hidden border border-stone-100 shadow-sm hover:-translate-y-2 hover:shadow-xl hover:shadow-red-800/10 transition-all duration-300 cursor-default",
@@ -2229,18 +2229,18 @@ function page() {
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "aspect-square overflow-hidden bg-slate-100",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                                src: "https://assets.myntassets.com/w_360,q_50,,dpr_2,fl_progressive,f_webp/assets/images/2025/FEBRUARY/11/sYy0mNXt_05e539c7801e411d8dda6a8f268b8e0d.jpg",
-                                                alt: "Salwar Kameez",
-                                                className: "w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-110"
+                                                src: "/images/krtipant.webp",
+                                                alt: "Salwar",
+                                                className: "w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 669,
-                                                columnNumber: 11
+                                                lineNumber: 670,
+                                                columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                            lineNumber: 668,
-                                            columnNumber: 9
+                                            lineNumber: 669,
+                                            columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "p-4",
@@ -2250,28 +2250,28 @@ function page() {
                                                     children: "Kurti with Salwar"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                    lineNumber: 676,
-                                                    columnNumber: 11
+                                                    lineNumber: 677,
+                                                    columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                     className: "text-slate-400 text-[11px] font-medium",
                                                     children: "Classic modern comfort"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                    lineNumber: 679,
-                                                    columnNumber: 11
+                                                    lineNumber: 680,
+                                                    columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                            lineNumber: 675,
-                                            columnNumber: 9
+                                            lineNumber: 676,
+                                            columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                    lineNumber: 667,
-                                    columnNumber: 7
+                                    lineNumber: 668,
+                                    columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
@@ -2290,19 +2290,19 @@ function page() {
                                         children: "add_circle"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                        lineNumber: 689,
+                                        lineNumber: 692,
                                         columnNumber: 9
                                     }, this),
                                     "Book an Outfit Stitching"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                lineNumber: 687,
+                                lineNumber: 690,
                                 columnNumber: 7
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                            lineNumber: 686,
+                            lineNumber: 689,
                             columnNumber: 5
                         }, this)
                     ]
@@ -2323,14 +2323,14 @@ function page() {
                         className: "absolute top-0 right-0 w-96 h-96 rounded-full bg-white/[0.03] -translate-y-1/2 translate-x-1/2 pointer-events-none"
                     }, void 0, false, {
                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                        lineNumber: 699,
+                        lineNumber: 702,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute bottom-0 left-0 w-64 h-64 rounded-full bg-white/[0.03] translate-y-1/2 -translate-x-1/2 pointer-events-none"
                     }, void 0, false, {
                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                        lineNumber: 702,
+                        lineNumber: 705,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2346,7 +2346,7 @@ function page() {
                                                 className: "w-8 h-[2px] bg-red-800"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 710,
+                                                lineNumber: 713,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2354,20 +2354,20 @@ function page() {
                                                 children: "Numbers That Speak"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 711,
+                                                lineNumber: 714,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "w-8 h-[2px] bg-red-800"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 713,
+                                                lineNumber: 716,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                        lineNumber: 709,
+                                        lineNumber: 712,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -2375,7 +2375,7 @@ function page() {
                                         children: "Trusted by Thousands of Families"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                        lineNumber: 715,
+                                        lineNumber: 718,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2383,13 +2383,13 @@ function page() {
                                         children: "Our legacy in numbers — built on craftsmanship, trust, and thousands of perfectly fitted garments."
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                        lineNumber: 718,
+                                        lineNumber: 721,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                lineNumber: 708,
+                                lineNumber: 711,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2405,12 +2405,12 @@ function page() {
                                                     children: "workspace_premium"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                    lineNumber: 728,
+                                                    lineNumber: 731,
                                                     columnNumber: 25
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 727,
+                                                lineNumber: 730,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2422,13 +2422,13 @@ function page() {
                                                         children: "+"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                        lineNumber: 730,
+                                                        lineNumber: 733,
                                                         columnNumber: 88
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 730,
+                                                lineNumber: 733,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2436,13 +2436,13 @@ function page() {
                                                 children: "Years Experience"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 732,
+                                                lineNumber: 735,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                        lineNumber: 725,
+                                        lineNumber: 728,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2455,12 +2455,12 @@ function page() {
                                                     children: "people"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                    lineNumber: 738,
+                                                    lineNumber: 741,
                                                     columnNumber: 25
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 737,
+                                                lineNumber: 740,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2472,13 +2472,13 @@ function page() {
                                                         children: "+"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                        lineNumber: 740,
+                                                        lineNumber: 743,
                                                         columnNumber: 88
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 740,
+                                                lineNumber: 743,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2486,13 +2486,13 @@ function page() {
                                                 children: "Happy Customers"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 742,
+                                                lineNumber: 745,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                        lineNumber: 735,
+                                        lineNumber: 738,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2505,12 +2505,12 @@ function page() {
                                                     children: "checkroom"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                    lineNumber: 748,
+                                                    lineNumber: 751,
                                                     columnNumber: 25
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 747,
+                                                lineNumber: 750,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2522,13 +2522,13 @@ function page() {
                                                         children: "+"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                        lineNumber: 750,
+                                                        lineNumber: 753,
                                                         columnNumber: 89
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 750,
+                                                lineNumber: 753,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2536,13 +2536,13 @@ function page() {
                                                 children: "Outfits Stitched"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 752,
+                                                lineNumber: 755,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                        lineNumber: 745,
+                                        lineNumber: 748,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2555,12 +2555,12 @@ function page() {
                                                     children: "favorite"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                    lineNumber: 758,
+                                                    lineNumber: 761,
                                                     columnNumber: 25
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 757,
+                                                lineNumber: 760,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2572,13 +2572,13 @@ function page() {
                                                         children: "%"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                        lineNumber: 760,
+                                                        lineNumber: 763,
                                                         columnNumber: 88
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 760,
+                                                lineNumber: 763,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2586,19 +2586,19 @@ function page() {
                                                 children: "Repeat Customers"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 762,
+                                                lineNumber: 765,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                        lineNumber: 755,
+                                        lineNumber: 758,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                lineNumber: 723,
+                                lineNumber: 726,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2608,7 +2608,7 @@ function page() {
                                         className: "mt-14 space-y-4 max-h-[700px] overflow-y-auto pr-2 overflow-x-hidden"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                        lineNumber: 769,
+                                        lineNumber: 772,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -2623,36 +2623,36 @@ function page() {
                                                     children: "expand_more"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                    lineNumber: 779,
+                                                    lineNumber: 782,
                                                     columnNumber: 25
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                            lineNumber: 777,
+                                            lineNumber: 780,
                                             columnNumber: 25
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                        lineNumber: 776,
+                                        lineNumber: 779,
                                         columnNumber: 21
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                lineNumber: 767,
+                                lineNumber: 770,
                                 columnNumber: 12
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                        lineNumber: 706,
+                        lineNumber: 709,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                lineNumber: 697,
+                lineNumber: 700,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -2672,7 +2672,7 @@ function page() {
                                                 className: "absolute top-0 right-0 w-48 h-48 bg-red-100 rounded-full -translate-y-1/4 translate-x-1/4 pointer-events-none"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 796,
+                                                lineNumber: 799,
                                                 columnNumber: 25
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2682,12 +2682,12 @@ function page() {
                                                     children: "emoji_events"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                    lineNumber: 801,
+                                                    lineNumber: 804,
                                                     columnNumber: 29
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 800,
+                                                lineNumber: 803,
                                                 columnNumber: 25
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -2695,7 +2695,7 @@ function page() {
                                                 children: "Stitching That Feels Like It Was Made for You"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 804,
+                                                lineNumber: 807,
                                                 columnNumber: 25
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2703,7 +2703,7 @@ function page() {
                                                 children: "At Yogeshwar Tailor, we don't just stitch clothes. We craft experiences that make you feel confident, beautiful, and uniquely you."
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 807,
+                                                lineNumber: 810,
                                                 columnNumber: 25
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2717,7 +2717,7 @@ function page() {
                                                                 children: "100%"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                                lineNumber: 814,
+                                                                lineNumber: 817,
                                                                 columnNumber: 33
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2725,13 +2725,13 @@ function page() {
                                                                 children: "Custom Made"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                                lineNumber: 815,
+                                                                lineNumber: 818,
                                                                 columnNumber: 33
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                        lineNumber: 813,
+                                                        lineNumber: 816,
                                                         columnNumber: 29
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2742,7 +2742,7 @@ function page() {
                                                                 children: "Free"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                                lineNumber: 819,
+                                                                lineNumber: 822,
                                                                 columnNumber: 33
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2750,13 +2750,13 @@ function page() {
                                                                 children: "Alterations"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                                lineNumber: 820,
+                                                                lineNumber: 823,
                                                                 columnNumber: 33
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                        lineNumber: 818,
+                                                        lineNumber: 821,
                                                         columnNumber: 29
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2767,7 +2767,7 @@ function page() {
                                                                 children: "7–10"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                                lineNumber: 824,
+                                                                lineNumber: 827,
                                                                 columnNumber: 33
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2775,13 +2775,13 @@ function page() {
                                                                 children: "Days Delivery"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                                lineNumber: 825,
+                                                                lineNumber: 828,
                                                                 columnNumber: 33
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                        lineNumber: 823,
+                                                        lineNumber: 826,
                                                         columnNumber: 29
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2792,7 +2792,7 @@ function page() {
                                                                 children: "∞"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                                lineNumber: 829,
+                                                                lineNumber: 832,
                                                                 columnNumber: 33
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2800,25 +2800,25 @@ function page() {
                                                                 children: "Saved Records"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                                lineNumber: 830,
+                                                                lineNumber: 833,
                                                                 columnNumber: 33
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                        lineNumber: 828,
+                                                        lineNumber: 831,
                                                         columnNumber: 29
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 812,
+                                                lineNumber: 815,
                                                 columnNumber: 25
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                        lineNumber: 794,
+                                        lineNumber: 797,
                                         columnNumber: 21
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2829,7 +2829,7 @@ function page() {
                                                 children: "verified"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 838,
+                                                lineNumber: 841,
                                                 columnNumber: 25
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2839,7 +2839,7 @@ function page() {
                                                         children: "Satisfaction"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                        lineNumber: 840,
+                                                        lineNumber: 843,
                                                         columnNumber: 29
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2847,25 +2847,25 @@ function page() {
                                                         children: "Guaranteed"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                        lineNumber: 841,
+                                                        lineNumber: 844,
                                                         columnNumber: 29
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 839,
+                                                lineNumber: 842,
                                                 columnNumber: 25
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                        lineNumber: 836,
+                                        lineNumber: 839,
                                         columnNumber: 21
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                lineNumber: 793,
+                                lineNumber: 796,
                                 columnNumber: 17
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2877,7 +2877,7 @@ function page() {
                                                 className: "w-8 h-[2px] bg-red-800"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 848,
+                                                lineNumber: 851,
                                                 columnNumber: 25
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2885,13 +2885,13 @@ function page() {
                                                 children: "Why Customers Love Us"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 849,
+                                                lineNumber: 852,
                                                 columnNumber: 25
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                        lineNumber: 847,
+                                        lineNumber: 850,
                                         columnNumber: 21
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -2900,14 +2900,14 @@ function page() {
                                             "Benefits of Stitching",
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 853,
+                                                lineNumber: 856,
                                                 columnNumber: 46
                                             }, this),
                                             "at Our Shop"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                        lineNumber: 852,
+                                        lineNumber: 855,
                                         columnNumber: 21
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2915,7 +2915,7 @@ function page() {
                                         children: "Every visit to Yogeshwar Tailor is an experience built around you — your style, your comfort, your perfection."
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                        lineNumber: 855,
+                                        lineNumber: 858,
                                         columnNumber: 21
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2931,12 +2931,12 @@ function page() {
                                                             children: "straighten"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                            lineNumber: 866,
+                                                            lineNumber: 869,
                                                             columnNumber: 33
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                        lineNumber: 864,
+                                                        lineNumber: 867,
                                                         columnNumber: 29
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2946,7 +2946,7 @@ function page() {
                                                                 children: "Perfect Fitting Guaranteed"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                                lineNumber: 870,
+                                                                lineNumber: 873,
                                                                 columnNumber: 33
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2954,19 +2954,19 @@ function page() {
                                                                 children: "Every garment tailored to your exact body shape — no loose ends, no tight spots."
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                                lineNumber: 872,
+                                                                lineNumber: 875,
                                                                 columnNumber: 33
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                        lineNumber: 869,
+                                                        lineNumber: 872,
                                                         columnNumber: 29
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 862,
+                                                lineNumber: 865,
                                                 columnNumber: 25
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2979,12 +2979,12 @@ function page() {
                                                             children: "save"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                            lineNumber: 881,
+                                                            lineNumber: 884,
                                                             columnNumber: 33
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                        lineNumber: 879,
+                                                        lineNumber: 882,
                                                         columnNumber: 29
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2994,7 +2994,7 @@ function page() {
                                                                 children: "Measurements Saved for Life"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                                lineNumber: 885,
+                                                                lineNumber: 888,
                                                                 columnNumber: 33
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3002,19 +3002,19 @@ function page() {
                                                                 children: "We store your records securely. Future orders are faster — no re-measurement needed."
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                                lineNumber: 887,
+                                                                lineNumber: 890,
                                                                 columnNumber: 33
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                        lineNumber: 884,
+                                                        lineNumber: 887,
                                                         columnNumber: 29
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 877,
+                                                lineNumber: 880,
                                                 columnNumber: 25
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3027,12 +3027,12 @@ function page() {
                                                             children: "design_services"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                            lineNumber: 896,
+                                                            lineNumber: 899,
                                                             columnNumber: 33
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                        lineNumber: 894,
+                                                        lineNumber: 897,
                                                         columnNumber: 29
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3042,7 +3042,7 @@ function page() {
                                                                 children: "Free Alteration Support"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                                lineNumber: 900,
+                                                                lineNumber: 903,
                                                                 columnNumber: 33
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3050,19 +3050,19 @@ function page() {
                                                                 children: "Not fully satisfied? We offer free alterations until you're completely happy with the fit."
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                                lineNumber: 901,
+                                                                lineNumber: 904,
                                                                 columnNumber: 33
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                        lineNumber: 899,
+                                                        lineNumber: 902,
                                                         columnNumber: 29
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 892,
+                                                lineNumber: 895,
                                                 columnNumber: 25
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3075,12 +3075,12 @@ function page() {
                                                             children: "trending_up"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                            lineNumber: 910,
+                                                            lineNumber: 913,
                                                             columnNumber: 33
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                        lineNumber: 908,
+                                                        lineNumber: 911,
                                                         columnNumber: 29
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3090,7 +3090,7 @@ function page() {
                                                                 children: "Latest Fashion Designs"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                                lineNumber: 914,
+                                                                lineNumber: 917,
                                                                 columnNumber: 33
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3098,19 +3098,19 @@ function page() {
                                                                 children: "We stay updated with current fashion trends so your outfit always looks modern and elegant."
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                                lineNumber: 915,
+                                                                lineNumber: 918,
                                                                 columnNumber: 33
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                        lineNumber: 913,
+                                                        lineNumber: 916,
                                                         columnNumber: 29
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 906,
+                                                lineNumber: 909,
                                                 columnNumber: 25
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3123,12 +3123,12 @@ function page() {
                                                             children: "local_florist"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                            lineNumber: 924,
+                                                            lineNumber: 927,
                                                             columnNumber: 33
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                        lineNumber: 922,
+                                                        lineNumber: 925,
                                                         columnNumber: 29
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3138,7 +3138,7 @@ function page() {
                                                                 children: "Specialist Bridal Stitching"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                                lineNumber: 928,
+                                                                lineNumber: 931,
                                                                 columnNumber: 33
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3146,47 +3146,47 @@ function page() {
                                                                 children: "From bridal blouses to full lehenga sets, we make your special day look extraordinary."
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                                lineNumber: 930,
+                                                                lineNumber: 933,
                                                                 columnNumber: 33
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                        lineNumber: 927,
+                                                        lineNumber: 930,
                                                         columnNumber: 29
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 920,
+                                                lineNumber: 923,
                                                 columnNumber: 25
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                        lineNumber: 860,
+                                        lineNumber: 863,
                                         columnNumber: 21
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                lineNumber: 846,
+                                lineNumber: 849,
                                 columnNumber: 17
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                        lineNumber: 791,
+                        lineNumber: 794,
                         columnNumber: 13
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                    lineNumber: 789,
+                    lineNumber: 792,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                lineNumber: 788,
+                lineNumber: 791,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -3200,27 +3200,27 @@ function page() {
                                 className: "absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-red-800/10"
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                lineNumber: 945,
+                                lineNumber: 948,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "absolute bottom-0 right-0 w-96 h-96 rounded-full bg-white/[0.03] translate-x-1/3 translate-y-1/3"
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                lineNumber: 948,
+                                lineNumber: 951,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "absolute top-0 left-0 w-64 h-64 rounded-full bg-white/[0.03] -translate-x-1/3 -translate-y-1/3"
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                lineNumber: 951,
+                                lineNumber: 954,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                        lineNumber: 944,
+                        lineNumber: 947,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3233,7 +3233,7 @@ function page() {
                                         className: "w-8 h-[2px] bg-red-800"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                        lineNumber: 958,
+                                        lineNumber: 961,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3241,20 +3241,20 @@ function page() {
                                         children: "We'd Love to See You"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                        lineNumber: 959,
+                                        lineNumber: 962,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: "w-8 h-[2px] bg-red-800"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                        lineNumber: 961,
+                                        lineNumber: 964,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                lineNumber: 957,
+                                lineNumber: 960,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -3263,7 +3263,7 @@ function page() {
                                     "Visit Yogeshwar Tailor",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                        lineNumber: 965,
+                                        lineNumber: 968,
                                         columnNumber: 39
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3271,13 +3271,13 @@ function page() {
                                         children: "Today"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                        lineNumber: 966,
+                                        lineNumber: 969,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                lineNumber: 964,
+                                lineNumber: 967,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3285,7 +3285,7 @@ function page() {
                                 children: "Step into our shop and experience the art of perfect tailoring. Our master tailors are ready to craft something beautiful — just for you."
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                lineNumber: 969,
+                                lineNumber: 972,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3300,14 +3300,14 @@ function page() {
                                                 children: "calendar_month"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 978,
+                                                lineNumber: 981,
                                                 columnNumber: 21
                                             }, this),
                                             "Book Appointment"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                        lineNumber: 976,
+                                        lineNumber: 979,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -3319,14 +3319,14 @@ function page() {
                                                 children: "call"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 984,
+                                                lineNumber: 987,
                                                 columnNumber: 21
                                             }, this),
                                             "Call Now"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                        lineNumber: 982,
+                                        lineNumber: 985,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -3340,20 +3340,20 @@ function page() {
                                                 children: "location_on"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 990,
+                                                lineNumber: 993,
                                                 columnNumber: 21
                                             }, this),
                                             "Visit Shop Location"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                        lineNumber: 988,
+                                        lineNumber: 991,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                lineNumber: 974,
+                                lineNumber: 977,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3367,7 +3367,7 @@ function page() {
                                                 children: "location_on"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 1001,
+                                                lineNumber: 1004,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3375,7 +3375,7 @@ function page() {
                                                 children: "Shop Address"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 1002,
+                                                lineNumber: 1005,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3384,20 +3384,20 @@ function page() {
                                                     "Kedareshwar road , Anand shopping center 27,",
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                        lineNumber: 1003,
+                                                        lineNumber: 1006,
                                                         columnNumber: 132
                                                     }, this),
                                                     "Porbandar, Gujarat"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 1003,
+                                                lineNumber: 1006,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                        lineNumber: 999,
+                                        lineNumber: 1002,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3408,7 +3408,7 @@ function page() {
                                                 children: "schedule"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 1009,
+                                                lineNumber: 1012,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3416,7 +3416,7 @@ function page() {
                                                 children: "Shop Hours"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 1010,
+                                                lineNumber: 1013,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3425,14 +3425,14 @@ function page() {
                                                     "Mon – Sat",
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                        lineNumber: 1011,
+                                                        lineNumber: 1014,
                                                         columnNumber: 105
                                                     }, this),
                                                     "10:00 AM - 1:00 PM "
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 1011,
+                                                lineNumber: 1014,
                                                 columnNumber: 29
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3440,7 +3440,7 @@ function page() {
                                                 children: "04:00 PM - 9:00 PM "
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 1012,
+                                                lineNumber: 1015,
                                                 columnNumber: 29
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3449,20 +3449,20 @@ function page() {
                                                     "Sunday",
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                        lineNumber: 1013,
+                                                        lineNumber: 1016,
                                                         columnNumber: 94
                                                     }, this),
                                                     "10:00 AM – 1:00 PM"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 1013,
+                                                lineNumber: 1016,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                        lineNumber: 1007,
+                                        lineNumber: 1010,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3473,7 +3473,7 @@ function page() {
                                                 children: "call"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 1018,
+                                                lineNumber: 1021,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3481,7 +3481,7 @@ function page() {
                                                 children: "Contact Us"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 1019,
+                                                lineNumber: 1022,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3490,38 +3490,38 @@ function page() {
                                                     "+91 8200392919",
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                        lineNumber: 1020,
+                                                        lineNumber: 1023,
                                                         columnNumber: 102
                                                     }, this),
                                                     "himeshbhadrecha@gmail.com"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 1020,
+                                                lineNumber: 1023,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                        lineNumber: 1016,
+                                        lineNumber: 1019,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                lineNumber: 997,
+                                lineNumber: 1000,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                        lineNumber: 955,
+                        lineNumber: 958,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                lineNumber: 942,
+                lineNumber: 945,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -3539,7 +3539,7 @@ function page() {
                                             className: "w-8 h-[2px] bg-red-800"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                            lineNumber: 1033,
+                                            lineNumber: 1036,
                                             columnNumber: 21
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3547,20 +3547,20 @@ function page() {
                                             children: "Got Questions?"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                            lineNumber: 1034,
+                                            lineNumber: 1037,
                                             columnNumber: 21
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: "w-8 h-[2px] bg-red-800"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                            lineNumber: 1035,
+                                            lineNumber: 1038,
                                             columnNumber: 21
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                    lineNumber: 1032,
+                                    lineNumber: 1035,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -3568,7 +3568,7 @@ function page() {
                                     children: "Frequently Asked Questions"
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                    lineNumber: 1037,
+                                    lineNumber: 1040,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3576,13 +3576,13 @@ function page() {
                                     children: "Everything you need to know before your first visit — answered honestly."
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                    lineNumber: 1040,
+                                    lineNumber: 1043,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                            lineNumber: 1031,
+                            lineNumber: 1034,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3604,12 +3604,12 @@ function page() {
                                                                 children: "schedule"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                                lineNumber: 1052,
+                                                                lineNumber: 1055,
                                                                 columnNumber: 33
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                            lineNumber: 1051,
+                                                            lineNumber: 1054,
                                                             columnNumber: 29
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3617,13 +3617,13 @@ function page() {
                                                             children: "How long does stitching usually take?"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                            lineNumber: 1054,
+                                                            lineNumber: 1057,
                                                             columnNumber: 29
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                    lineNumber: 1050,
+                                                    lineNumber: 1053,
                                                     columnNumber: 25
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3631,13 +3631,13 @@ function page() {
                                                     children: "add"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                    lineNumber: 1057,
+                                                    lineNumber: 1060,
                                                     columnNumber: 25
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                            lineNumber: 1048,
+                                            lineNumber: 1051,
                                             columnNumber: 21
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3653,34 +3653,34 @@ function page() {
                                                             children: "7 to 10 working days"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                            lineNumber: 1063,
+                                                            lineNumber: 1066,
                                                             columnNumber: 58
                                                         }, this),
                                                         " from the date measurements are taken. For simpler garments like blouses and kurtis, it can be ready in 5–7 days. We always share an estimated delivery date when you place your order."
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                    lineNumber: 1062,
+                                                    lineNumber: 1065,
                                                     columnNumber: 29
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 1061,
+                                                lineNumber: 1064,
                                                 columnNumber: 25
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                            lineNumber: 1060,
+                                            lineNumber: 1063,
                                             columnNumber: 21
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                    lineNumber: 1047,
+                                    lineNumber: 1050,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("details", {
-                                    className: "group bg-offwhite rounded-2xl border bg-gray-300 border-stone-100 overflow-hidden",
+                                    className: "group bg-offwhite rounded-2xl border bg-white border-stone-100 overflow-hidden",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("summary", {
                                             className: "flex items-center justify-between gap-4 px-6 py-5 cursor-pointer list-none select-none bg-gray-300  hover:bg-stone-100 transition-colors duration-200",
@@ -3695,12 +3695,12 @@ function page() {
                                                                 children: "speed"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                                lineNumber: 1077,
+                                                                lineNumber: 1080,
                                                                 columnNumber: 33
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                            lineNumber: 1076,
+                                                            lineNumber: 1079,
                                                             columnNumber: 29
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3708,13 +3708,13 @@ function page() {
                                                             children: "Do you provide urgent stitching?"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                            lineNumber: 1079,
+                                                            lineNumber: 1082,
                                                             columnNumber: 29
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                    lineNumber: 1075,
+                                                    lineNumber: 1078,
                                                     columnNumber: 25
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3722,13 +3722,13 @@ function page() {
                                                     children: "add"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                    lineNumber: 1082,
+                                                    lineNumber: 1085,
                                                     columnNumber: 25
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                            lineNumber: 1073,
+                                            lineNumber: 1076,
                                             columnNumber: 21
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3744,30 +3744,30 @@ function page() {
                                                             children: "urgent stitching on request"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                            lineNumber: 1088,
+                                                            lineNumber: 1091,
                                                             columnNumber: 47
                                                         }, this),
                                                         " — especially for weddings, events, and festivals. Urgent orders may have an additional charge depending on timeline and garment type. Please visit our shop or call us to discuss your deadline."
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                    lineNumber: 1087,
+                                                    lineNumber: 1090,
                                                     columnNumber: 29
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 1086,
+                                                lineNumber: 1089,
                                                 columnNumber: 25
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                            lineNumber: 1085,
+                                            lineNumber: 1088,
                                             columnNumber: 21
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                    lineNumber: 1072,
+                                    lineNumber: 1075,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("details", {
@@ -3786,12 +3786,12 @@ function page() {
                                                                 children: "inventory_2"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                                lineNumber: 1102,
+                                                                lineNumber: 1105,
                                                                 columnNumber: 33
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                            lineNumber: 1101,
+                                                            lineNumber: 1104,
                                                             columnNumber: 29
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3799,13 +3799,13 @@ function page() {
                                                             children: "Can I bring my own fabric?"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                            lineNumber: 1104,
+                                                            lineNumber: 1107,
                                                             columnNumber: 29
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                    lineNumber: 1100,
+                                                    lineNumber: 1103,
                                                     columnNumber: 25
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3813,13 +3813,13 @@ function page() {
                                                     children: "add"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                    lineNumber: 1107,
+                                                    lineNumber: 1110,
                                                     columnNumber: 25
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                            lineNumber: 1098,
+                                            lineNumber: 1101,
                                             columnNumber: 21
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3835,30 +3835,30 @@ function page() {
                                                             children: "welcome customer-provided fabric"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                            lineNumber: 1113,
+                                                            lineNumber: 1116,
                                                             columnNumber: 48
                                                         }, this),
                                                         ". Whether it's a family heirloom saree or a fabric you chose yourself — we'll stitch it with the same care and skill. Just ensure you bring sufficient fabric as per the garment type."
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                    lineNumber: 1112,
+                                                    lineNumber: 1115,
                                                     columnNumber: 29
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 1111,
+                                                lineNumber: 1114,
                                                 columnNumber: 25
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                            lineNumber: 1110,
+                                            lineNumber: 1113,
                                             columnNumber: 21
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                    lineNumber: 1097,
+                                    lineNumber: 1100,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("details", {
@@ -3877,12 +3877,12 @@ function page() {
                                                                 children: "save"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                                lineNumber: 1127,
+                                                                lineNumber: 1130,
                                                                 columnNumber: 33
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                            lineNumber: 1126,
+                                                            lineNumber: 1129,
                                                             columnNumber: 29
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3890,13 +3890,13 @@ function page() {
                                                             children: "Do you save my measurements for future orders?"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                            lineNumber: 1129,
+                                                            lineNumber: 1132,
                                                             columnNumber: 29
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                    lineNumber: 1125,
+                                                    lineNumber: 1128,
                                                     columnNumber: 25
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3904,13 +3904,13 @@ function page() {
                                                     children: "add"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                    lineNumber: 1132,
+                                                    lineNumber: 1135,
                                                     columnNumber: 25
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                            lineNumber: 1123,
+                                            lineNumber: 1126,
                                             columnNumber: 21
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3926,30 +3926,30 @@ function page() {
                                                             children: "personal measurement record"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                            lineNumber: 1138,
+                                                            lineNumber: 1141,
                                                             columnNumber: 53
                                                         }, this),
                                                         " for every customer. Once measured, your data is saved and used for all future orders. This means faster service and more consistent fitting every time you visit."
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                    lineNumber: 1137,
+                                                    lineNumber: 1140,
                                                     columnNumber: 29
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 1136,
+                                                lineNumber: 1139,
                                                 columnNumber: 25
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                            lineNumber: 1135,
+                                            lineNumber: 1138,
                                             columnNumber: 21
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                    lineNumber: 1122,
+                                    lineNumber: 1125,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("details", {
@@ -3968,12 +3968,12 @@ function page() {
                                                                 children: "design_services"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                                lineNumber: 1152,
+                                                                lineNumber: 1155,
                                                                 columnNumber: 33
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                            lineNumber: 1151,
+                                                            lineNumber: 1154,
                                                             columnNumber: 29
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3981,13 +3981,13 @@ function page() {
                                                             children: "Do you offer free alterations if I'm not satisfied?"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                            lineNumber: 1154,
+                                                            lineNumber: 1157,
                                                             columnNumber: 29
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                    lineNumber: 1150,
+                                                    lineNumber: 1153,
                                                     columnNumber: 25
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3995,13 +3995,13 @@ function page() {
                                                     children: "add"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                    lineNumber: 1157,
+                                                    lineNumber: 1160,
                                                     columnNumber: 25
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                            lineNumber: 1148,
+                                            lineNumber: 1151,
                                             columnNumber: 21
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4017,30 +4017,30 @@ function page() {
                                                             children: "free alterations"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                            lineNumber: 1164,
+                                                            lineNumber: 1167,
                                                             columnNumber: 49
                                                         }, this),
                                                         " until it's right. We stand behind every piece we stitch and never leave a customer unhappy."
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                    lineNumber: 1162,
+                                                    lineNumber: 1165,
                                                     columnNumber: 29
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 1161,
+                                                lineNumber: 1164,
                                                 columnNumber: 25
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                            lineNumber: 1160,
+                                            lineNumber: 1163,
                                             columnNumber: 21
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                    lineNumber: 1147,
+                                    lineNumber: 1150,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("details", {
@@ -4059,12 +4059,12 @@ function page() {
                                                                 children: "local_florist"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                                lineNumber: 1176,
+                                                                lineNumber: 1179,
                                                                 columnNumber: 33
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                            lineNumber: 1175,
+                                                            lineNumber: 1178,
                                                             columnNumber: 29
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4072,13 +4072,13 @@ function page() {
                                                             children: "Do you specialise in bridal stitching?"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                            lineNumber: 1178,
+                                                            lineNumber: 1181,
                                                             columnNumber: 29
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                    lineNumber: 1174,
+                                                    lineNumber: 1177,
                                                     columnNumber: 25
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4086,13 +4086,13 @@ function page() {
                                                     children: "add"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                    lineNumber: 1181,
+                                                    lineNumber: 1184,
                                                     columnNumber: 25
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                            lineNumber: 1172,
+                                            lineNumber: 1175,
                                             columnNumber: 21
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4108,36 +4108,36 @@ function page() {
                                                             children: "bridal blouses, lehenga cholis, and chaniya cholis"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                            lineNumber: 1188,
+                                                            lineNumber: 1191,
                                                             columnNumber: 33
                                                         }, this),
                                                         " for weddings across Gujarat. We recommend booking at least 3–4 weeks in advance for bridal orders."
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                    lineNumber: 1186,
+                                                    lineNumber: 1189,
                                                     columnNumber: 29
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                                lineNumber: 1185,
+                                                lineNumber: 1188,
                                                 columnNumber: 25
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                            lineNumber: 1184,
+                                            lineNumber: 1187,
                                             columnNumber: 21
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                    lineNumber: 1171,
+                                    lineNumber: 1174,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                            lineNumber: 1045,
+                            lineNumber: 1048,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4148,7 +4148,7 @@ function page() {
                                     children: "Still have a question? We're happy to help."
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                    lineNumber: 1199,
+                                    lineNumber: 1202,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -4160,31 +4160,31 @@ function page() {
                                             children: "support_agent"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                            lineNumber: 1202,
+                                            lineNumber: 1205,
                                             columnNumber: 21
                                         }, this),
                                         "Ask Us Anything"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                                    lineNumber: 1200,
+                                    lineNumber: 1203,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                            lineNumber: 1198,
+                            lineNumber: 1201,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                    lineNumber: 1029,
+                    lineNumber: 1032,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Desktop/yogeshwar/app/page.js",
-                lineNumber: 1028,
+                lineNumber: 1031,
                 columnNumber: 5
             }, this)
         ]

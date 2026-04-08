@@ -40,6 +40,44 @@ const Page = () => {
     );
   };
 
+  const getAvatarColor = (name) => {
+    const firstLetter = name?.charAt(0).toUpperCase() || "U";
+
+    // Map letters to specific Tailwind colors
+    const colors = {
+      A: "bg-red-800",
+      B: "bg-blue-800",
+      C: "bg-green-800",
+      D: "bg-yellow-700",
+      E: "bg-indigo-800",
+      F: "bg-purple-800",
+      G: "bg-pink-800",
+      H: "bg-orange-700",
+      I: "bg-teal-800",
+      J: "bg-cyan-800",
+      K: "bg-lime-700",
+      L: "bg-amber-700",
+      M: "bg-emerald-800",
+      N: "bg-violet-800",
+      O: "bg-fuchsia-800",
+      P: "bg-rose-800",
+      Q: "bg-sky-800",
+      R: "bg-stone-700",
+      S: "bg-neutral-700",
+      T: "bg-zinc-700",
+      U: "bg-gray-700",
+      V: "bg-slate-700",
+      W: "bg-red-600",
+      X: "bg-blue-600",
+      Y: "bg-green-600",
+      Z: "bg-yellow-600",
+
+      // ... add more or use a default
+    };
+
+    return colors[firstLetter] || "bg-slate-700"; // Default color
+  };
+
   return (
     // Page background is now pure white
     <div className="min-h-screen mt-30 bg-white py-10 px-4">
@@ -93,21 +131,23 @@ const Page = () => {
         {filter_comments().map((comment) => (
           <div
             key={comment.id}
-            // Card background set to slate-300
             className="bg-slate-300 rounded-2xl p-5 md:p-6 shadow-sm border border-slate-400/20"
           >
-            <div className="flex flex-col md:flex-row gap-4">
-              {/* Profile & Name Section: Left-aligned on mobile */}
-              <div className="flex items-center md:items-start gap-4">
+            {/* Changed md:flex-row to flex-col to keep comment below the name */}
+            <div className="flex flex-col gap-4">
+              {/* Profile & Name Section */}
+              <div className="flex items-center gap-4">
                 <div className="shrink-0">
                   {comment.avatar ? (
                     <img
                       src={comment.avatar}
                       alt={comment.userName}
-                      className="w-12 h-12 rounded-full object-cover border border-slate-400"
+                      className={`w-12 h-12 rounded-full object-cover border ${getAvatarColor(comment.userName)}`}
                     />
                   ) : (
-                    <div className="w-12 h-12 rounded-full bg-slate-500 flex items-center justify-center text-white font-bold">
+                    <div
+                      className={`w-12 h-12 rounded-full ${getAvatarColor(comment.userName)} flex items-center justify-center text-white font-bold`}
+                    >
                       {comment.userName?.charAt(0).toUpperCase() || "U"}
                     </div>
                   )}
@@ -118,12 +158,18 @@ const Page = () => {
                     {comment.userName || "Anonymous"}
                   </h3>
                   <p className="text-slate-600 text-[10px] uppercase tracking-wider">
-                    {comment.date || "March 31, 2026"}
+                    {comment.createdAt?.toDate
+                      ? comment.createdAt.toDate().toLocaleDateString("en-US", {
+                          year: "numeric",
+                          month: "long",
+                          day: "numeric",
+                        })
+                      : "March 31, 2026"}
                   </p>
                 </div>
               </div>
 
-              {/* Comment Text: Left-aligned */}
+              {/* Comment Text: Now naturally falls below the name section */}
               <div className="flex-1">
                 <p className="text-slate-800 text-sm md:text-base leading-relaxed">
                   {comment.textComments || "No comment provided."}
@@ -131,7 +177,7 @@ const Page = () => {
               </div>
             </div>
 
-            {/* Stars Section: Centered on mobile, Right-aligned or Centered on Desktop */}
+            {/* Stars Section */}
             <div className="mt-4 pt-3 border-t border-slate-400/30 flex justify-center">
               <div className="flex items-center gap-1">
                 {[...Array(5)].map((_, i) => (

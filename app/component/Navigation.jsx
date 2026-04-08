@@ -202,12 +202,12 @@ export default function Navigation() {
                 </div>
               </div>
 
-              <Link
+              {/* <Link
                 href="/contact"
                 className="bg-rose-50 text-blue-950 px-8 py-3.5 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-red-800 hover:text-white transition-all shadow-lg active:scale-95"
               >
                 Book Visit
-              </Link>
+              </Link> */}
             </div>
 
             {/* Mobile Toggle */}
