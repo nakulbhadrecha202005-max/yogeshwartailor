@@ -16,41 +16,58 @@ const PageContent = () => {
   //console.log("ID:", id); // ✅ now aavse
   const [authuser, setAuthuser] = useState(null);
   const [User, setUser] = useState([]);
-  const [error, setError] = useState("");
-  const [loading, setLoading] = useState(false);
+  const [isDataLoaded, setIsDataLoaded] = useState(false); // Track if DB fetch is DONE
 
-  //fetch auth user
+  // 1. Fetch Auth User
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setAuthuser(currentUser);
+      // If no one is logged in at all, kick to login immediately
+      if (currentUser === null) {
+        router.push("/login");
+      }
     });
     return () => unsubscribe();
-  }, []);
+  }, [router]);
 
-  //admin data from admin collection
+  // 2. Fetch Admin Collection
   useEffect(() => {
     const fetchUsers = async () => {
-      const querySnapshot = await getDocs(collection(db, "users"));
-      const data = querySnapshot.docs.map((doc) => ({
-        id: doc.id,
-        ...doc.data(),
-      }));
-      //console.log("Fetched Users:", data);
-      setUser(data);
+      try {
+        const querySnapshot = await getDocs(collection(db, "users"));
+        const data = querySnapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+        setUser(data);
+      } catch (err) {
+        // Handle error silently
+      } finally {
+        setIsDataLoaded(true); // Confirmation that we have the full list
+      }
     };
-
     fetchUsers();
   }, []);
 
-  //matching with user email and admin collection email
+  // 3. Logic: Only redirect if Auth is ready AND DB fetch is 100% finished
   useEffect(() => {
-    if (!authuser || User.length === 0) return;
-    const matchUser = User.find((U) => U.email === authuser.email);
+    if (!authuser || !isDataLoaded) return;
+
+    // Use .trim() and .toLowerCase() to prevent invisible mismatches
+    const loggedInEmail = authuser.email?.toLowerCase().trim();
+    const matchUser = User.find(
+      (U) => U.email?.toLowerCase().trim() === loggedInEmail,
+    );
+
     if (!matchUser) {
       router.push("/login");
     }
-  }, [authuser, User]);
+  }, [authuser, User, isDataLoaded, router]);
 
+  // Prevent showing the page content while the security check is running
+  if (!isDataLoaded || !authuser) {
+    return null;
+  }
   return (
     <div>
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-14">
