@@ -1,6 +1,60 @@
-{"timestamp":"00:00:17.417","source":"Server","level":"WARN","message":"⚠ Turbopack's filesystem cache has been deleted because we previously detected an internal error in Turbopack. Builds or page loads may be slower as a result."}
-{"timestamp":"00:00:21.540","source":"Server","level":"LOG","message":""}
-{"timestamp":"00:01:03.130","source":"Server","level":"LOG","message":"○ Compiling / ..."}
-{"timestamp":"00:01:31.577","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
-{"timestamp":"00:01:48.944","source":"Browser","level":"LOG","message":"Auth State Changed:  undefined"}
-{"timestamp":"00:03:36.639","source":"Server","level":"LOG","message":"✓ Compiled in 4.9s"}
+{"timestamp":"00:00:04.275","source":"Server","level":"WARN","message":"⚠ Turbopack's filesystem cache has been deleted because we previously detected an internal error in Turbopack. Builds or page loads may be slower as a result."}
+{"timestamp":"00:00:04.597","source":"Server","level":"WARN","message":"⚠ Slow filesystem detected. The benchmark took 772ms. If C:\\Users\\HP\\Desktop/yogeshwar/.next/dev is a network drive, consider moving it to a local folder.\nSee more: https://nextjs.org/docs/app/guides/local-development"}
+{"timestamp":"00:00:06.649","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:23.117","source":"Server","level":"LOG","message":"○ Compiling / ..."}
+{"timestamp":"00:00:39.755","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:00:58.994","source":"Server","level":"LOG","message":"○ Compiling /login ..."}
+{"timestamp":"00:01:11.380","source":"Browser","level":"LOG","message":"Auth State Changed:  undefined"}
+{"timestamp":"00:01:23.320","source":"Server","level":"LOG","message":"✓ Compiled in 557ms"}
+{"timestamp":"00:01:23.361","source":"Server","level":"WARN","message":"⚠ Fast Refresh had to perform a full reload when ./Desktop/yogeshwar/app/comments/add/page.jsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload"}
+{"timestamp":"00:01:25.007","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:01:25.113","source":"Browser","level":"LOG","message":"Auth State Changed:  undefined"}
+{"timestamp":"00:01:59.473","source":"Server","level":"WARN","message":"⚠ Fast Refresh had to perform a full reload when ./Desktop/yogeshwar/app/comments/add/page.jsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload"}
+{"timestamp":"00:01:59.479","source":"Server","level":"LOG","message":"✓ Compiled in 331ms"}
+{"timestamp":"00:02:02.142","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:02:02.223","source":"Browser","level":"LOG","message":"Auth State Changed:  undefined"}
+{"timestamp":"00:02:07.823","source":"Server","level":"WARN","message":"⚠ Fast Refresh had to perform a full reload when ./Desktop/yogeshwar/app/comments/add/page.jsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload"}
+{"timestamp":"00:02:07.855","source":"Server","level":"LOG","message":"✓ Compiled in 480ms"}
+{"timestamp":"00:02:09.026","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:02:09.087","source":"Browser","level":"LOG","message":"Auth State Changed:  undefined"}
+{"timestamp":"00:02:12.417","source":"Server","level":"WARN","message":"⚠ Fast Refresh had to perform a full reload when ./Desktop/yogeshwar/app/comments/add/page.jsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload"}
+{"timestamp":"00:02:12.852","source":"Server","level":"LOG","message":"✓ Compiled in 347ms"}
+{"timestamp":"00:02:13.633","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:02:13.708","source":"Browser","level":"LOG","message":"Auth State Changed:  undefined"}
+{"timestamp":"00:02:17.446","source":"Server","level":"WARN","message":"⚠ Fast Refresh had to perform a full reload when ./Desktop/yogeshwar/app/comments/add/page.jsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload"}
+{"timestamp":"00:02:18.870","source":"Server","level":"LOG","message":"✓ Compiled in 152ms"}
+{"timestamp":"00:02:19.591","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:02:20.108","source":"Browser","level":"LOG","message":"Auth State Changed:  undefined"}
+{"timestamp":"00:02:23.628","source":"Server","level":"WARN","message":"⚠ Fast Refresh had to perform a full reload when ./Desktop/yogeshwar/app/comments/add/page.jsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload"}
+{"timestamp":"00:02:24.243","source":"Server","level":"LOG","message":"✓ Compiled in 1259ms"}
+{"timestamp":"00:02:24.881","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:02:25.098","source":"Browser","level":"LOG","message":"Auth State Changed:  undefined"}
+{"timestamp":"00:02:27.861","source":"Server","level":"WARN","message":"⚠ Fast Refresh had to perform a full reload when ./Desktop/yogeshwar/app/comments/add/page.jsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload"}
+{"timestamp":"00:02:28.651","source":"Server","level":"LOG","message":"✓ Compiled in 436ms"}
+{"timestamp":"00:02:29.667","source":"Server","level":"LOG","message":"✓ Compiled in 632ms"}
+{"timestamp":"00:02:29.692","source":"Server","level":"WARN","message":"⚠ Fast Refresh had to perform a full reload when ./Desktop/yogeshwar/app/comments/add/page.jsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload"}
+{"timestamp":"00:02:30.303","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:02:30.368","source":"Browser","level":"LOG","message":"Auth State Changed:  undefined"}
+{"timestamp":"00:02:37.346","source":"Server","level":"WARN","message":"⚠ Fast Refresh had to perform a full reload when ./Desktop/yogeshwar/app/comments/add/page.jsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload"}
+{"timestamp":"00:02:38.149","source":"Server","level":"LOG","message":"✓ Compiled in 333ms"}
+{"timestamp":"00:02:38.277","source":"Server","level":"WARN","message":"⚠ Fast Refresh had to perform a full reload when ./Desktop/yogeshwar/app/comments/add/page.jsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload"}
+{"timestamp":"00:02:38.932","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:02:39.010","source":"Browser","level":"LOG","message":"Auth State Changed:  undefined"}
+{"timestamp":"00:02:49.116","source":"Server","level":"LOG","message":"✓ Compiled in 406ms"}
+{"timestamp":"00:02:49.127","source":"Server","level":"WARN","message":"⚠ Fast Refresh had to perform a full reload when ./Desktop/yogeshwar/app/comments/add/page.jsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload"}
+{"timestamp":"00:02:50.129","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:02:50.198","source":"Browser","level":"LOG","message":"Auth State Changed:  undefined"}
+{"timestamp":"00:02:59.298","source":"Server","level":"WARN","message":"⚠ Fast Refresh had to perform a full reload when ./Desktop/yogeshwar/app/comments/add/page.jsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload"}
+{"timestamp":"00:02:59.318","source":"Server","level":"LOG","message":"✓ Compiled in 100ms"}
+{"timestamp":"00:03:00.591","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:03:01.252","source":"Browser","level":"LOG","message":"Auth State Changed:  undefined"}
+{"timestamp":"00:03:06.923","source":"Server","level":"WARN","message":"⚠ Fast Refresh had to perform a full reload when ./Desktop/yogeshwar/app/comments/add/page.jsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload"}
+{"timestamp":"00:03:06.934","source":"Server","level":"LOG","message":"✓ Compiled in 131ms"}
+{"timestamp":"00:03:08.368","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:03:08.646","source":"Browser","level":"LOG","message":"Auth State Changed:  undefined"}
+{"timestamp":"00:03:15.333","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:03:15.427","source":"Browser","level":"LOG","message":"Auth State Changed:  undefined"}
+{"timestamp":"00:03:22.404","source":"Server","level":"LOG","message":"✓ Compiled in 145ms"}
+{"timestamp":"00:03:22.419","source":"Server","level":"WARN","message":"⚠ Fast Refresh had to perform a full reload when ./Desktop/yogeshwar/app/comments/add/page.jsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload"}
+{"timestamp":"00:03:23.986","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:03:24.055","source":"Browser","level":"LOG","message":"Auth State Changed:  undefined"}
