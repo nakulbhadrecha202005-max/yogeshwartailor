@@ -1,0 +1,21 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/about/page": "/about",
+  "/admin/ManageCustomernameUI/page": "/admin/ManageCustomernameUI",
+  "/admin/Managecomments/page": "/admin/Managecomments",
+  "/admin/measurements/Indianblowse/page": "/admin/measurements/Indianblowse",
+  "/admin/measurements/dress/page": "/admin/measurements/dress",
+  "/admin/measurements/page": "/admin/measurements",
+  "/admin/page": "/admin",
+  "/comments/HomedisplayComments/page": "/comments/HomedisplayComments",
+  "/comments/UserUploadedComments/page": "/comments/UserUploadedComments",
+  "/comments/add/page": "/comments/add",
+  "/favicon.ico/route": "/favicon.ico",
+  "/login/page": "/login",
+  "/outfit/page": "/outfit",
+  "/page": "/",
+  "/service/page": "/service",
+  "/signup/page": "/signup",
+  "/whyus/page": "/whyus"
+}
