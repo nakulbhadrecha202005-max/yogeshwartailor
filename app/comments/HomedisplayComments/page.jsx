@@ -3,6 +3,26 @@ import React, { useEffect, useState } from "react";
 import { db } from "../../lib/firebase";
 import { collection, getDocs } from "firebase/firestore";
 
+export const metadata = {
+  title: "Customer Comments & Reviews – Yogeshwar Tailor Porbandar",
+
+  description:
+    "Read all customer comments, reviews, and feedback for Yogeshwar Tailor Shop in Porbandar. See real experiences about stitching quality, fitting, and service from our customers.",
+
+  metadataBase: new URL("https://yogeshwartailor.vercel.app"),
+
+  keywords: [
+    "yogeshwar tailor reviews",
+    "tailor customer comments porbandar",
+    "ladies tailor feedback porbandar",
+    "customer reviews yogeshwar tailor",
+    "tailor shop reviews porbandar",
+    "real customer feedback tailor",
+  ],
+
+  authors: [{ name: "Yogeshwar Tailor" }],
+};
+
 const Page = () => {
   const [comments, setComments] = useState([]);
   const [search, setSearch] = useState("");

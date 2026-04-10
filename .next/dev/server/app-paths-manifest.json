@@ -1,4 +1,6 @@
 {
+  "/customDesign/page": "app/customDesign/page.js",
+  "/outfit/page": "app/outfit/page.js",
   "/page": "app/page.js",
   "/whyus/page": "app/whyus/page.js"
 }

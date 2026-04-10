@@ -6,6 +6,26 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { useRouter } from "next/navigation";
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import Link from "next/link";
+
+export const metadata = {
+  title: "Login – Yogeshwar Tailor Porbandar",
+
+  description:
+    "Login to your Yogeshwar Tailor account to manage bookings, track stitching orders, and access personalized ladies tailoring services in Porbandar.",
+
+  metadataBase: new URL("https://yogeshwartailor.vercel.app"),
+
+  keywords: [
+    "yogeshwar tailor login",
+    "tailor account login porbandar",
+    "ladies tailor booking login",
+    "custom stitching account porbandar",
+    "yogeshwar tailor dashboard login",
+  ],
+
+  authors: [{ name: "Yogeshwar Tailor" }],
+};
+
 const page = () => {
   const router = useRouter();
   const [FormData, setFormData] = useState({

@@ -7,6 +7,26 @@ import { db } from "@/app/lib/firebase";
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 import { useRouter } from "next/navigation";
 
+export const metadata = {
+  title: "Customer Reviews & Feedback – Yogeshwar Tailor Porbandar",
+
+  description:
+    "Read and share customer reviews, comments, and feedback for Yogeshwar Tailor Shop in Porbandar. Share your experience about stitching quality, fitting, and service.",
+
+  metadataBase: new URL("https://yogeshwartailor.vercel.app"),
+
+  keywords: [
+    "yogeshwar tailor reviews",
+    "tailor feedback porbandar",
+    "customer comments tailor shop",
+    "ladies tailor reviews porbandar",
+    "yogeshwar tailor feedback",
+    "tailor service reviews porbandar",
+  ],
+
+  authors: [{ name: "Yogeshwar Tailor" }],
+};
+
 const page = () => {
   const router = useRouter();
   const [rating, setRating] = useState(0);

@@ -1,5 +1,28 @@
 import React from "react";
 
+export const metadata = {
+  title:
+    "Outfits – Bridal, Lehenga, Kurti & Custom Stitching | Yogeshwar Tailor Porbandar",
+
+  description:
+    "Explore premium ladies outfits stitched at Yogeshwar Tailor Porbandar. We specialize in bridal blouses, designer lehengas, kurti pants, salwar suits, and custom bespoke tailoring with perfect fit since 1999.",
+
+  metadataBase: new URL("https://yogeshwartailor.vercel.app"),
+
+  keywords: [
+    "ladies outfits porbandar",
+    "bridal blouse stitching porbandar",
+    "designer lehenga tailor porbandar",
+    "kurti pant stitching porbandar",
+    "salwar suit tailor porbandar",
+    "yogeshwar tailor outfits",
+    "custom stitching porbandar ladies wear",
+    "bespoke tailoring porbandar",
+  ],
+
+  authors: [{ name: "Yogeshwar Tailor" }],
+};
+
 const page = () => {
   return (
     <div>

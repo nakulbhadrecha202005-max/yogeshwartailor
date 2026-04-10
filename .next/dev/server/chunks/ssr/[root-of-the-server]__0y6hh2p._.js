@@ -28,12 +28,34 @@ const __TURBOPACK__default__export__ = {
 
 __turbopack_context__.s([
     "default",
-    ()=>__TURBOPACK__default__export__
+    ()=>__TURBOPACK__default__export__,
+    "metadata",
+    ()=>metadata
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/yogeshwar/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/yogeshwar/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react.js [app-rsc] (ecmascript)");
 ;
 ;
+const metadata = {
+    title: "Outfits – Bridal, Lehenga, Kurti & Custom Stitching | Yogeshwar Tailor Porbandar",
+    description: "Explore premium ladies outfits stitched at Yogeshwar Tailor Porbandar. We specialize in bridal blouses, designer lehengas, kurti pants, salwar suits, and custom bespoke tailoring with perfect fit since 1999.",
+    metadataBase: new URL("https://yogeshwartailor.vercel.app"),
+    keywords: [
+        "ladies outfits porbandar",
+        "bridal blouse stitching porbandar",
+        "designer lehenga tailor porbandar",
+        "kurti pant stitching porbandar",
+        "salwar suit tailor porbandar",
+        "yogeshwar tailor outfits",
+        "custom stitching porbandar ladies wear",
+        "bespoke tailoring porbandar"
+    ],
+    authors: [
+        {
+            name: "Yogeshwar Tailor"
+        }
+    ]
+};
 const page = ()=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -52,7 +74,7 @@ const page = ()=>{
                                         className: "w-8 h-[2px] bg-red-800"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/yogeshwar/app/outfit/page.jsx",
-                                        lineNumber: 10,
+                                        lineNumber: 33,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -60,20 +82,20 @@ const page = ()=>{
                                         children: "Our Specialities"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/yogeshwar/app/outfit/page.jsx",
-                                        lineNumber: 11,
+                                        lineNumber: 34,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: "w-8 h-[2px] bg-red-800"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/yogeshwar/app/outfit/page.jsx",
-                                        lineNumber: 14,
+                                        lineNumber: 37,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Desktop/yogeshwar/app/outfit/page.jsx",
-                                lineNumber: 9,
+                                lineNumber: 32,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -81,7 +103,7 @@ const page = ()=>{
                                 children: "Popular Outfits We Stitch"
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/yogeshwar/app/outfit/page.jsx",
-                                lineNumber: 16,
+                                lineNumber: 39,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -89,13 +111,13 @@ const page = ()=>{
                                 children: "From everyday kurtis to grand bridal wear — every outfit stitched with love and precision."
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/yogeshwar/app/outfit/page.jsx",
-                                lineNumber: 19,
+                                lineNumber: 42,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Desktop/yogeshwar/app/outfit/page.jsx",
-                        lineNumber: 8,
+                        lineNumber: 31,
                         columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -112,12 +134,12 @@ const page = ()=>{
                                             className: "w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/yogeshwar/app/outfit/page.jsx",
-                                            lineNumber: 29,
+                                            lineNumber: 52,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/yogeshwar/app/outfit/page.jsx",
-                                        lineNumber: 28,
+                                        lineNumber: 51,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -128,7 +150,7 @@ const page = ()=>{
                                                 children: "Bridal Blouse"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/outfit/page.jsx",
-                                                lineNumber: 36,
+                                                lineNumber: 59,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -136,19 +158,19 @@ const page = ()=>{
                                                 children: "Custom fit with intricate embroidery"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/outfit/page.jsx",
-                                                lineNumber: 39,
+                                                lineNumber: 62,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Desktop/yogeshwar/app/outfit/page.jsx",
-                                        lineNumber: 35,
+                                        lineNumber: 58,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Desktop/yogeshwar/app/outfit/page.jsx",
-                                lineNumber: 27,
+                                lineNumber: 50,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -162,12 +184,12 @@ const page = ()=>{
                                             className: "w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/yogeshwar/app/outfit/page.jsx",
-                                            lineNumber: 47,
+                                            lineNumber: 70,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/yogeshwar/app/outfit/page.jsx",
-                                        lineNumber: 46,
+                                        lineNumber: 69,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -178,7 +200,7 @@ const page = ()=>{
                                                 children: "Bride chaniya choli fitting"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/outfit/page.jsx",
-                                                lineNumber: 54,
+                                                lineNumber: 77,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -186,19 +208,19 @@ const page = ()=>{
                                                 children: "Festival & wedding wear"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/outfit/page.jsx",
-                                                lineNumber: 57,
+                                                lineNumber: 80,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Desktop/yogeshwar/app/outfit/page.jsx",
-                                        lineNumber: 53,
+                                        lineNumber: 76,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Desktop/yogeshwar/app/outfit/page.jsx",
-                                lineNumber: 45,
+                                lineNumber: 68,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -212,12 +234,12 @@ const page = ()=>{
                                             className: "w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/yogeshwar/app/outfit/page.jsx",
-                                            lineNumber: 65,
+                                            lineNumber: 88,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/yogeshwar/app/outfit/page.jsx",
-                                        lineNumber: 64,
+                                        lineNumber: 87,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -228,7 +250,7 @@ const page = ()=>{
                                                 children: "Kurti with Pant"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/outfit/page.jsx",
-                                                lineNumber: 72,
+                                                lineNumber: 95,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -236,19 +258,19 @@ const page = ()=>{
                                                 children: "Indo-western style"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/outfit/page.jsx",
-                                                lineNumber: 75,
+                                                lineNumber: 98,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Desktop/yogeshwar/app/outfit/page.jsx",
-                                        lineNumber: 71,
+                                        lineNumber: 94,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Desktop/yogeshwar/app/outfit/page.jsx",
-                                lineNumber: 63,
+                                lineNumber: 86,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -262,12 +284,12 @@ const page = ()=>{
                                             className: "w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/yogeshwar/app/outfit/page.jsx",
-                                            lineNumber: 83,
+                                            lineNumber: 106,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/yogeshwar/app/outfit/page.jsx",
-                                        lineNumber: 82,
+                                        lineNumber: 105,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -278,7 +300,7 @@ const page = ()=>{
                                                 children: "Kurti with Salwar"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/outfit/page.jsx",
-                                                lineNumber: 90,
+                                                lineNumber: 113,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -286,25 +308,25 @@ const page = ()=>{
                                                 children: "Classic modern comfort"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/outfit/page.jsx",
-                                                lineNumber: 93,
+                                                lineNumber: 116,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Desktop/yogeshwar/app/outfit/page.jsx",
-                                        lineNumber: 89,
+                                        lineNumber: 112,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Desktop/yogeshwar/app/outfit/page.jsx",
-                                lineNumber: 81,
+                                lineNumber: 104,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Desktop/yogeshwar/app/outfit/page.jsx",
-                        lineNumber: 25,
+                        lineNumber: 48,
                         columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -318,35 +340,35 @@ const page = ()=>{
                                     children: "add_circle"
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/yogeshwar/app/outfit/page.jsx",
-                                    lineNumber: 123,
+                                    lineNumber: 146,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 "Book an Outfit Stitching"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Desktop/yogeshwar/app/outfit/page.jsx",
-                            lineNumber: 119,
+                            lineNumber: 142,
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/Desktop/yogeshwar/app/outfit/page.jsx",
-                        lineNumber: 118,
+                        lineNumber: 141,
                         columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/Desktop/yogeshwar/app/outfit/page.jsx",
-                lineNumber: 7,
+                lineNumber: 30,
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0))
         }, void 0, false, {
             fileName: "[project]/Desktop/yogeshwar/app/outfit/page.jsx",
-            lineNumber: 6,
+            lineNumber: 29,
             columnNumber: 7
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/Desktop/yogeshwar/app/outfit/page.jsx",
-        lineNumber: 5,
+        lineNumber: 28,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
