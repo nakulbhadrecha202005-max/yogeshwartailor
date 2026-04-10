@@ -1,3 +1,0 @@
-module.exports=[37991,(a,b,c)=>{}];
-
-//# sourceMappingURL=_next-internal_server_app_outfit_page_actions_1034pq~.js.map
