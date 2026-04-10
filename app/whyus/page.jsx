@@ -1,5 +1,23 @@
 import React from "react";
 
+export const metadata = {
+  title: "Yogeshwar Tailor – Best Ladies Tailor in Porbandar",
+  description:
+    "Yogeshwar Tailor Shop on Kedareshwar Road, Porbandar offers quality stitching for women’s wear with perfect fitting, stylish designs, and affordable prices.",
+
+  metadataBase: new URL("https://yogeshwartailor.vercel.app"),
+
+  keywords: [
+    "tailor in porbandar",
+    "ladies tailor porbandar",
+    "yogeshwar tailor porbandar",
+    "kedareshwar road porbandar tailor",
+    "blouse stitching porbandar",
+    "women tailoring porbandar",
+  ],
+
+  authors: [{ name: "Yogeshwar Tailor" }],
+};
 const page = () => {
   return (
     <div>

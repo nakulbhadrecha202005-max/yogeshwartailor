@@ -190,6 +190,15 @@ export default function Navigation() {
                             Admin Dashboard
                           </Link>
                         )}
+                        {isAdmin && (
+                          <Link
+                            onClick={() => setOpen(false)}
+                            href="/customDesign"
+                            className="text-rose-200 font-bold text-sm "
+                          >
+                            custom Design
+                          </Link>
+                        )}
                         <button
                           onClick={handleLogout}
                           className="w-full text-left block px-4 py-2 text-xs hover:text-rose-50 hover:bg-red-800 font-bold text-red-800 tracking-widest rounded-xl transition"
@@ -330,6 +339,15 @@ export default function Navigation() {
                         className="text-rose-200 font-bold text-sm "
                       >
                         Admin Dashboard
+                      </Link>
+                    )}
+                    {isAdmin && (
+                      <Link
+                        onClick={() => setOpen(false)}
+                        href="/customDesign"
+                        className="text-rose-200 font-bold text-sm "
+                      >
+                        custom Design
                       </Link>
                     )}
                     <button

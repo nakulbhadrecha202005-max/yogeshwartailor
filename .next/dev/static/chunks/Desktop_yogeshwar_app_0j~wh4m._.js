@@ -363,13 +363,23 @@ function Navigation() {
                                                                     lineNumber: 186,
                                                                     columnNumber: 27
                                                                 }, this),
+                                                                isAdmin && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                                    onClick: ()=>setOpen(false),
+                                                                    href: "/customDesign",
+                                                                    className: "text-rose-200 font-bold text-sm ",
+                                                                    children: "custom Design"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/Desktop/yogeshwar/app/component/Navigation.jsx",
+                                                                    lineNumber: 194,
+                                                                    columnNumber: 27
+                                                                }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                                     onClick: handleLogout,
                                                                     className: "jsx-506be4a57a4c0d79" + " " + "w-full text-left block px-4 py-2 text-xs hover:text-rose-50 hover:bg-red-800 font-bold text-red-800 tracking-widest rounded-xl transition",
                                                                     children: "Logout"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/yogeshwar/app/component/Navigation.jsx",
-                                                                    lineNumber: 193,
+                                                                    lineNumber: 202,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
@@ -404,12 +414,12 @@ function Navigation() {
                                         children: open ? "close" : "menu"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/yogeshwar/app/component/Navigation.jsx",
-                                        lineNumber: 218,
+                                        lineNumber: 227,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/yogeshwar/app/component/Navigation.jsx",
-                                    lineNumber: 214,
+                                    lineNumber: 223,
                                     columnNumber: 13
                                 }, this)
                             ]
@@ -436,7 +446,7 @@ function Navigation() {
                                         children: "Home"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/yogeshwar/app/component/Navigation.jsx",
-                                        lineNumber: 230,
+                                        lineNumber: 239,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -446,7 +456,7 @@ function Navigation() {
                                         children: "Why Us"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/yogeshwar/app/component/Navigation.jsx",
-                                        lineNumber: 237,
+                                        lineNumber: 246,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -456,7 +466,7 @@ function Navigation() {
                                         children: "Outfits"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/yogeshwar/app/component/Navigation.jsx",
-                                        lineNumber: 244,
+                                        lineNumber: 253,
                                         columnNumber: 15
                                     }, this),
                                     " ",
@@ -464,13 +474,13 @@ function Navigation() {
                                         className: "jsx-506be4a57a4c0d79" + " " + "text-slate-600"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/yogeshwar/app/component/Navigation.jsx",
-                                        lineNumber: 251,
+                                        lineNumber: 260,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Desktop/yogeshwar/app/component/Navigation.jsx",
-                                lineNumber: 229,
+                                lineNumber: 238,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -481,7 +491,7 @@ function Navigation() {
                                         children: "Community"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/yogeshwar/app/component/Navigation.jsx",
-                                        lineNumber: 255,
+                                        lineNumber: 264,
                                         columnNumber: 15
                                     }, this),
                                     " ",
@@ -495,7 +505,7 @@ function Navigation() {
                                                 children: "Customer Reviews"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/component/Navigation.jsx",
-                                                lineNumber: 259,
+                                                lineNumber: 268,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -505,7 +515,7 @@ function Navigation() {
                                                 children: "Post Comment"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/component/Navigation.jsx",
-                                                lineNumber: 266,
+                                                lineNumber: 275,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -515,7 +525,7 @@ function Navigation() {
                                                 children: "Manage My Comments"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/component/Navigation.jsx",
-                                                lineNumber: 273,
+                                                lineNumber: 282,
                                                 columnNumber: 17
                                             }, this),
                                             isAdmin && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -525,19 +535,19 @@ function Navigation() {
                                                 children: "Admin Review Comments"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/component/Navigation.jsx",
-                                                lineNumber: 282,
+                                                lineNumber: 291,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Desktop/yogeshwar/app/component/Navigation.jsx",
-                                        lineNumber: 258,
+                                        lineNumber: 267,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Desktop/yogeshwar/app/component/Navigation.jsx",
-                                lineNumber: 254,
+                                lineNumber: 263,
                                 columnNumber: 13
                             }, this),
                             " ",
@@ -545,7 +555,7 @@ function Navigation() {
                                 className: "jsx-506be4a57a4c0d79" + " " + "text-slate-600"
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/yogeshwar/app/component/Navigation.jsx",
-                                lineNumber: 292,
+                                lineNumber: 301,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -556,7 +566,7 @@ function Navigation() {
                                         children: "Account Details"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/yogeshwar/app/component/Navigation.jsx",
-                                        lineNumber: 295,
+                                        lineNumber: 304,
                                         columnNumber: 15
                                     }, this),
                                     " ",
@@ -572,7 +582,7 @@ function Navigation() {
                                                     children: "Login"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/component/Navigation.jsx",
-                                                    lineNumber: 302,
+                                                    lineNumber: 311,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -582,7 +592,7 @@ function Navigation() {
                                                     children: "Signup"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/component/Navigation.jsx",
-                                                    lineNumber: 309,
+                                                    lineNumber: 318,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
@@ -595,7 +605,7 @@ function Navigation() {
                                                     children: "Edit Profile"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/component/Navigation.jsx",
-                                                    lineNumber: 319,
+                                                    lineNumber: 328,
                                                     columnNumber: 21
                                                 }, this),
                                                 isAdmin && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -605,7 +615,17 @@ function Navigation() {
                                                     children: "Admin Dashboard"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/component/Navigation.jsx",
-                                                    lineNumber: 327,
+                                                    lineNumber: 336,
+                                                    columnNumber: 23
+                                                }, this),
+                                                isAdmin && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                    onClick: ()=>setOpen(false),
+                                                    href: "/customDesign",
+                                                    className: "text-rose-200 font-bold text-sm ",
+                                                    children: "custom Design"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/Desktop/yogeshwar/app/component/Navigation.jsx",
+                                                    lineNumber: 345,
                                                     columnNumber: 23
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -614,26 +634,26 @@ function Navigation() {
                                                     children: "Logout"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/component/Navigation.jsx",
-                                                    lineNumber: 335,
+                                                    lineNumber: 353,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true)
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/yogeshwar/app/component/Navigation.jsx",
-                                        lineNumber: 298,
+                                        lineNumber: 307,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Desktop/yogeshwar/app/component/Navigation.jsx",
-                                lineNumber: 294,
+                                lineNumber: 303,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Desktop/yogeshwar/app/component/Navigation.jsx",
-                        lineNumber: 227,
+                        lineNumber: 236,
                         columnNumber: 11
                     }, this)
                 ]

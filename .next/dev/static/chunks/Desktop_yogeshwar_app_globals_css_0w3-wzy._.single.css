@@ -113,7 +113,6 @@
     --color-blue-100: #dbeafe;
     --color-blue-200: #bedbff;
     --color-blue-300: #90c5ff;
-    --color-blue-400: #54a2ff;
     --color-blue-600: #155dfc;
     --color-blue-800: #193cb8;
     --color-blue-900: #1c398e;
@@ -143,9 +142,9 @@
     --color-slate-800: #1d293d;
     --color-slate-900: #0f172b;
     --color-slate-950: #020618;
-    --color-gray-50: #f9fafb;
     --color-gray-100: #f3f4f6;
     --color-gray-300: #d1d5dc;
+    --color-gray-500: #6a7282;
     --color-gray-700: #364153;
     --color-zinc-700: #3f3f46;
     --color-neutral-700: #404040;
@@ -258,7 +257,6 @@
       --color-blue-100: lab(92.0301% -2.24757 -11.6453);
       --color-blue-200: lab(86.15% -4.04379 -21.0797);
       --color-blue-300: lab(77.5052% -6.4629 -36.42);
-      --color-blue-400: lab(65.0361% -1.42062 -56.9803);
       --color-blue-600: lab(44.0605% 29.0279 -86.0352);
       --color-blue-800: lab(30.2514% 27.7854 -70.2699);
       --color-blue-900: lab(26.1542% 15.7545 -51.5504);
@@ -288,9 +286,9 @@
       --color-slate-800: lab(16.132% -.318021 -14.6672);
       --color-slate-900: lab(7.78673% 1.82346 -15.0537);
       --color-slate-950: lab(1.76974% 1.32743 -9.28855);
-      --color-gray-50: lab(98.2596% -.247031 -.706708);
       --color-gray-100: lab(96.1596% -.082314 -1.13575);
       --color-gray-300: lab(85.1236% -.612259 -3.7138);
+      --color-gray-500: lab(47.7841% -.393212 -10.0268);
       --color-gray-700: lab(27.1134% -.956401 -12.3224);
       --color-zinc-700: lab(26.8019% 1.35386 -4.68303);
       --color-neutral-700: lab(27.036% 0 0);
@@ -995,16 +993,20 @@
     margin-left: calc(var(--spacing) * 4);
   }
 
-  .ml-13 {
-    margin-left: calc(var(--spacing) * 13);
+  .ml-5 {
+    margin-left: calc(var(--spacing) * 5);
   }
 
-  .ml-17 {
-    margin-left: calc(var(--spacing) * 17);
+  .ml-12 {
+    margin-left: calc(var(--spacing) * 12);
   }
 
   .ml-20 {
     margin-left: calc(var(--spacing) * 20);
+  }
+
+  .ml-29 {
+    margin-left: calc(var(--spacing) * 29);
   }
 
   .ml-auto {
@@ -1203,6 +1205,10 @@
     width: calc(var(--spacing) * 12);
   }
 
+  .w-13 {
+    width: calc(var(--spacing) * 13);
+  }
+
   .w-14 {
     width: calc(var(--spacing) * 14);
   }
@@ -1231,8 +1237,16 @@
     width: calc(var(--spacing) * 34);
   }
 
+  .w-37 {
+    width: calc(var(--spacing) * 37);
+  }
+
   .w-44 {
     width: calc(var(--spacing) * 44);
+  }
+
+  .w-45 {
+    width: calc(var(--spacing) * 45);
   }
 
   .w-48 {
@@ -1337,6 +1351,10 @@
 
   .flex-shrink-0, .shrink-0 {
     flex-shrink: 0;
+  }
+
+  .border-collapse {
+    border-collapse: collapse;
   }
 
   .-translate-x-1\/2 {
@@ -1736,12 +1754,20 @@
     border-color: var(--color-blue-200);
   }
 
+  .border-blue-800 {
+    border-color: var(--color-blue-800);
+  }
+
   .border-blue-900 {
     border-color: var(--color-blue-900);
   }
 
   .border-emerald-500 {
     border-color: var(--color-emerald-500);
+  }
+
+  .border-gray-500 {
+    border-color: var(--color-gray-500);
   }
 
   .border-red-200 {
@@ -1994,10 +2020,6 @@
 
   .bg-fuchsia-800 {
     background-color: var(--color-fuchsia-800);
-  }
-
-  .bg-gray-50 {
-    background-color: var(--color-gray-50);
   }
 
   .bg-gray-100 {
@@ -2356,14 +2378,6 @@
     object-fit: cover;
   }
 
-  .object-bottom {
-    object-position: bottom;
-  }
-
-  .object-top {
-    object-position: top;
-  }
-
   .p-0\.5 {
     padding: calc(var(--spacing) * .5);
   }
@@ -2520,6 +2534,10 @@
     padding-top: calc(var(--spacing) * 5);
   }
 
+  .pt-6 {
+    padding-top: calc(var(--spacing) * 6);
+  }
+
   .pt-8 {
     padding-top: calc(var(--spacing) * 8);
   }
@@ -2570,6 +2588,10 @@
 
   .pl-2 {
     padding-left: calc(var(--spacing) * 2);
+  }
+
+  .pl-8 {
+    padding-left: calc(var(--spacing) * 8);
   }
 
   .pl-9 {
@@ -2643,10 +2665,6 @@
   .text-xs {
     font-size: var(--text-xs);
     line-height: var(--tw-leading, var(--text-xs--line-height));
-  }
-
-  .text-\[1px\] {
-    font-size: 1px;
   }
 
   .text-\[7px\] {
@@ -2828,10 +2846,6 @@
 
   .text-blue-200 {
     color: var(--color-blue-200);
-  }
-
-  .text-blue-400 {
-    color: var(--color-blue-400);
   }
 
   .text-blue-800 {
@@ -4302,18 +4316,6 @@
   @media (min-width: 64rem) {
     .lg\:grid-cols-5 {
       grid-template-columns: repeat(5, minmax(0, 1fr));
-    }
-  }
-
-  @media (min-width: 64rem) {
-    .lg\:grid-cols-6 {
-      grid-template-columns: repeat(6, minmax(0, 1fr));
-    }
-  }
-
-  @media (min-width: 64rem) {
-    .lg\:grid-cols-9 {
-      grid-template-columns: repeat(9, minmax(0, 1fr));
     }
   }
 
