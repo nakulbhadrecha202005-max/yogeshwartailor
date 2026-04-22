@@ -231,7 +231,7 @@ const CustomDressDashboard = () => {
   }, [id, type]);
 
   return (
-    <div className="min-h-screen customdesign bg-zinc-600  mt-25 flex justify-center items-start p-4">
+    <div className="min-h-screen customdesign bg-zinc-600   flex justify-center items-start p-4">
       <style>
         {`
 
