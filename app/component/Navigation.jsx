@@ -423,7 +423,7 @@ export default function Navigation() {
                   >
                     Signup
                   </Link>
-                  {!user && (
+                  {user && (
                     <button
                       onClick={handleLogout}
                       className="text-left text-sm font-bold text-pink-400 tracking-widest mt-1"

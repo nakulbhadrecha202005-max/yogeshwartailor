@@ -360,8 +360,8 @@ function page() {
                                         columnNumber: 21
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-slate-300 text-base md:text-lg font-medium leading-relaxed mb-8 max-w-md mx-auto lg:mx-0",
-                                        children: "Yogeshwar Tailor has been crafting perfect-fitting ladies garments for over two decades. From bridal blouses to designer kurtis — every stitch tells your story."
+                                        className: "text-[#904B1B] text-base md:text-lg font-medium leading-relaxed mb-8 max-w-md mx-auto lg:mx-0",
+                                        children: "Yogeshwar Tailor has been crafting perfect-fitting ladies garments for over two decades. From bridal blouses to designer kurtis — every stitch tells story."
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/yogeshwar/app/page.js",
                                         lineNumber: 207,
@@ -391,7 +391,7 @@ function page() {
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                                 href: "#why-us",
-                                                className: "bg-[#C08552] text-slate-800 px-8 py-4 rounded-full font-bold text-[11px] uppercase tracking-widest border border-stone-200 hover:border-red-800 hover:text-[#C08552] transition-all shadow-sm active:scale-95 flex items-center justify-center gap-2",
+                                                className: "bg-[#C08552] text-slate-800 px-8 py-4 rounded-full font-bold text-[11px] uppercase tracking-widest border border-stone-200  hover:text-slate-800 transition-all shadow-sm active:scale-95 flex items-center justify-center gap-2",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         className: "material-symbols-outlined text-base",

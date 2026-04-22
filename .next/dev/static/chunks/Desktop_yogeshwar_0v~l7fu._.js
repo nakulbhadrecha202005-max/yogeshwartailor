@@ -120,7 +120,7 @@ const page = ()=>{
         }
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "min-h-screen mt-25 bg-[#F1EDEE] flex flex-col items-center justify-center p-6 font-sans text-slate-900",
+        className: "min-h-screen mt-3 bg-[#F1EDEE] flex flex-col items-center justify-center p-6 font-sans text-slate-900",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "w-full max-w-md mt-20 bg-white rounded-2xl shadow-xl border border-stone-200 p-10 relative overflow-hidden",
             children: [
@@ -296,7 +296,7 @@ const page = ()=>{
                                     className: "relative",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                            type: showPassword ? "text" : "password",
+                                            type: showPassword ? "password" : "text",
                                             name: "password",
                                             spellCheck: false,
                                             disabled: Loading,
@@ -356,15 +356,6 @@ const page = ()=>{
                             lineNumber: 178,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                            href: "forgotpassword",
-                            className: "text-sm text-[#A376A2] hover:text-[#C08552] font-semibold underline transition-all block text-left mb-3 ml-2",
-                            children: "Forgot Password ?"
-                        }, void 0, false, {
-                            fileName: "[project]/Desktop/yogeshwar/app/login/page.jsx",
-                            lineNumber: 216,
-                            columnNumber: 11
-                        }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                             disabled: Loading,
                             type: "submit",
@@ -382,62 +373,10 @@ const page = ()=>{
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "relative my-8",
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "absolute inset-0 flex items-center",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "w-full border-t border-stone-300"
-                            }, void 0, false, {
-                                fileName: "[project]/Desktop/yogeshwar/app/login/page.jsx",
-                                lineNumber: 235,
-                                columnNumber: 13
-                            }, ("TURBOPACK compile-time value", void 0))
-                        }, void 0, false, {
-                            fileName: "[project]/Desktop/yogeshwar/app/login/page.jsx",
-                            lineNumber: 234,
-                            columnNumber: 11
-                        }, ("TURBOPACK compile-time value", void 0)),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "relative flex justify-center text-xs uppercase",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "bg-white px-3 text-stone-400 font-semibold tracking-widest",
-                                children: "Or"
-                            }, void 0, false, {
-                                fileName: "[project]/Desktop/yogeshwar/app/login/page.jsx",
-                                lineNumber: 238,
-                                columnNumber: 13
-                            }, ("TURBOPACK compile-time value", void 0))
-                        }, void 0, false, {
-                            fileName: "[project]/Desktop/yogeshwar/app/login/page.jsx",
-                            lineNumber: 237,
-                            columnNumber: 11
-                        }, ("TURBOPACK compile-time value", void 0))
-                    ]
-                }, void 0, true, {
+                    className: "relative my-8"
+                }, void 0, false, {
                     fileName: "[project]/Desktop/yogeshwar/app/login/page.jsx",
                     lineNumber: 233,
-                    columnNumber: 9
-                }, ("TURBOPACK compile-time value", void 0)),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                    onClick: signinWithGoogle,
-                    disabled: GoogleLoading,
-                    className: "w-full py-3 border border-stone-300 bg-[#F1EDEE] hover:bg-stone-200 text-stone-700 text-sm font-bold rounded-full flex items-center justify-center gap-3 transition-all shadow-sm",
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                            src: "https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg",
-                            alt: "Google",
-                            className: "w-4 h-4"
-                        }, void 0, false, {
-                            fileName: "[project]/Desktop/yogeshwar/app/login/page.jsx",
-                            lineNumber: 250,
-                            columnNumber: 11
-                        }, ("TURBOPACK compile-time value", void 0)),
-                        GoogleLoading ? "Verifying..." : "Continue with Google"
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/Desktop/yogeshwar/app/login/page.jsx",
-                    lineNumber: 245,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {

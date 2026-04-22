@@ -205,9 +205,9 @@ return (
                     </h1>
 
                     <p
-                        className="text-slate-300 text-base md:text-lg font-medium leading-relaxed mb-8 max-w-md mx-auto lg:mx-0">
+                        className="text-[#904B1B] text-base md:text-lg font-medium leading-relaxed mb-8 max-w-md mx-auto lg:mx-0">
                         Yogeshwar Tailor has been crafting perfect-fitting ladies garments for over two decades.
-                        From bridal blouses to designer kurtis — every stitch tells your story.
+                        From bridal blouses to designer kurtis — every stitch tells story.
                     </p>
 
                     <div
@@ -218,7 +218,7 @@ return (
                             Book Appointment
                         </a>
                         <a href="#why-us"
-                            className="bg-[#C08552] text-slate-800 px-8 py-4 rounded-full font-bold text-[11px] uppercase tracking-widest border border-stone-200 hover:border-red-800 hover:text-[#C08552] transition-all shadow-sm active:scale-95 flex items-center justify-center gap-2">
+                            className="bg-[#C08552] text-slate-800 px-8 py-4 rounded-full font-bold text-[11px] uppercase tracking-widest border border-stone-200  hover:text-slate-800 transition-all shadow-sm active:scale-95 flex items-center justify-center gap-2">
                             <span className="material-symbols-outlined text-base">explore</span>
                             Explore Shop
                         </a>

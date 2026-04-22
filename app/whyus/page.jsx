@@ -113,7 +113,7 @@ const page = () => {
             {/* Mint Button for High Action Contrast */}
             <a
               href="tel:+918200392919"
-              className="bg-[#40F99B] text-[#1A1619] px-8 py-4 rounded-full font-bold text-xs uppercase tracking-widest hover:bg-[#F1EDEE] transition-all shadow-lg active:scale-95 flex items-center justify-center gap-3 group"
+              className="bg-[#c597c5] text-[#1A1619] px-8 py-3 rounded-full font-bold text-xs uppercase tracking-widest hover:bg-[#F1EDEE] transition-all shadow-lg active:scale-95 flex items-center justify-center gap-3 group"
             >
               <div className="flex items-center justify-center w-8 h-8 bg-[#1A1619]/10 rounded-full group-hover:bg-[#A376A2]/20 transition-colors">
                 <span className="material-symbols-outlined text-base animate-pulse">

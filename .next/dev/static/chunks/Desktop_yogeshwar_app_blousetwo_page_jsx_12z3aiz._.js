@@ -4,7 +4,7 @@
 
 __turbopack_context__.s([
     "default",
-    ()=>__TURBOPACK__default__export__
+    ()=>Page
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/yogeshwar/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/yogeshwar/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
@@ -32,7 +32,7 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
-const page = ()=>{
+const BlouseCustomDashboard = ()=>{
     _s();
     const navigator = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
     const [adminData, setAdminData] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
@@ -42,42 +42,42 @@ const page = ()=>{
     const type = searchParams.get("type");
     //authetication
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "page.useEffect": ()=>{
+        "BlouseCustomDashboard.useEffect": ()=>{
             const unsubscribe = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f40$firebase$2f$auth$2f$dist$2f$esm$2f$index$2d$dfb5c973$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__z__as__onAuthStateChanged$3e$__["onAuthStateChanged"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$app$2f$lib$2f$firebase$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["auth"], {
-                "page.useEffect.unsubscribe": (currentUser)=>{
+                "BlouseCustomDashboard.useEffect.unsubscribe": (currentUser)=>{
                     setUser(currentUser);
                 }
-            }["page.useEffect.unsubscribe"]);
+            }["BlouseCustomDashboard.useEffect.unsubscribe"]);
             return ({
-                "page.useEffect": ()=>unsubscribe()
-            })["page.useEffect"];
+                "BlouseCustomDashboard.useEffect": ()=>unsubscribe()
+            })["BlouseCustomDashboard.useEffect"];
         }
-    }["page.useEffect"], []);
+    }["BlouseCustomDashboard.useEffect"], []);
     //admin user checkin
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "page.useEffect": ()=>{
+        "BlouseCustomDashboard.useEffect": ()=>{
             const fetchAdmins = {
-                "page.useEffect.fetchAdmins": async ()=>{
+                "BlouseCustomDashboard.useEffect.fetchAdmins": async ()=>{
                     const querySnapshot = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f40$firebase$2f$firestore$2f$dist$2f$index$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["getDocs"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f40$firebase$2f$firestore$2f$dist$2f$common$2d$edb5d170$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__aO__as__collection$3e$__["collection"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$app$2f$lib$2f$firebase$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["db"], "admin_users"));
                     setAdminData(querySnapshot.docs.map({
-                        "page.useEffect.fetchAdmins": (doc)=>({
+                        "BlouseCustomDashboard.useEffect.fetchAdmins": (doc)=>({
                                 id: doc.id,
                                 ...doc.data()
                             })
-                    }["page.useEffect.fetchAdmins"]));
+                    }["BlouseCustomDashboard.useEffect.fetchAdmins"]));
                 }
-            }["page.useEffect.fetchAdmins"];
+            }["BlouseCustomDashboard.useEffect.fetchAdmins"];
             fetchAdmins();
         }
-    }["page.useEffect"], []);
+    }["BlouseCustomDashboard.useEffect"], []);
     const isAdmin = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
-        "page.useMemo[isAdmin]": ()=>{
+        "BlouseCustomDashboard.useMemo[isAdmin]": ()=>{
             if (!user) return false;
             return adminData.some({
-                "page.useMemo[isAdmin]": (item)=>item.email === user.email
-            }["page.useMemo[isAdmin]"]);
+                "BlouseCustomDashboard.useMemo[isAdmin]": (item)=>item.email === user.email
+            }["BlouseCustomDashboard.useMemo[isAdmin]"]);
         }
-    }["page.useMemo[isAdmin]"], [
+    }["BlouseCustomDashboard.useMemo[isAdmin]"], [
         adminData,
         user
     ]);
@@ -186,25 +186,25 @@ const page = ()=>{
     };
     //fetching all customer measurementt records
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "page.useEffect": ()=>{
+        "BlouseCustomDashboard.useEffect": ()=>{
             if (!id || !type) return;
             const fetchData = {
-                "page.useEffect.fetchData": async ()=>{
+                "BlouseCustomDashboard.useEffect.fetchData": async ()=>{
                     try {
                         const ref = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f40$firebase$2f$firestore$2f$dist$2f$common$2d$edb5d170$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__a6__as__doc$3e$__["doc"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$app$2f$lib$2f$firebase$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["db"], "customers", id, "measurement", type);
                         const snap = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f40$firebase$2f$firestore$2f$dist$2f$index$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["getDoc"])(ref);
                         if (snap.exists()) {
                             setFormData({
-                                "page.useEffect.fetchData": (prev)=>({
+                                "BlouseCustomDashboard.useEffect.fetchData": (prev)=>({
                                         ...prev,
                                         ...snap.data(),
                                         type: type
                                     })
-                            }["page.useEffect.fetchData"]);
+                            }["BlouseCustomDashboard.useEffect.fetchData"]);
                         } else {
                             // 👉 if no data → clear form
                             setFormData({
-                                "page.useEffect.fetchData": (prev)=>({
+                                "BlouseCustomDashboard.useEffect.fetchData": (prev)=>({
                                         ...prev,
                                         type: type,
                                         _2: "",
@@ -226,16 +226,16 @@ const page = ()=>{
                                         _18: "",
                                         _19: ""
                                     })
-                            }["page.useEffect.fetchData"]);
+                            }["BlouseCustomDashboard.useEffect.fetchData"]);
                         }
                     } catch (error) {
                         console.log(error);
                     }
                 }
-            }["page.useEffect.fetchData"];
+            }["BlouseCustomDashboard.useEffect.fetchData"];
             fetchData();
         }
-    }["page.useEffect"], [
+    }["BlouseCustomDashboard.useEffect"], [
         id,
         type
     ]);
@@ -1815,13 +1815,37 @@ const page = ()=>{
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
-_s(page, "WKxWi4iZ3TFvvE6EdkEcwPkETCg=", false, function() {
+_s(BlouseCustomDashboard, "WKxWi4iZ3TFvvE6EdkEcwPkETCg=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"],
         __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSearchParams"]
     ];
 });
-const __TURBOPACK__default__export__ = page;
+_c = BlouseCustomDashboard;
+function Page() {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Suspense"], {
+        fallback: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            children: "Loading..."
+        }, void 0, false, {
+            fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
+            lineNumber: 925,
+            columnNumber: 25
+        }, this),
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(BlouseCustomDashboard, {}, void 0, false, {
+            fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
+            lineNumber: 926,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
+        lineNumber: 925,
+        columnNumber: 5
+    }, this);
+}
+_c1 = Page;
+var _c, _c1;
+__turbopack_context__.k.register(_c, "BlouseCustomDashboard");
+__turbopack_context__.k.register(_c1, "Page");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }

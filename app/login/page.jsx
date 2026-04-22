@@ -117,7 +117,7 @@ const page = () => {
   };
 
   return (
-    <div className="min-h-screen mt-25 bg-[#F1EDEE] flex flex-col items-center justify-center p-6 font-sans text-slate-900">
+    <div className="min-h-screen mt-3 bg-[#F1EDEE] flex flex-col items-center justify-center p-6 font-sans text-slate-900">
       {/* Main Form Container */}
       <div className="w-full max-w-md mt-20 bg-white rounded-2xl shadow-xl border border-stone-200 p-10 relative overflow-hidden">
         {/* Subtle Top Accent - Using your brand Orange */}
@@ -183,7 +183,7 @@ const page = () => {
 
             <div className="relative">
               <input
-                type={showPassword ? "text" : "password"}
+                type={showPassword ? "password" : "text"}
                 name="password"
                 spellCheck={false}
                 disabled={Loading}
@@ -213,12 +213,12 @@ const page = () => {
             )}
           </div>
 
-          <Link
+          {/* <Link
             href="forgotpassword"
             className="text-sm text-[#A376A2] hover:text-[#C08552] font-semibold underline transition-all block text-left mb-3 ml-2"
           >
             Forgot Password ?
-          </Link>
+          </Link> */}
 
           {/* Submit Button - Using Purple/Orange hover */}
           <button
@@ -231,18 +231,18 @@ const page = () => {
         </form>
 
         <div className="relative my-8">
-          <div className="absolute inset-0 flex items-center">
+          {/* <div className="absolute inset-0 flex items-center">
             <span className="w-full border-t border-stone-300"></span>
-          </div>
-          <div className="relative flex justify-center text-xs uppercase">
+          </div> */}
+          {/* <div className="relative flex justify-center text-xs uppercase">
             <span className="bg-white px-3 text-stone-400 font-semibold tracking-widest">
               Or
             </span>
-          </div>
+          </div> */}
         </div>
 
         {/* Google Button */}
-        <button
+        {/* <button
           onClick={signinWithGoogle}
           disabled={GoogleLoading}
           className="w-full py-3 border border-stone-300 bg-[#F1EDEE] hover:bg-stone-200 text-stone-700 text-sm font-bold rounded-full flex items-center justify-center gap-3 transition-all shadow-sm"
@@ -253,7 +253,7 @@ const page = () => {
             className="w-4 h-4"
           />
           {GoogleLoading ? "Verifying..." : "Continue with Google"}
-        </button>
+        </button> */}
 
         <div className="mt-5 text-center text-[11px] text-stone-800 tracking-widest">
           Don't have an account ?{" "}

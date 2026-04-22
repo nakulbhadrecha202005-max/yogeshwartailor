@@ -37,11 +37,11 @@ const page = () => {
           {/* Header Section */}
           <div className="text-center mb-16">
             <div className="flex items-center justify-center gap-4 mb-4">
-              <span className="w-12 h-[1px] bg-gradient-to-r from-transparent to-[#C08552]"></span>
+              <span className="w-37 h-[1px] bg-gradient-to-r from-transparent to-[#C08552]"></span>
               <span className="text-[#C08552] font-black text-[12px] uppercase tracking-[0.4em]">
                 Exquisite Craftsmanship
               </span>
-              <span className="w-12 h-[1px] bg-gradient-to-l from-transparent to-[#C08552]"></span>
+              <span className="w-37 h-[1px] bg-gradient-to-l from-transparent to-[#C08552]"></span>
             </div>
             <h2 className="font-outfit text-4xl md:text-6xl font-extrabold text-[#F1EDEE] mb-6 tracking-tight">
               Style That{" "}

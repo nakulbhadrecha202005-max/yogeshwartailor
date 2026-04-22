@@ -241,7 +241,7 @@ const page = ()=>{
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                 href: "tel:+918200392919",
-                                className: "bg-[#40F99B] text-[#1A1619] px-8 py-4 rounded-full font-bold text-xs uppercase tracking-widest hover:bg-[#F1EDEE] transition-all shadow-lg active:scale-95 flex items-center justify-center gap-3 group",
+                                className: "bg-[#c597c5] text-[#1A1619] px-8 py-3 rounded-full font-bold text-xs uppercase tracking-widest hover:bg-[#F1EDEE] transition-all shadow-lg active:scale-95 flex items-center justify-center gap-3 group",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "flex items-center justify-center w-8 h-8 bg-[#1A1619]/10 rounded-full group-hover:bg-[#A376A2]/20 transition-colors",
