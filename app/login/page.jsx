@@ -7,24 +7,24 @@ import { useRouter } from "next/navigation";
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import Link from "next/link";
 
-export const metadata = {
-  title: "Login – Yogeshwar Tailor Porbandar",
+// export const metadata = {
+//   title: "Login – Yogeshwar Tailor Porbandar",
 
-  description:
-    "Login to your Yogeshwar Tailor account to manage bookings, track stitching orders, and access personalized ladies tailoring services in Porbandar.",
+//   description:
+//     "Login to your Yogeshwar Tailor account to manage bookings, track stitching orders, and access personalized ladies tailoring services in Porbandar.",
 
-  metadataBase: new URL("https://yogeshwartailor.vercel.app"),
+//   metadataBase: new URL("https://yogeshwartailor.vercel.app"),
 
-  keywords: [
-    "yogeshwar tailor login",
-    "tailor account login porbandar",
-    "ladies tailor booking login",
-    "custom stitching account porbandar",
-    "yogeshwar tailor dashboard login",
-  ],
+//   keywords: [
+//     "yogeshwar tailor login",
+//     "tailor account login porbandar",
+//     "ladies tailor booking login",
+//     "custom stitching account porbandar",
+//     "yogeshwar tailor dashboard login",
+//   ],
 
-  authors: [{ name: "Yogeshwar Tailor" }],
-};
+//   authors: [{ name: "Yogeshwar Tailor" }],
+// };
 
 const page = () => {
   const router = useRouter();
@@ -117,32 +117,34 @@ const page = () => {
   };
 
   return (
-    <div className="min-h-screen mt-25 bg-[#fdfaf7] flex flex-col items-center justify-center p-6 font-sans text-slate-900">
+    <div className="min-h-screen mt-25 bg-[#F1EDEE] flex flex-col items-center justify-center p-6 font-sans text-slate-900">
       {/* Main Form Container */}
-      <div className="w-full max-w-md bg-white rounded-2xl shadow-xl border border-stone-200 p-10 relative overflow-hidden">
-        {/* Subtle Top Accent */}
-        <div className="absolute top-0 left-0 w-full h-2 bg-rose-900"></div>
+      <div className="w-full max-w-md mt-20 bg-white rounded-2xl shadow-xl border border-stone-200 p-10 relative overflow-hidden">
+        {/* Subtle Top Accent - Using your brand Orange */}
+        <div className="absolute top-0 left-0 w-full h-2 bg-[#C08552]"></div>
 
         <div className="text-left mb-10">
-          <h2 className="text-2xl font-extrabold text-blue-900 tracking-tight ">
+          <h2 className="text-2xl font-extrabold text-[#A376A2] tracking-tight ">
             Yogeshwar Tailoring
           </h2>
-          <div className="h-1 w-34 bg-rose-100   mt-1"></div>
+          <div className="h-1 w-34 bg-[#C08552]/20 mt-1"></div>
           <p className="text-stone-500 text-sm mt-3 font-medium">
             1000+ Clients Served currently. Join us and experience the best
             tailoring services in town!
           </p>
         </div>
 
-        {/* Custom Error Alert - Tailored Design */}
+        {/* Custom Error Alert - Using Orange palette */}
         {Error && (
-          <div className="mb-6 flex items-start gap-3 bg-rose-100 border border-rose-200 p-3 rounded-lg shadow-sm">
-            <span className="material-symbols-outlined text-rose-900 text-xl">
+          <div className="mb-6 flex items-start gap-3 bg-[#F1EDEE] border border-[#C08552]/30 p-3 rounded-lg shadow-sm">
+            <span className="material-symbols-outlined text-[#C08552] text-xl">
               report
             </span>
             <div className="flex-1">
-              <p className="text-sm font-bold text-rose-900">Action Required</p>
-              <p className="text-xs text-rose-800 opacity-90">{Error}</p>
+              <p className="text-sm font-bold text-[#C08552]">
+                Action Required
+              </p>
+              <p className="text-xs text-slate-600 opacity-90">{Error}</p>
             </div>
           </div>
         )}
@@ -150,7 +152,7 @@ const page = () => {
         <form onSubmit={HandleSubmit} className="space-y-6">
           {/* Email Input */}
           <div className="space-y-1.5">
-            <label className="text-[13px] font-bold text-blue-900 uppercase tracking-wide flex items-center gap-2">
+            <label className="text-[13px] font-bold text-[#A376A2] uppercase tracking-wide flex items-center gap-2">
               <span className="material-symbols-outlined text-lg">mail</span>{" "}
               Email Address
             </label>
@@ -162,10 +164,10 @@ const page = () => {
               spellCheck={false}
               value={FormData.email}
               placeholder="e.g. customer@tailor.com"
-              className="w-full px-4 py-3 bg-rose-50 border text-blue-800 border-blue-200 rounded-md focus:ring-1 focus:ring-blue-900 focus:border-blue-900 outline-none transition-all text-sm pr-12"
+              className="w-full px-4 py-3 bg-[#F1EDEE] border text-slate-800 border-[#A376A2]/20 rounded-md focus:ring-1 focus:ring-[#C08552] focus:border-[#C08552] outline-none transition-all text-sm pr-12"
             />
             {ErrorsObj.email && (
-              <p className="text-[11px] text-rose-900 font-bold flex items-center gap-1 mt-1">
+              <p className="text-[11px] text-[#C08552] font-bold flex items-center gap-1 mt-1">
                 <span className="material-symbols-outlined text-sm">error</span>{" "}
                 {ErrorsObj.email}
               </p>
@@ -174,29 +176,28 @@ const page = () => {
 
           {/* Password Input */}
           <div className="space-y-1.5">
-            <label className="text-[13px] font-bold text-blue-900 uppercase tracking-wide flex items-center gap-2">
+            <label className="text-[13px] font-bold text-[#A376A2] uppercase tracking-wide flex items-center gap-2">
               <span className="material-symbols-outlined text-lg">lock</span>{" "}
               Password
             </label>
 
-            {/* Container for Relative Positioning */}
             <div className="relative">
               <input
-                type={showPassword ? "text" : "password"} // Dynamic type
+                type={showPassword ? "text" : "password"}
                 name="password"
                 spellCheck={false}
                 disabled={Loading}
                 onChange={handleChange}
                 value={FormData.password}
                 placeholder="••••••••"
-                className="w-full px-4 py-3 bg-rose-50 border text-blue-800 border-blue-200 rounded-md focus:ring-1 focus:ring-blue-900 focus:border-blue-900 outline-none transition-all text-sm pr-12" // Added pr-12 for spacing
+                className="w-full px-4 py-3 bg-[#F1EDEE] border text-slate-800 border-[#A376A2]/20 rounded-md focus:ring-1 focus:ring-[#C08552] focus:border-[#C08552] outline-none transition-all text-sm pr-12"
               />
 
               {/* Toggle Button */}
               <button
                 type="button"
                 onClick={() => setShowPassword(!showPassword)}
-                className="absolute right-3 top-1/2 -translate-y-1/2 text-blue-900 hover:text-blue-900 transition-colors flex items-center"
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-[#A376A2] hover:text-[#C08552] transition-colors flex items-center"
               >
                 <span className="material-symbols-outlined">
                   {showPassword ? "visibility_off" : "visibility"}
@@ -205,7 +206,7 @@ const page = () => {
             </div>
 
             {ErrorsObj.password && (
-              <p className="text-[11px] text-rose-900 font-bold flex items-center gap-1 mt-1">
+              <p className="text-[11px] text-[#C08552] font-bold flex items-center gap-1 mt-1">
                 <span className="material-symbols-outlined text-sm">error</span>
                 {ErrorsObj.password}
               </p>
@@ -214,15 +215,16 @@ const page = () => {
 
           <Link
             href="forgotpassword"
-            className="text-sm text-blue-900 hover:text-blue-900 font-semibold underline transition-all block text-left mb-3 ml-2"
+            className="text-sm text-[#A376A2] hover:text-[#C08552] font-semibold underline transition-all block text-left mb-3 ml-2"
           >
             Forgot Password ?
           </Link>
-          {/* Submit Button */}
+
+          {/* Submit Button - Using Purple/Orange hover */}
           <button
             disabled={Loading}
             type="submit"
-            className="w-full py-3 bg-emerald-900 hover:bg-blue-950 text-white text-sm font-bold rounded-full shadow-md hover:shadow-lg transition-all active:scale-[0.99] disabled:grayscale flex items-center justify-center gap-2"
+            className="w-full py-3 bg-[#A376A2] hover:bg-[#C08552] text-white text-sm font-bold rounded-full shadow-md hover:shadow-lg transition-all active:scale-[0.99] disabled:grayscale flex items-center justify-center gap-2"
           >
             {Loading ? "Processing..." : "Secure Sign In"}
           </button>
@@ -230,7 +232,7 @@ const page = () => {
 
         <div className="relative my-8">
           <div className="absolute inset-0 flex items-center">
-            <span className="w-full border-t border-stone-400"></span>
+            <span className="w-full border-t border-stone-300"></span>
           </div>
           <div className="relative flex justify-center text-xs uppercase">
             <span className="bg-white px-3 text-stone-400 font-semibold tracking-widest">
@@ -243,7 +245,7 @@ const page = () => {
         <button
           onClick={signinWithGoogle}
           disabled={GoogleLoading}
-          className="w-full py-3 border border-stone-300 bg-gray-100 hover:bg-stone-200 text-stone-700 text-sm font-bold rounded-full flex items-center justify-center gap-3 transition-all shadow-sm"
+          className="w-full py-3 border border-stone-300 bg-[#F1EDEE] hover:bg-stone-200 text-stone-700 text-sm font-bold rounded-full flex items-center justify-center gap-3 transition-all shadow-sm"
         >
           <img
             src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg"
@@ -257,8 +259,7 @@ const page = () => {
           Don't have an account ?{" "}
           <Link
             href="/signup"
-            className="font-bold text-blue-900 underline underline-offset-4 transition-all"
-            //onClick={() => /* Add your navigation logic here */}
+            className="font-bold text-[#A376A2] underline underline-offset-4 transition-all"
           >
             Create Account
           </Link>

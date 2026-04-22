@@ -1,0 +1,1 @@
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,34899,o=>{"use strict";var t=o.i(41331);o.s(["doc",()=>t.a6])},14477,o=>{"use strict";var t=o.i(41331);o.s(["collectionGroup",()=>t.aP])}]);

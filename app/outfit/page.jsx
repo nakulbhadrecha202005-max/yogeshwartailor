@@ -26,128 +26,112 @@ export const metadata = {
 const page = () => {
   return (
     <div>
-      <section id="outfits" className="bg-white mt-25 py-20 md:py-28">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
-            <div className="flex items-center justify-center gap-3 mb-3">
-              <span className="w-8 h-[2px] bg-red-800"></span>
-              <span className="text-red-800 font-black text-[11px] uppercase tracking-[0.35em]">
-                Our Specialities
+      <section
+        id="outfits"
+        className="bg-[#121012] mt-25 py-20 md:py-28 relative overflow-hidden"
+      >
+        {/* Decorative background glow */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(circle_at_top,_#A376A215_0%,_transparent_50%)] pointer-events-none" />
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          {/* Header Section */}
+          <div className="text-center mb-16">
+            <div className="flex items-center justify-center gap-4 mb-4">
+              <span className="w-12 h-[1px] bg-gradient-to-r from-transparent to-[#C08552]"></span>
+              <span className="text-[#C08552] font-black text-[12px] uppercase tracking-[0.4em]">
+                Exquisite Craftsmanship
               </span>
-              <span className="w-8 h-[2px] bg-red-800"></span>
+              <span className="w-12 h-[1px] bg-gradient-to-l from-transparent to-[#C08552]"></span>
             </div>
-            <h2 className="font-outfit text-3xl md:text-5xl font-extrabold text-midnight mb-4">
-              Popular Outfits We Stitch
+            <h2 className="font-outfit text-4xl md:text-6xl font-extrabold text-[#F1EDEE] mb-6 tracking-tight">
+              Style That{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#C08552] to-[#A376A2]">
+                Defines You
+              </span>
             </h2>
-            <p className="text-slate-500 text-lg font-medium max-w-xl mx-auto leading-relaxed">
-              From everyday kurtis to grand bridal wear — every outfit stitched
-              with love and precision.
+            <p className="text-slate-400 text-lg font-medium max-w-2xl mx-auto leading-relaxed italic">
+              "From everyday elegance to your grandest celebrations — every
+              stitch tells a story of perfection."
             </p>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-5">
-            {/* 1. Bridal Blouse */}
-            <div className="group bg-offwhite rounded-2xl overflow-hidden border border-stone-100 shadow-sm hover:-translate-y-2 hover:shadow-xl hover:shadow-red-800/10 transition-all duration-300 cursor-default">
-              <div className="aspect-square overflow-hidden bg-slate-100">
-                <img
-                  src="/images/Bridalblouse.avif"
-                  alt="Bridal Blouse"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
+          {/* Grid Section */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+            {[
+              {
+                title: "Bridal Blouse",
+                desc: "Intricate Hand-Embroidery",
+                img: "/images/Bridalblouse.avif",
+              },
+              {
+                title: "Bride Chaniya Choli",
+                desc: "Royal Wedding Collection",
+                img: "/images/Bridal-Lehenga.jpg",
+              },
+              {
+                title: "Designer Kurti",
+                desc: "Indo-Western Fusion",
+                img: "/images/Kurtipant.jpg",
+              },
+              {
+                title: "Modern Salwar",
+                desc: "Classic Contemporary Comfort",
+                img: "/images/krtipant.webp",
+              },
+            ].map((item, idx) => (
+              <div key={idx} className="group relative">
+                {/* Card Shadow/Glow Effect */}
+                <div className="absolute -inset-0.5 bg-gradient-to-b from-[#A376A2]/30 to-transparent rounded-[2rem] blur opacity-0 group-hover:opacity-100 transition duration-500"></div>
+
+                <div className="relative bg-[#1A181B] rounded-[2rem] overflow-hidden border border-white/5 hover:border-[#C08552]/40 transition-all duration-500">
+                  {/* Image Container */}
+                  <div className="aspect-[4/5] overflow-hidden relative">
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#1A181B] via-transparent to-transparent opacity-60 z-10" />
+                    <img
+                      src={item.img}
+                      alt={item.title}
+                      className="w-full h-full object-cover transition-transform duration-700 scale-105 group-hover:scale-110"
+                    />
+                    {/* Hover Mint Tag */}
+                    <div className="absolute top-4 right-4 z-20 translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+                      <span className="bg-[#40F99B] text-black text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter">
+                        Premium Fit
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Text Content */}
+                  <div className="p-6 relative z-20">
+                    <h4 className="font-outfit font-bold text-[#F1EDEE] text-lg mb-1 group-hover:text-[#C08552] transition-colors">
+                      {item.title}
+                    </h4>
+                    <p className="text-[#A376A2] text-xs font-medium tracking-wide uppercase opacity-80">
+                      {item.desc}
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div className="p-4 md:p-5">
-                <h4 className="font-outfit font-extrabold text-midnight text-sm md:text-base mb-1 leading-tight">
-                  Bridal Blouse
-                </h4>
-                <p className="text-slate-400 text-[10px] md:text-xs font-medium leading-relaxed">
-                  Custom fit with intricate embroidery
-                </p>
-              </div>
-            </div>
-            {/* 2. Designer Lehenga */}
-            <div className="group bg-offwhite rounded-2xl overflow-hidden border border-stone-100 shadow-sm hover:-translate-y-2 hover:shadow-xl hover:shadow-red-800/10 transition-all duration-300 cursor-default">
-              <div className="aspect-square overflow-hidden bg-slate-100">
-                <img
-                  src="/images/Bridal-Lehenga.jpg"
-                  alt="Designer Lehenga"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-              </div>
-              <div className="p-4">
-                <h4 className="font-outfit font-extrabold text-midnight text-sm mb-1 leading-tight">
-                  Bride chaniya choli fitting
-                </h4>
-                <p className="text-slate-400 text-[11px] font-medium">
-                  Festival & wedding wear
-                </p>
-              </div>
-            </div>
-            {/* 3. Kurti with Pant */}
-            <div className="group bg-offwhite rounded-2xl overflow-hidden border border-stone-100 shadow-sm hover:-translate-y-2 hover:shadow-xl hover:shadow-red-800/10 transition-all duration-300 cursor-default">
-              <div className="aspect-square overflow-hidden bg-slate-100">
-                <img
-                  src="/images/Kurtipant.jpg"
-                  alt="Kurti Pant"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-              </div>
-              <div className="p-4">
-                <h4 className="font-outfit font-extrabold text-midnight text-sm mb-1 leading-tight">
-                  Kurti with Pant
-                </h4>
-                <p className="text-slate-400 text-[11px] font-medium">
-                  Indo-western style
-                </p>
-              </div>
-            </div>
-            {/* 4. Kurti with Salwar */}
-            <div className="group bg-offwhite rounded-2xl overflow-hidden border border-stone-100 shadow-sm hover:-translate-y-2 hover:shadow-xl hover:shadow-red-800/10 transition-all duration-300 cursor-default">
-              <div className="aspect-square overflow-hidden bg-slate-100">
-                <img
-                  src="/images/krtipant.webp"
-                  alt="Salwar"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-              </div>
-              <div className="p-4">
-                <h4 className="font-outfit font-extrabold text-midnight text-sm mb-1 leading-tight">
-                  Kurti with Salwar
-                </h4>
-                <p className="text-slate-400 text-[11px] font-medium">
-                  Classic modern comfort
-                </p>
-              </div>
-            </div>
-            {/* 5. Chaniya Choli
-            <div className="group bg-offwhite rounded-2xl overflow-hidden border border-stone-100 shadow-sm hover:-translate-y-2 hover:shadow-xl hover:shadow-red-800/10 transition-all duration-300 cursor-default">
-              <div className="aspect-square overflow-hidden bg-slate-100">
-                <img
-                  src="https://images.unsplash.com/photo-1612459284970-e8f027596582?q=80&w=500&auto=format&fit=crop"
-                  alt="Chaniya Choli"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-              </div>
-              <div className="p-4">
-                <h4 className="font-outfit font-extrabold text-midnight text-sm mb-1 leading-tight">
-                  Chaniya Choli Fitting
-                </h4>
-                <p className="text-slate-400 text-[11px] font-medium">
-                  Gujarati Garba special
-                </p>
-              </div>
-            </div> */}
+            ))}
           </div>
 
-          <div className="text-center mt-10">
-            <a
-              href="#contact"
-              className="inline-flex items-center gap-2 bg-blue-950 text-rose-50 px-10 py-4 rounded-full font-bold text-xs uppercase tracking-widest hover:bg-red-800 transition-all shadow-xl active:scale-95"
-            >
-              <span className="material-symbols-outlined text-base">
-                add_circle
-              </span>
-              Book an Outfit Stitching
-            </a>
+          {/* Bottom CTA Section */}
+          <div className="mt-20 relative text-center">
+            <div className="inline-block p-[1px] rounded-full bg-gradient-to-r from-[#C08552] via-[#40F99B] to-[#A376A2]">
+              <a
+                href="#contact"
+                className="flex items-center gap-3 bg-[#121012] text-white px-12 py-5 rounded-full font-bold text-sm uppercase tracking-[0.2em] hover:bg-transparent transition-all duration-300 group"
+              >
+                <span className="material-symbols-outlined text-[#40F99B] group-hover:text-black transition-colors">
+                  auto_awesome
+                </span>
+                <span className="group-hover:text-black transition-colors">
+                  Book Your Master Tailor
+                </span>
+              </a>
+            </div>
+            <p className="mt-6 text-slate-500 text-sm font-medium">
+              Limited slots available for this month’s bridal bookings.
+            </p>
           </div>
         </div>
       </section>

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 13, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/HP/Desktop/yogeshwar/app/favicon.ico.mjs%20%28structured%20image%20object%29"],"sourcesContent":["import src from \"IMAGE\";\nexport default { src, width: 256, height: 256 }\n"],"names":["src","width","height"],"mappings":";;;;AAAA;;uCACe;IAAEA,KAAAA,2JAAG;IAAEC,OAAO;IAAKC,QAAQ;AAAI"}},
+    {"offset": {"line": 28, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/HP/Desktop/yogeshwar/app/admin2/NewCustomerRecord/page.jsx"],"sourcesContent":["import React from \"react\";\r\n\r\nconst page = () => {\r\n    return <div className=\"mt-80 mb-30\">\r\n      \r\n  </div>;\r\n};\r\n\r\nexport default page;\r\n"],"names":["page","className"],"mappings":";;;;;AAAA;;;AAEA,MAAMA,OAAO;IACT,qBAAO,sQAAC;QAAIC,WAAU;;;;;;AAG1B;uCAEeD"}}]
+}
