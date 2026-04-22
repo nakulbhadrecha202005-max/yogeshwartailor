@@ -367,15 +367,15 @@ export default function Navigation() {
                 >
                   Manage My Comments
                 </Link>
-                {isAdmin && (
-                  <Link
-                    onClick={() => setOpen(false)}
-                    href="/admin/Managecomments"
-                    className="text-xs text-[#FEFEDF] font-bold italic"
-                  >
-                    Admin Review Comments
-                  </Link>
-                )}
+                {/* {isAdmin && ( */}
+                <Link
+                  onClick={() => setOpen(false)}
+                  href="/admin/Managecomments"
+                  className="text-xs text-[#FEFEDF] font-bold italic"
+                >
+                  Admin Review Comments
+                </Link>
+                {/* )} */}
               </div>
             </div>
 

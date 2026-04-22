@@ -576,7 +576,7 @@ return (
 
     {/* --- 4. CTA BUTTON (MOBILE OPTIMIZED) --- */}
     <div className="text-center mt-12 md:mt-24 pb-4">
-      <a href="#contact"
+      <a href="tel:+918200392919"
         className="group inline-flex items-center justify-center gap-3 w-full sm:w-auto px-8 md:px-14 py-4 md:py-5 rounded-2xl font-black text-[10px] md:text-xs uppercase tracking-[0.2em] transition-all duration-300 shadow-xl text-white"
         style={{ backgroundColor: '#2d1a24' }}>
         <span className="w-2 h-2 rounded-full bg-[#40F99B] animate-pulse" />
