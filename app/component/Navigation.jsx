@@ -387,8 +387,52 @@ export default function Navigation() {
                 Account Details
               </p>
               <div className="grid grid-cols-1 gap-4 pl-2">
-                {!user ? (
-                  <>
+                <>
+                  {/* <Link
+                    onClick={() => setOpen(false)}
+                    href="/edit-profile"
+                    className="text-[#FEFEDF] font-bold text-sm"
+                  >
+                    Edit Profile
+                  </Link> */}
+                  <Link
+                    onClick={() => setOpen(false)}
+                    href="/admin/ManageCustomernameUI"
+                    className="text-[#FEFEDF] font-bold text-sm"
+                  >
+                    Admin Dashboard
+                  </Link>
+                  <Link
+                    onClick={() => setOpen(false)}
+                    href="/customDesign"
+                    className="text-[#FEFEDF] font-bold text-sm"
+                  >
+                    Custom Design
+                  </Link>
+                  <Link
+                    onClick={() => setOpen(false)}
+                    href="/login"
+                    className="text-[#FEFEDF] font-bold text-sm"
+                  >
+                    Login
+                  </Link>
+                  <Link
+                    onClick={() => setOpen(false)}
+                    href="/signup"
+                    className="text-[#FEFEDF] font-bold text-sm"
+                  >
+                    Signup
+                  </Link>
+                  {!user && (
+                    <button
+                      onClick={handleLogout}
+                      className="text-left text-sm font-bold text-pink-400 tracking-widest mt-1"
+                    >
+                      Logout
+                    </button>
+                  )}
+
+                  {/* <>
                     <Link
                       onClick={() => setOpen(false)}
                       href="/login"
@@ -403,42 +447,8 @@ export default function Navigation() {
                     >
                       Signup
                     </Link>
-                  </>
-                ) : (
-                  <>
-                    <Link
-                      onClick={() => setOpen(false)}
-                      href="/edit-profile"
-                      className="text-[#FEFEDF] font-bold text-sm"
-                    >
-                      Edit Profile
-                    </Link>
-                    {isAdmin && (
-                      <Link
-                        onClick={() => setOpen(false)}
-                        href="/admin/ManageCustomernameUI"
-                        className="text-[#FEFEDF] font-bold text-sm"
-                      >
-                        Admin Dashboard
-                      </Link>
-                    )}
-                    {isAdmin && (
-                      <Link
-                        onClick={() => setOpen(false)}
-                        href="/customDesign"
-                        className="text-[#FEFEDF] font-bold text-sm"
-                      >
-                        Custom Design
-                      </Link>
-                    )}
-                    <button
-                      onClick={handleLogout}
-                      className="text-left text-sm font-bold text-pink-400 tracking-widest mt-1"
-                    >
-                      Logout
-                    </button>
-                  </>
-                )}
+                  </> */}
+                </>
               </div>
             </div>
           </div>

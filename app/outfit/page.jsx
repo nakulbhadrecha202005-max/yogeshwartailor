@@ -113,26 +113,6 @@ const page = () => {
               </div>
             ))}
           </div>
-
-          {/* Bottom CTA Section */}
-          <div className="mt-20 relative text-center">
-            <div className="inline-block p-[1px] rounded-full bg-gradient-to-r from-[#C08552] via-[#40F99B] to-[#A376A2]">
-              <a
-                href="#contact"
-                className="flex items-center gap-3 bg-[#121012] text-white px-12 py-5 rounded-full font-bold text-sm uppercase tracking-[0.2em] hover:bg-transparent transition-all duration-300 group"
-              >
-                <span className="material-symbols-outlined text-[#40F99B] group-hover:text-black transition-colors">
-                  auto_awesome
-                </span>
-                <span className="group-hover:text-black transition-colors">
-                  Book Your Master Tailor
-                </span>
-              </a>
-            </div>
-            <p className="mt-6 text-slate-500 text-sm font-medium">
-              Limited slots available for this month’s bridal bookings.
-            </p>
-          </div>
         </div>
       </section>
     </div>

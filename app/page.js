@@ -540,7 +540,7 @@ return (
         { title: "Bridal Blouse", img: "/images/Bridalblouse.avif", desc: "Intricate Handwork", mt: "md:mt-0" },
         { title: "Bride Lehenga", img: "/images/Bridal-Lehenga.jpg", desc: "Grand Silhouettes", mt: "md:mt-12" },
         { title: "Kurti with Pant", img: "/images/Kurtipant.jpg", desc: "Modern Chic", mt: "md:mt-0" },
-        { title: "Kurti with Salwar", img: "https://assets.myntassets.com/...", desc: "Classic Comfort", mt: "md:mt-12" },
+        { title: "Kurti with Salwar", img: "/images/krtipant.webp", desc: "Classic Comfort", mt: "md:mt-12" },
       ].map((item, index) => (
         <div
           key={index}

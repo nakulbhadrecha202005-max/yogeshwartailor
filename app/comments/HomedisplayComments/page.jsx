@@ -100,7 +100,7 @@ const Page = () => {
 
   return (
     // Page background is now pure white
-    <div className="min-h-screen mt-30 bg-gradient-to-br from-[#A376A2] via-[#A376A2]/10 to-[#C08552]/10 py-20 px-4 relative">
+    <div className="min-h-screen mt-25 bg-gradient-to-br from-[#A376A2] via-[#A376A2]/10 to-[#C08552]/10 py-20 px-4 relative">
       {/* Ambient Background Decorative Elements */}
       <div className="absolute top-20 left-10 w-72 h-72 bg-[#A376A2]/20 rounded-full blur-[100px] pointer-events-none animate-pulse"></div>
       <div className="absolute bottom-40 right-10 w-80 h-80 bg-[#C08552]/20 rounded-full blur-[120px] pointer-events-none"></div>

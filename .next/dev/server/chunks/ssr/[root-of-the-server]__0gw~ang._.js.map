@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 13, "column": 0}, "map": {"version":3,"sources":["file:///D:/YogeshwarTailorN2/my-app/app/favicon.ico.mjs%20%28structured%20image%20object%29"],"sourcesContent":["import src from \"IMAGE\";\nexport default { src, width: 256, height: 256 }\n"],"names":["src","width","height"],"mappings":";;;;AAAA;;uCACe;IAAEA,KAAAA,mIAAG;IAAEC,OAAO;IAAKC,QAAQ;AAAI"}},
+    {"offset": {"line": 28, "column": 0}, "map": {"version":3,"sources":["file:///D:/YogeshwarTailorN2/my-app/app/admin/ManageCustomernameUI/page.jsx"],"sourcesContent":["import React from \"react\";\r\n\r\n\r\nconst displayUserDataFunal_Fetch = () => {\r\n    return (\r\n        <>\r\n            \r\n        </>\r\n    )\r\n}\r\n\r\nconst page = () => {\r\n  return (\r\n    <div className=\"text-slate-900 antialiased min-h-screen\">\r\n      {/* main */}\r\n      <main className=\"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-14\"></main>\r\n    </div>\r\n  );\r\n};\r\n\r\nexport default page;\r\n"],"names":["displayUserDataFunal_Fetch","page","className"],"mappings":";;;;;AAAA;;;AAGA,MAAMA,6BAA6B;IAC/B,qBACI;AAIR;AAEA,MAAMC,OAAO;IACX,qBACE,8OAAC;QAAIC,WAAU;kBAEb,cAAA,8OAAC;YAAKA,WAAU;;;;;;;;;;;AAGtB;uCAEeD"}}]
+}
