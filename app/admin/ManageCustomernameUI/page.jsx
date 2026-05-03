@@ -1033,7 +1033,7 @@ const page = () => {
         </>
       ) : (
         <>
-          <div className="min-h-screen mt-10 flex items-center justify-center bg-[#1a1c23] p-4">
+          <div className="min-h-screen mt-13 flex items-center justify-center bg-[#1a1c23] p-4">
             <div className="max-w-md w-full text-center space-y-8 p-10 rounded-2xl border border-[#4a4e69] bg-[#1a1c23] shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
               {/* Lock Icon Section */}
               <div className="relative inline-flex items-center justify-center">

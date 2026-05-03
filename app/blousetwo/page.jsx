@@ -22,6 +22,7 @@ const BlouseCustomDashboard = () => {
   const searchParams = useSearchParams();
   const id = searchParams.get("id"); // customer id
   const type = searchParams.get("type");
+  const [ContactNumber, setContactNumber] = useState("");
 
   //authetication
   useEffect(() => {
@@ -134,7 +135,6 @@ const BlouseCustomDashboard = () => {
       });
 
       alert("Saved successfully");
-      clearForm();
     } catch (error) {
       console.log(error);
       alert("Error saving data");
@@ -224,6 +224,15 @@ const BlouseCustomDashboard = () => {
             _18: "",
             _19: "",
           }));
+        }
+
+        const customerSnap = await getDoc(ref);
+
+        if (customerSnap.exists()) {
+          const data = customerSnap.data();
+          const phone = data._19.replace(/\D/g, "");
+          console.log("Phone:", phone);
+          setContactNumber(data?._19); // adjust field name if needed
         }
       } catch (error) {
         console.log(error);
@@ -496,7 +505,7 @@ const BlouseCustomDashboard = () => {
                     <div className="flex gap-2">
                       <div className="textInputWrapper secondinput ">
                         <input
-                          type="text"
+                          type="number"
                           name="_2"
                           value={formData._2}
                           onChange={handleChange}
@@ -520,7 +529,7 @@ const BlouseCustomDashboard = () => {
                     <div className="flex gap-2">
                       <div className="textInputWrapper secondinput_2 ">
                         <input
-                          type="text"
+                          type="number"
                           name="_3"
                           value={formData._3}
                           onChange={handleChange}
@@ -530,7 +539,7 @@ const BlouseCustomDashboard = () => {
 
                       <div className="textInputWrapper secondinput_3 ">
                         <input
-                          type="text"
+                          type="number"
                           name="_4"
                           value={formData._4}
                           onChange={handleChange}
@@ -547,7 +556,7 @@ const BlouseCustomDashboard = () => {
                     <div className="flex gap-2">
                       <div className="textInputWrapper fourtosix">
                         <input
-                          type="text"
+                          type="number"
                           name="_5"
                           value={formData._5}
                           onChange={handleChange}
@@ -565,7 +574,7 @@ const BlouseCustomDashboard = () => {
                   <td className=" border-gray-500">
                     <div className="textInputWrapper fourtosix">
                       <input
-                        type="text"
+                        type="number"
                         name="_6"
                         value={formData._6}
                         onChange={handleChange}
@@ -581,7 +590,7 @@ const BlouseCustomDashboard = () => {
                     <div className="flex gap-2">
                       <div className="textInputWrapper five">
                         <input
-                          type="text"
+                          type="number"
                           name="_7"
                           value={formData._7}
                           onChange={handleChange}
@@ -602,7 +611,7 @@ const BlouseCustomDashboard = () => {
                     <div className="flex gap-2 ">
                       <div className="textInputWrapper six">
                         <input
-                          type="text"
+                          type="number"
                           name="_8"
                           value={formData._8}
                           onChange={handleChange}
@@ -611,7 +620,7 @@ const BlouseCustomDashboard = () => {
                       </div>
                       <div className="textInputWrapper seven">
                         <input
-                          type="text"
+                          type="number"
                           name="_9"
                           value={formData._9}
                           onChange={handleChange}
@@ -621,7 +630,7 @@ const BlouseCustomDashboard = () => {
 
                       <div className="textInputWrapper eight">
                         <input
-                          type="text"
+                          type="number"
                           name="_10"
                           value={formData._10}
                           onChange={handleChange}
@@ -641,7 +650,7 @@ const BlouseCustomDashboard = () => {
                     {" "}
                     <div className="textInputWrapper ten">
                       <input
-                        type="text"
+                        type="number"
                         name="_11"
                         value={formData._11}
                         onChange={handleChange}
@@ -658,7 +667,7 @@ const BlouseCustomDashboard = () => {
                     <div className="flex gap-2">
                       <div className="textInputWrapper eleven">
                         <input
-                          type="text"
+                          type="number"
                           name="_12"
                           value={formData._12}
                           onChange={handleChange}
@@ -667,7 +676,7 @@ const BlouseCustomDashboard = () => {
                       </div>
                       <div className="textInputWrapper twelve">
                         <input
-                          type="text"
+                          type="number"
                           name="_13"
                           value={formData._13}
                           onChange={handleChange}
@@ -676,7 +685,7 @@ const BlouseCustomDashboard = () => {
                       </div>
                       <div className="textInputWrapper fifteen">
                         <input
-                          type="text"
+                          type="number"
                           name="_14"
                           value={formData._14}
                           onChange={handleChange}
@@ -697,7 +706,7 @@ const BlouseCustomDashboard = () => {
                     <div className="flex gap-2">
                       <div className="textInputWrapper thirteen">
                         <input
-                          type="text"
+                          type="number"
                           name="_15"
                           value={formData._15}
                           onChange={handleChange}
@@ -706,7 +715,7 @@ const BlouseCustomDashboard = () => {
                       </div>
                       <div className="textInputWrapper fourteen">
                         <input
-                          type="text"
+                          type="number"
                           name="_16"
                           value={formData._16}
                           onChange={handleChange}
@@ -727,7 +736,7 @@ const BlouseCustomDashboard = () => {
                     <div className="flex gap-2">
                       <div className="textInputWrapper sixteen">
                         <input
-                          type="text"
+                          type="tel"
                           name="_17"
                           value={formData._17}
                           onChange={handleChange}
@@ -767,11 +776,11 @@ const BlouseCustomDashboard = () => {
                   <td className=" border-gray-500">
                     <div className="textInputWrapper contact">
                       <input
-                        type="text"
+                        type="number"
                         name="_19"
-                        value={formData._19}
+                        value={formData._19 || ""}
                         onChange={handleChange}
-                        className="textInput  "
+                        className="textInput"
                       />
                     </div>
                   </td>
@@ -804,7 +813,7 @@ const BlouseCustomDashboard = () => {
                             d="M43.611 20.083H42V20H24v8h11.303a12.04 12.04 0 0 1-4.087 5.571l.003-.002l6.19 5.238C36.971 39.205 44 34 44 24c0-1.341-.138-2.65-.389-3.917z"
                           />
                         </svg>
-                        <span>Save with Google</span>
+                        <span>Save Record</span>
                       </button>
 
                       {/* Reset Button */}
@@ -837,8 +846,9 @@ const BlouseCustomDashboard = () => {
 
                       <div className="rounded-lg ml-50">
                         <a
-                          href="https://wa.me/919998453537"
+                          href={`${`https://wa.me/${ContactNumber}`}`}
                           target="_blank"
+                          rel="noopener noreferrer"
                           className="transition-all duration-200 active:scale-90 no-underline inline-flex hover:opacity-80"
                         >
                           <span className="material-symbols-outlined text-[#ddac38] !text-[42px]">

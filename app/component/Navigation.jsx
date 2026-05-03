@@ -51,7 +51,7 @@ export default function Navigation() {
           100% {
             /* Note: -50% works if you have duplicated the content exactly. 
        Ensure the container is wide enough.
-    */
+          */
             transform: translateX(-50%);
           }
         }
@@ -121,7 +121,7 @@ export default function Navigation() {
               className="px-4 md:px-8 text-[10px] md:text-[11px] font-bold uppercase tracking-[0.3em] flex items-center whitespace-nowrap"
               style={{ color: "rgba(233, 221, 255, 0.90)" }}
             >
-              Perfect Fit Since 1999 ● India's remium Ladies Custom Tailor ●
+              Perfect Fit Since 1999 ● India's Premium Ladies Custom Tailor ●
               Quality Stitched Heritage ● Luxury Bespoke ●&nbsp;
             </div>
           ))}

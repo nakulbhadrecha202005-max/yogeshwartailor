@@ -115,10 +115,10 @@ function Navigation() {
         router.push("/login");
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
-        className: "jsx-746cce3f522fc31c" + " " + "fixed top-0 mb-20 left-0 w-full z-50",
+        className: "jsx-b7c6e0ed35917602" + " " + "fixed top-0 mb-20 left-0 w-full z-50",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                id: "746cce3f522fc31c",
+                id: "b7c6e0ed35917602",
                 children: "@keyframes scroll-left{0%{transform:translate(0)}to{transform:translate(-50%)}}.animate-marquee{white-space:nowrap;will-change:transform;backface-visibility:hidden;min-width:max-content;animation:30s linear infinite scroll-left;display:flex}@media (width>=1024px){.nav-gradient{background:radial-gradient(60% 100% at -5%,#8b5cf62e 0,#0000 100%),radial-gradient(60% 100% at 105%,#ec489924 0,#0000 100%),radial-gradient(100% 60% at 50% 160%,#38bdf81a 0,#0000 100%),#fcf9fffa!important}}.animate-marquee{will-change:transform;width:max-content;animation:20s linear infinite scroll-left;display:flex}.menu-open{overflow:hidden}"
             }, void 0, false, void 0, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -127,9 +127,9 @@ function Navigation() {
                  radial-gradient(ellipse at 100% 50%, rgba(236, 72, 153, 0.32) 0px, transparent 55%),
                  #07040f`
                 },
-                className: "jsx-746cce3f522fc31c" + " " + "w-full overflow-hidden flex items-center h-10 border-b border-violet-900/30",
+                className: "jsx-b7c6e0ed35917602" + " " + "w-full overflow-hidden flex items-center h-10 border-b border-violet-900/30",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "jsx-746cce3f522fc31c" + " " + "animate-marquee",
+                    className: "jsx-b7c6e0ed35917602" + " " + "animate-marquee",
                     children: [
                         1,
                         2
@@ -137,8 +137,8 @@ function Navigation() {
                             style: {
                                 color: "rgba(233, 221, 255, 0.90)"
                             },
-                            className: "jsx-746cce3f522fc31c" + " " + "px-4 md:px-8 text-[10px] md:text-[11px] font-bold uppercase tracking-[0.3em] flex items-center whitespace-nowrap",
-                            children: "Perfect Fit Since 1999 ● India's Premier Ladies Custom Tailor ● Quality Stitched Heritage ● Luxury Bespoke ● "
+                            className: "jsx-b7c6e0ed35917602" + " " + "px-4 md:px-8 text-[10px] md:text-[11px] font-bold uppercase tracking-[0.3em] flex items-center whitespace-nowrap",
+                            children: "Perfect Fit Since 1999 ● India's Premium Ladies Custom Tailor ● Quality Stitched Heritage ● Luxury Bespoke ● "
                         }, i, false, {
                             fileName: "[project]/Desktop/yogeshwar/app/component/Navigation.jsx",
                             lineNumber: 119,
@@ -164,23 +164,23 @@ function Navigation() {
           `,
                     boxShadow: "0 4px 24px rgba(139, 92, 246, 0.08)"
                 },
-                className: "jsx-746cce3f522fc31c" + " " + "w-full border-b border-violet-200/40 nav-gradient",
+                className: "jsx-b7c6e0ed35917602" + " " + "w-full border-b border-violet-200/40 nav-gradient",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "jsx-746cce3f522fc31c" + " " + "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+                        className: "jsx-b7c6e0ed35917602" + " " + "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "jsx-746cce3f522fc31c" + " " + "flex justify-between items-center h-16 md:h-20",
+                            className: "jsx-b7c6e0ed35917602" + " " + "flex justify-between items-center h-16 md:h-20",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "jsx-746cce3f522fc31c" + " " + "flex-shrink-0",
+                                    className: "jsx-b7c6e0ed35917602" + " " + "flex-shrink-0",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "jsx-746cce3f522fc31c" + " " + "font-outfit text-xl md:text-2xl font-black tracking-tighter text-violet-950 uppercase",
+                                        className: "jsx-b7c6e0ed35917602" + " " + "font-outfit text-xl md:text-2xl font-black tracking-tighter text-violet-950 uppercase",
                                         children: isAdmin ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                             href: "/customDesign",
                                             children: [
                                                 "Yogeshwar",
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "jsx-746cce3f522fc31c" + " " + "text-pink-600",
+                                                    className: "jsx-b7c6e0ed35917602" + " " + "text-pink-600",
                                                     children: "."
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/component/Navigation.jsx",
@@ -197,7 +197,7 @@ function Navigation() {
                                             children: [
                                                 "Yogeshwar",
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "jsx-746cce3f522fc31c" + " " + "text-pink-600",
+                                                    className: "jsx-b7c6e0ed35917602" + " " + "text-pink-600",
                                                     children: "."
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/component/Navigation.jsx",
@@ -221,7 +221,7 @@ function Navigation() {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "jsx-746cce3f522fc31c" + " " + "hidden lg:flex items-center space-x-8 text-xs font-bold tracking-[0.1em]",
+                                    className: "jsx-b7c6e0ed35917602" + " " + "hidden lg:flex items-center space-x-8 text-xs font-bold tracking-[0.1em]",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                             href: "/",
@@ -251,15 +251,15 @@ function Navigation() {
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "jsx-746cce3f522fc31c" + " " + "relative group cursor-pointer",
+                                            className: "jsx-b7c6e0ed35917602" + " " + "relative group cursor-pointer",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                    className: "jsx-746cce3f522fc31c" + " " + "text-violet-900 flex items-center gap-1 hover:text-pink-600 uppercase tracking-widest outline-none",
+                                                    className: "jsx-b7c6e0ed35917602" + " " + "text-violet-900 flex items-center gap-1 hover:text-pink-600 uppercase tracking-widest outline-none",
                                                     children: [
                                                         "Comments",
                                                         " ",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "jsx-746cce3f522fc31c" + " " + "material-symbols-outlined text-sm",
+                                                            className: "jsx-b7c6e0ed35917602" + " " + "material-symbols-outlined text-sm",
                                                             children: "expand_more"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/component/Navigation.jsx",
@@ -273,9 +273,9 @@ function Navigation() {
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "jsx-746cce3f522fc31c" + " " + "absolute left-0 top-full pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0",
+                                                    className: "jsx-b7c6e0ed35917602" + " " + "absolute left-0 top-full pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0",
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "jsx-746cce3f522fc31c" + " " + "w-52 bg-white shadow-xl rounded-2xl p-2 border border-violet-100",
+                                                        className: "jsx-b7c6e0ed35917602" + " " + "w-52 bg-white shadow-xl rounded-2xl p-2 border border-violet-100",
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                                                 href: "/comments/HomedisplayComments",
@@ -331,15 +331,15 @@ function Navigation() {
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "jsx-746cce3f522fc31c" + " " + "relative group cursor-pointer",
+                                            className: "jsx-b7c6e0ed35917602" + " " + "relative group cursor-pointer",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                    className: "jsx-746cce3f522fc31c" + " " + "text-violet-900 flex items-center gap-1 hover:text-pink-600 uppercase tracking-widest outline-none",
+                                                    className: "jsx-b7c6e0ed35917602" + " " + "text-violet-900 flex items-center gap-1 hover:text-pink-600 uppercase tracking-widest outline-none",
                                                     children: [
                                                         "Account",
                                                         " ",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "jsx-746cce3f522fc31c" + " " + "material-symbols-outlined text-sm",
+                                                            className: "jsx-b7c6e0ed35917602" + " " + "material-symbols-outlined text-sm",
                                                             children: "expand_more"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/component/Navigation.jsx",
@@ -353,9 +353,9 @@ function Navigation() {
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "jsx-746cce3f522fc31c" + " " + "absolute right-0 top-full pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0",
+                                                    className: "jsx-b7c6e0ed35917602" + " " + "absolute right-0 top-full pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0",
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "jsx-746cce3f522fc31c" + " " + "w-52 bg-white shadow-xl rounded-2xl p-2 border border-violet-100",
+                                                        className: "jsx-b7c6e0ed35917602" + " " + "w-52 bg-white shadow-xl rounded-2xl p-2 border border-violet-100",
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                                                                 children: [
@@ -402,7 +402,7 @@ function Navigation() {
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                                         onClick: handleLogout,
-                                                                        className: "jsx-746cce3f522fc31c" + " " + "w-full text-left block px-4 py-2 text-xs hover:text-white hover:bg-violet-700 font-bold text-violet-800 tracking-widest rounded-xl transition",
+                                                                        className: "jsx-b7c6e0ed35917602" + " " + "w-full text-left block px-4 py-2 text-xs hover:text-white hover:bg-violet-700 font-bold text-violet-800 tracking-widest rounded-xl transition",
                                                                         children: "Logout"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/Desktop/yogeshwar/app/component/Navigation.jsx",
@@ -437,9 +437,9 @@ function Navigation() {
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     onClick: ()=>setOpen(!open),
-                                    className: "jsx-746cce3f522fc31c" + " " + "lg:hidden p-2 text-violet-700 focus:outline-none",
+                                    className: "jsx-b7c6e0ed35917602" + " " + "lg:hidden p-2 text-violet-700 focus:outline-none",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "jsx-746cce3f522fc31c" + " " + "material-symbols-outlined text-3xl",
+                                        className: "jsx-b7c6e0ed35917602" + " " + "material-symbols-outlined text-3xl",
                                         children: open ? "close" : "menu"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/yogeshwar/app/component/Navigation.jsx",
@@ -470,10 +470,10 @@ function Navigation() {
                             background: "linear-gradient(337deg,rgba(163, 118, 162, 1) 43%, rgba(192, 133, 82, 1) 100%)",
                             borderTop: "1px solid rgba(139, 92, 246, 0.2)"
                         },
-                        className: "jsx-746cce3f522fc31c" + " " + "fixed left-0 right-0 bottom-0 z-[60] overflow-y-auto px-6 py-8 space-y-8 animate-in slide-in-from-top duration-300",
+                        className: "jsx-b7c6e0ed35917602" + " " + "fixed left-0 right-0 bottom-0 z-[60] overflow-y-auto px-6 py-8 space-y-8 animate-in slide-in-from-top duration-300",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "jsx-746cce3f522fc31c" + " " + "space-y-4",
+                                className: "jsx-b7c6e0ed35917602" + " " + "space-y-4",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                         onClick: ()=>setOpen(false),
@@ -506,7 +506,7 @@ function Navigation() {
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("hr", {
-                                        className: "jsx-746cce3f522fc31c" + " " + "border-violet-800/40"
+                                        className: "jsx-b7c6e0ed35917602" + " " + "border-violet-800/40"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/yogeshwar/app/component/Navigation.jsx",
                                         lineNumber: 340,
@@ -519,10 +519,10 @@ function Navigation() {
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "jsx-746cce3f522fc31c" + " " + "space-y-3",
+                                className: "jsx-b7c6e0ed35917602" + " " + "space-y-3",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "jsx-746cce3f522fc31c" + " " + "text-[15px] font-black uppercase tracking-[0.1em] text-violet-400",
+                                        className: "jsx-b7c6e0ed35917602" + " " + "text-[15px] font-black uppercase tracking-[0.1em] text-violet-400",
                                         children: "Community"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/yogeshwar/app/component/Navigation.jsx",
@@ -530,7 +530,7 @@ function Navigation() {
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "jsx-746cce3f522fc31c" + " " + "grid grid-cols-1 gap-3 pl-2",
+                                        className: "jsx-b7c6e0ed35917602" + " " + "grid grid-cols-1 gap-3 pl-2",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                                 onClick: ()=>setOpen(false),
@@ -585,17 +585,17 @@ function Navigation() {
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("hr", {
-                                className: "jsx-746cce3f522fc31c" + " " + "border-violet-800/40"
+                                className: "jsx-b7c6e0ed35917602" + " " + "border-violet-800/40"
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/yogeshwar/app/component/Navigation.jsx",
                                 lineNumber: 382,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "jsx-746cce3f522fc31c" + " " + "space-y-3",
+                                className: "jsx-b7c6e0ed35917602" + " " + "space-y-3",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "jsx-746cce3f522fc31c" + " " + "text-[15px] font-black uppercase tracking-[0.1em] text-pink-400",
+                                        className: "jsx-b7c6e0ed35917602" + " " + "text-[15px] font-black uppercase tracking-[0.1em] text-pink-400",
                                         children: "Account Details"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/yogeshwar/app/component/Navigation.jsx",
@@ -603,7 +603,7 @@ function Navigation() {
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "jsx-746cce3f522fc31c" + " " + "grid grid-cols-1 gap-4 pl-2",
+                                        className: "jsx-b7c6e0ed35917602" + " " + "grid grid-cols-1 gap-4 pl-2",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -648,7 +648,7 @@ function Navigation() {
                                                 }, this),
                                                 user && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                     onClick: handleLogout,
-                                                    className: "jsx-746cce3f522fc31c" + " " + "text-left text-sm font-bold text-pink-400 tracking-widest mt-1",
+                                                    className: "jsx-b7c6e0ed35917602" + " " + "text-left text-sm font-bold text-pink-400 tracking-widest mt-1",
                                                     children: "Logout"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/component/Navigation.jsx",

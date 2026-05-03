@@ -1,7 +1,7 @@
 (globalThis["TURBOPACK"] || (globalThis["TURBOPACK"] = [])).push([typeof document === "object" ? document.currentScript : undefined,
 "[project]/Desktop/yogeshwar/app/customDesign/page.jsx [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 
-const e = new Error("Could not parse module '[project]/Desktop/yogeshwar/app/customDesign/page.jsx'\n\nUnexpected token `,`. Expected identifier or string");
+const e = new Error("Could not parse module '[project]/Desktop/yogeshwar/app/customDesign/page.jsx'\n\nExpected '</', got '}'");
 e.code = 'MODULE_UNPARSABLE';
 throw e;
 }),

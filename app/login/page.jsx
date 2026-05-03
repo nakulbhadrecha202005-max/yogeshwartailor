@@ -117,7 +117,7 @@ const page = () => {
   };
 
   return (
-    <div className="min-h-screen mt-3 bg-[#F1EDEE] flex flex-col items-center justify-center p-6 font-sans text-slate-900">
+    <div className="min-h-screen mt-9 bg-[#F1EDEE] flex flex-col items-center justify-center p-6 font-sans text-slate-900">
       {/* Main Form Container */}
       <div className="w-full max-w-md mt-20 bg-white rounded-2xl shadow-xl border border-stone-200 p-10 relative overflow-hidden">
         {/* Subtle Top Accent - Using your brand Orange */}

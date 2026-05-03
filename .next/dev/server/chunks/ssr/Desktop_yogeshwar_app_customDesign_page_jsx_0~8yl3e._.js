@@ -41,6 +41,7 @@ const CustomDressDashboard = ()=>{
     const searchParams = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useSearchParams"])();
     const id = searchParams.get("id"); // customer id
     const type = searchParams.get("type");
+    const [ContactNumber, setContactNumber] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
     //authetication
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         const unsubscribe = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f40$firebase$2f$auth$2f$dist$2f$node$2d$esm$2f$totp$2d$ed01b91b$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__z__as__onAuthStateChanged$3e$__["onAuthStateChanged"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$app$2f$lib$2f$firebase$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["auth"], (currentUser)=>{
@@ -199,6 +200,13 @@ const CustomDressDashboard = ()=>{
                             _16: "",
                             _17: ""
                         }));
+                    const customerSnap = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f40$firebase$2f$firestore$2f$dist$2f$index$2e$node$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["getDoc"])(ref);
+                    if (customerSnap.exists()) {
+                        const data = customerSnap.data();
+                        const phone = data._17.replace(/\D/g, "");
+                        console.log("Phone:", phone);
+                        setContactNumber(data?._17); // adjust field name if needed
+                    }
                 }
             } catch (error) {
                 console.log(error);
@@ -923,12 +931,12 @@ const CustomDressDashboard = ()=>{
         `
             }, void 0, false, {
                 fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                lineNumber: 235,
+                lineNumber: 246,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             isAdmin ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "w-full customdesign max-w-3xl  overflow-hidden",
+                    className: "w-full customdesign max-w-3xl mt-23 overflow-hidden",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: " customdesign bg-zinc-600",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -945,7 +953,7 @@ const CustomDressDashboard = ()=>{
                                     onChange: handleChange
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                    lineNumber: 954,
+                                    lineNumber: 965,
                                     columnNumber: 17
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("table", {
@@ -960,7 +968,7 @@ const CustomDressDashboard = ()=>{
                                                         className: "w-10"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 969,
+                                                        lineNumber: 980,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -975,7 +983,7 @@ const CustomDressDashboard = ()=>{
                                                                     children: "Dress"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                                    lineNumber: 974,
+                                                                    lineNumber: 985,
                                                                     columnNumber: 27
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -985,31 +993,31 @@ const CustomDressDashboard = ()=>{
                                                                     children: "Blouse"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                                    lineNumber: 986,
+                                                                    lineNumber: 997,
                                                                     columnNumber: 27
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                            lineNumber: 973,
+                                                            lineNumber: 984,
                                                             columnNumber: 25
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 972,
+                                                        lineNumber: 983,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                         className: "w-10"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 999,
+                                                        lineNumber: 1010,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                lineNumber: 967,
+                                                lineNumber: 978,
                                                 columnNumber: 21
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -1019,7 +1027,7 @@ const CustomDressDashboard = ()=>{
                                                         className: "w-10"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1003,
+                                                        lineNumber: 1014,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1034,23 +1042,23 @@ const CustomDressDashboard = ()=>{
                                                                 className: "textInput "
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                                lineNumber: 1006,
+                                                                lineNumber: 1017,
                                                                 columnNumber: 27
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                            lineNumber: 1005,
+                                                            lineNumber: 1016,
                                                             columnNumber: 25
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1004,
+                                                        lineNumber: 1015,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                lineNumber: 1002,
+                                                lineNumber: 1013,
                                                 columnNumber: 21
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -1060,7 +1068,7 @@ const CustomDressDashboard = ()=>{
                                                         className: "w-10"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1018,
+                                                        lineNumber: 1029,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1068,30 +1076,30 @@ const CustomDressDashboard = ()=>{
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                             className: "textInputWrapper2",
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                                type: "text",
+                                                                type: "number",
                                                                 name: "_2",
                                                                 value: formData._2,
                                                                 onChange: handleChange,
                                                                 className: "textInput2"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                                lineNumber: 1021,
+                                                                lineNumber: 1032,
                                                                 columnNumber: 27
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                            lineNumber: 1020,
+                                                            lineNumber: 1031,
                                                             columnNumber: 25
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1019,
+                                                        lineNumber: 1030,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                lineNumber: 1017,
+                                                lineNumber: 1028,
                                                 columnNumber: 21
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -1101,7 +1109,7 @@ const CustomDressDashboard = ()=>{
                                                         className: "w-10"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1033,
+                                                        lineNumber: 1044,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1109,30 +1117,30 @@ const CustomDressDashboard = ()=>{
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                             className: "textInputWrapper2",
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                                type: "text",
+                                                                type: "number",
                                                                 name: "_3",
                                                                 value: formData._3,
                                                                 onChange: handleChange,
                                                                 className: "textInput2"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                                lineNumber: 1036,
+                                                                lineNumber: 1047,
                                                                 columnNumber: 27
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                            lineNumber: 1035,
+                                                            lineNumber: 1046,
                                                             columnNumber: 25
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1034,
+                                                        lineNumber: 1045,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                lineNumber: 1032,
+                                                lineNumber: 1043,
                                                 columnNumber: 21
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -1142,20 +1150,20 @@ const CustomDressDashboard = ()=>{
                                                         className: "w-10"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1047,
+                                                        lineNumber: 1058,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                         className: " border-gray-500 "
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1048,
+                                                        lineNumber: 1059,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                lineNumber: 1046,
+                                                lineNumber: 1057,
                                                 columnNumber: 21
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -1165,7 +1173,7 @@ const CustomDressDashboard = ()=>{
                                                         className: "w-10"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1051,
+                                                        lineNumber: 1062,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1177,54 +1185,54 @@ const CustomDressDashboard = ()=>{
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                     className: "textInputWrapper7",
                                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                                        type: "text",
+                                                                        type: "number",
                                                                         name: "_4",
                                                                         value: formData._4,
                                                                         onChange: handleChange,
                                                                         className: "textInput7"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                                        lineNumber: 1056,
+                                                                        lineNumber: 1067,
                                                                         columnNumber: 29
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                                    lineNumber: 1055,
+                                                                    lineNumber: 1066,
                                                                     columnNumber: 27
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                     className: "textInputWrapper14",
                                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                                        type: "text",
+                                                                        type: "number",
                                                                         name: "_5",
                                                                         value: formData._5,
                                                                         onChange: handleChange,
                                                                         className: "textInput14"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                                        lineNumber: 1065,
+                                                                        lineNumber: 1076,
                                                                         columnNumber: 29
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                                    lineNumber: 1064,
+                                                                    lineNumber: 1075,
                                                                     columnNumber: 27
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                            lineNumber: 1054,
+                                                            lineNumber: 1065,
                                                             columnNumber: 25
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1053,
+                                                        lineNumber: 1064,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                lineNumber: 1050,
+                                                lineNumber: 1061,
                                                 columnNumber: 21
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -1234,7 +1242,7 @@ const CustomDressDashboard = ()=>{
                                                         className: "w-10"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1077,
+                                                        lineNumber: 1088,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1242,30 +1250,30 @@ const CustomDressDashboard = ()=>{
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                             className: "textInputWrapper7",
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                                type: "text",
+                                                                type: "number",
                                                                 name: "_6",
                                                                 value: formData._6,
                                                                 onChange: handleChange,
                                                                 className: "textInput7"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                                lineNumber: 1080,
+                                                                lineNumber: 1091,
                                                                 columnNumber: 27
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                            lineNumber: 1079,
+                                                            lineNumber: 1090,
                                                             columnNumber: 25
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1078,
+                                                        lineNumber: 1089,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                lineNumber: 1076,
+                                                lineNumber: 1087,
                                                 columnNumber: 21
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -1275,7 +1283,7 @@ const CustomDressDashboard = ()=>{
                                                         className: "w-10"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1091,
+                                                        lineNumber: 1102,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1287,54 +1295,54 @@ const CustomDressDashboard = ()=>{
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                     className: "textInputWrapper7",
                                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                                        type: "text",
+                                                                        type: "number",
                                                                         name: "_7",
                                                                         value: formData._7,
                                                                         onChange: handleChange,
                                                                         className: "textInput7"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                                        lineNumber: 1096,
+                                                                        lineNumber: 1107,
                                                                         columnNumber: 29
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                                    lineNumber: 1095,
+                                                                    lineNumber: 1106,
                                                                     columnNumber: 27
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                     className: "textInputWrapper14",
                                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                                        type: "text",
+                                                                        type: "number",
                                                                         name: "_8",
                                                                         value: formData._8,
                                                                         onChange: handleChange,
                                                                         className: "textInput14"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                                        lineNumber: 1105,
+                                                                        lineNumber: 1116,
                                                                         columnNumber: 29
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                                    lineNumber: 1104,
+                                                                    lineNumber: 1115,
                                                                     columnNumber: 27
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                            lineNumber: 1094,
+                                                            lineNumber: 1105,
                                                             columnNumber: 25
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1093,
+                                                        lineNumber: 1104,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                lineNumber: 1090,
+                                                lineNumber: 1101,
                                                 columnNumber: 21
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -1344,7 +1352,7 @@ const CustomDressDashboard = ()=>{
                                                         className: "w-10"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1117,
+                                                        lineNumber: 1128,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1356,54 +1364,54 @@ const CustomDressDashboard = ()=>{
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                     className: "textInputWrapper7",
                                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                                        type: "text",
+                                                                        type: "number",
                                                                         name: "_9",
                                                                         value: formData._9,
                                                                         onChange: handleChange,
                                                                         className: "textInput7"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                                        lineNumber: 1122,
+                                                                        lineNumber: 1133,
                                                                         columnNumber: 29
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                                    lineNumber: 1121,
+                                                                    lineNumber: 1132,
                                                                     columnNumber: 27
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                     className: "textInputWrapper14",
                                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                                        type: "text",
+                                                                        type: "number",
                                                                         name: "_10",
                                                                         value: formData._10,
                                                                         onChange: handleChange,
                                                                         className: "textInput14"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                                        lineNumber: 1131,
+                                                                        lineNumber: 1142,
                                                                         columnNumber: 29
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                                    lineNumber: 1130,
+                                                                    lineNumber: 1141,
                                                                     columnNumber: 27
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                            lineNumber: 1120,
+                                                            lineNumber: 1131,
                                                             columnNumber: 25
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1119,
+                                                        lineNumber: 1130,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                lineNumber: 1116,
+                                                lineNumber: 1127,
                                                 columnNumber: 21
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -1413,20 +1421,20 @@ const CustomDressDashboard = ()=>{
                                                         className: "w-10"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1143,
+                                                        lineNumber: 1154,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                         className: "  border-gray-500"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1144,
+                                                        lineNumber: 1155,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                lineNumber: 1142,
+                                                lineNumber: 1153,
                                                 columnNumber: 21
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -1436,7 +1444,7 @@ const CustomDressDashboard = ()=>{
                                                         className: "w-10"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1147,
+                                                        lineNumber: 1158,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1446,31 +1454,31 @@ const CustomDressDashboard = ()=>{
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                 className: "textInputWrapper11",
                                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                                    type: "text",
+                                                                    type: "number",
                                                                     name: "_11",
                                                                     value: formData._11,
                                                                     onChange: handleChange,
                                                                     className: "textInput11"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                                    lineNumber: 1151,
+                                                                    lineNumber: 1162,
                                                                     columnNumber: 27
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                                lineNumber: 1150,
+                                                                lineNumber: 1161,
                                                                 columnNumber: 25
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1148,
+                                                        lineNumber: 1159,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                lineNumber: 1146,
+                                                lineNumber: 1157,
                                                 columnNumber: 21
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -1480,20 +1488,20 @@ const CustomDressDashboard = ()=>{
                                                         className: "w-10"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1162,
+                                                        lineNumber: 1173,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                         className: " border-gray-500"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1163,
+                                                        lineNumber: 1174,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                lineNumber: 1161,
+                                                lineNumber: 1172,
                                                 columnNumber: 21
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -1503,7 +1511,7 @@ const CustomDressDashboard = ()=>{
                                                         className: "w-10"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1166,
+                                                        lineNumber: 1177,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1515,54 +1523,54 @@ const CustomDressDashboard = ()=>{
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                     className: "textInputWrapper11",
                                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                                        type: "text",
+                                                                        type: "number",
                                                                         name: "_12",
                                                                         value: formData._12,
                                                                         onChange: handleChange,
                                                                         className: "textInput11"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                                        lineNumber: 1171,
+                                                                        lineNumber: 1182,
                                                                         columnNumber: 29
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                                    lineNumber: 1170,
+                                                                    lineNumber: 1181,
                                                                     columnNumber: 27
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                     className: "textInputWrapperls",
                                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                                        type: "text",
+                                                                        type: "number",
                                                                         name: "_13",
                                                                         value: formData._13,
                                                                         onChange: handleChange,
                                                                         className: "textInputls"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                                        lineNumber: 1180,
+                                                                        lineNumber: 1191,
                                                                         columnNumber: 29
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                                    lineNumber: 1179,
+                                                                    lineNumber: 1190,
                                                                     columnNumber: 27
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                            lineNumber: 1169,
+                                                            lineNumber: 1180,
                                                             columnNumber: 25
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1168,
+                                                        lineNumber: 1179,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                lineNumber: 1165,
+                                                lineNumber: 1176,
                                                 columnNumber: 21
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -1572,7 +1580,7 @@ const CustomDressDashboard = ()=>{
                                                         className: "w-10"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1192,
+                                                        lineNumber: 1203,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1583,35 +1591,35 @@ const CustomDressDashboard = ()=>{
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                 className: "textInputWrapper11",
                                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                                    type: "text",
+                                                                    type: "number",
                                                                     name: "_14",
                                                                     value: formData._14,
                                                                     onChange: handleChange,
                                                                     className: "textInput11"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                                    lineNumber: 1197,
+                                                                    lineNumber: 1208,
                                                                     columnNumber: 29
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                                lineNumber: 1196,
+                                                                lineNumber: 1207,
                                                                 columnNumber: 27
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                            lineNumber: 1195,
+                                                            lineNumber: 1206,
                                                             columnNumber: 25
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1194,
+                                                        lineNumber: 1205,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                lineNumber: 1191,
+                                                lineNumber: 1202,
                                                 columnNumber: 21
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -1621,20 +1629,20 @@ const CustomDressDashboard = ()=>{
                                                         className: "w-10"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1209,
+                                                        lineNumber: 1220,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                         className: " border-gray-500"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1210,
+                                                        lineNumber: 1221,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                lineNumber: 1208,
+                                                lineNumber: 1219,
                                                 columnNumber: 21
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -1644,7 +1652,7 @@ const CustomDressDashboard = ()=>{
                                                         className: "w-10"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1213,
+                                                        lineNumber: 1224,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1655,35 +1663,35 @@ const CustomDressDashboard = ()=>{
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                 className: "textInputWrapper11",
                                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                                    type: "text",
+                                                                    type: "number",
                                                                     name: "_15",
                                                                     value: formData._15,
                                                                     onChange: handleChange,
                                                                     className: "textInput11"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                                    lineNumber: 1218,
+                                                                    lineNumber: 1229,
                                                                     columnNumber: 29
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                                lineNumber: 1217,
+                                                                lineNumber: 1228,
                                                                 columnNumber: 27
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                            lineNumber: 1216,
+                                                            lineNumber: 1227,
                                                             columnNumber: 25
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1215,
+                                                        lineNumber: 1226,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                lineNumber: 1212,
+                                                lineNumber: 1223,
                                                 columnNumber: 21
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -1693,20 +1701,20 @@ const CustomDressDashboard = ()=>{
                                                         className: "w-10"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1230,
+                                                        lineNumber: 1241,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                         className: " border-gray-500"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1231,
+                                                        lineNumber: 1242,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                lineNumber: 1229,
+                                                lineNumber: 1240,
                                                 columnNumber: 21
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -1716,20 +1724,20 @@ const CustomDressDashboard = ()=>{
                                                         className: "w-10"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1234,
+                                                        lineNumber: 1245,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                         className: " border-gray-500"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1235,
+                                                        lineNumber: 1246,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                lineNumber: 1233,
+                                                lineNumber: 1244,
                                                 columnNumber: 21
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -1739,7 +1747,7 @@ const CustomDressDashboard = ()=>{
                                                         className: "w-10"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1238,
+                                                        lineNumber: 1249,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1753,18 +1761,18 @@ const CustomDressDashboard = ()=>{
                                                             className: "resize-none border-2 rounded-xl outline-none px-4 py-2 border-[#d4af37] w-80 bg-[#252525] text-[#e8e8e8] transition-colors duration-200 focus:bg-[#353535] focus:border-[#a3e583] focus:ring-1 focus:ring-[#a3e583]"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                            lineNumber: 1240,
+                                                            lineNumber: 1251,
                                                             columnNumber: 25
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1239,
+                                                        lineNumber: 1250,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                lineNumber: 1237,
+                                                lineNumber: 1248,
                                                 columnNumber: 21
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -1774,7 +1782,7 @@ const CustomDressDashboard = ()=>{
                                                         className: "w-10"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1251,
+                                                        lineNumber: 1262,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1782,30 +1790,30 @@ const CustomDressDashboard = ()=>{
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                             className: "textInputWrapper",
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                                type: "text",
+                                                                type: "tel",
                                                                 name: "_17",
-                                                                value: formData._17,
+                                                                value: formData._17 || "",
                                                                 onChange: handleChange,
                                                                 className: "textInput "
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                                lineNumber: 1254,
+                                                                lineNumber: 1265,
                                                                 columnNumber: 27
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                            lineNumber: 1253,
+                                                            lineNumber: 1264,
                                                             columnNumber: 25
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1252,
+                                                        lineNumber: 1263,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                lineNumber: 1250,
+                                                lineNumber: 1261,
                                                 columnNumber: 21
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -1815,7 +1823,7 @@ const CustomDressDashboard = ()=>{
                                                         className: "w-10"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1266,
+                                                        lineNumber: 1277,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1836,7 +1844,7 @@ const CustomDressDashboard = ()=>{
                                                                                     d: "M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8c-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4C12.955 4 4 12.955 4 24s8.955 20 20 20s20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                                                    lineNumber: 1276,
+                                                                                    lineNumber: 1287,
                                                                                     columnNumber: 31
                                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1844,7 +1852,7 @@ const CustomDressDashboard = ()=>{
                                                                                     d: "m6.306 14.691l6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4C16.318 4 9.656 8.337 6.306 14.691z"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                                                    lineNumber: 1280,
+                                                                                    lineNumber: 1291,
                                                                                     columnNumber: 31
                                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1852,7 +1860,7 @@ const CustomDressDashboard = ()=>{
                                                                                     d: "M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238A11.91 11.91 0 0 1 24 36c-5.202 0-9.619-3.317-11.283-7.946l-6.522 5.025C9.505 39.556 16.227 44 24 44z"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                                                    lineNumber: 1284,
+                                                                                    lineNumber: 1295,
                                                                                     columnNumber: 31
                                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1860,26 +1868,26 @@ const CustomDressDashboard = ()=>{
                                                                                     d: "M43.611 20.083H42V20H24v8h11.303a12.04 12.04 0 0 1-4.087 5.571l.003-.002l6.19 5.238C36.971 39.205 44 34 44 24c0-1.341-.138-2.65-.389-3.917z"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                                                    lineNumber: 1288,
+                                                                                    lineNumber: 1299,
                                                                                     columnNumber: 31
                                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                                            lineNumber: 1275,
+                                                                            lineNumber: 1286,
                                                                             columnNumber: 29
                                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                             children: "Save Record"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                                            lineNumber: 1293,
+                                                                            lineNumber: 1304,
                                                                             columnNumber: 29
                                                                         }, ("TURBOPACK compile-time value", void 0))
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                                    lineNumber: 1271,
+                                                                    lineNumber: 1282,
                                                                     columnNumber: 27
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1889,24 +1897,24 @@ const CustomDressDashboard = ()=>{
                                                                     children: "Reset"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                                    lineNumber: 1297,
+                                                                    lineNumber: 1308,
                                                                     columnNumber: 27
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                            lineNumber: 1269,
+                                                            lineNumber: 1280,
                                                             columnNumber: 25
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1268,
+                                                        lineNumber: 1279,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                lineNumber: 1265,
+                                                lineNumber: 1276,
                                                 columnNumber: 21
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -1916,7 +1924,7 @@ const CustomDressDashboard = ()=>{
                                                         className: "w-10"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1309,
+                                                        lineNumber: 1320,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1927,7 +1935,7 @@ const CustomDressDashboard = ()=>{
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                     className: "rounded-lg",
                                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                                        href: "https://wa.me/919998453537",
+                                                                        // href={`${`https://wa.me/${}`}`}
                                                                         target: "_blank",
                                                                         rel: "noopener noreferrer",
                                                                         className: "transition-all duration-200 active:scale-90 no-underline inline-flex hover:opacity-80",
@@ -1936,58 +1944,59 @@ const CustomDressDashboard = ()=>{
                                                                             children: "shortcut"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                                            lineNumber: 1319,
+                                                                            lineNumber: 1330,
                                                                             columnNumber: 31
                                                                         }, ("TURBOPACK compile-time value", void 0))
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                                        lineNumber: 1313,
+                                                                        lineNumber: 1324,
                                                                         columnNumber: 29
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                                    lineNumber: 1312,
+                                                                    lineNumber: 1323,
                                                                     columnNumber: 27
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                     className: "rounded-lg ml-50",
                                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                                        href: "https://wa.me/919998453537",
+                                                                        href: `${`https://wa.me/${ContactNumber}`}`,
                                                                         target: "_blank",
+                                                                        rel: "noopener noreferrer",
                                                                         className: "transition-all duration-200 active:scale-90 no-underline inline-flex hover:opacity-80",
                                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                             className: "material-symbols-outlined text-[#ddac38] !text-[42px]",
                                                                             children: "send"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                                            lineNumber: 1331,
+                                                                            lineNumber: 1343,
                                                                             columnNumber: 31
                                                                         }, ("TURBOPACK compile-time value", void 0))
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                                        lineNumber: 1326,
+                                                                        lineNumber: 1337,
                                                                         columnNumber: 29
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                                    lineNumber: 1325,
+                                                                    lineNumber: 1336,
                                                                     columnNumber: 27
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                            lineNumber: 1311,
+                                                            lineNumber: 1322,
                                                             columnNumber: 25
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1310,
+                                                        lineNumber: 1321,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                lineNumber: 1308,
+                                                lineNumber: 1319,
                                                 columnNumber: 21
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -1997,7 +2006,7 @@ const CustomDressDashboard = ()=>{
                                                         className: "w-10"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1341,
+                                                        lineNumber: 1353,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -2015,23 +2024,23 @@ const CustomDressDashboard = ()=>{
                                                                 children: "Back to User Dashboard"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                                lineNumber: 1356,
+                                                                lineNumber: 1368,
                                                                 columnNumber: 27
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                            lineNumber: 1343,
+                                                            lineNumber: 1355,
                                                             columnNumber: 25
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1342,
+                                                        lineNumber: 1354,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                lineNumber: 1340,
+                                                lineNumber: 1352,
                                                 columnNumber: 21
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -2041,7 +2050,7 @@ const CustomDressDashboard = ()=>{
                                                         className: "w-10"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1363,
+                                                        lineNumber: 1375,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -2057,87 +2066,18 @@ const CustomDressDashboard = ()=>{
                                                             children: "Update Record"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                            lineNumber: 1365,
+                                                            lineNumber: 1377,
                                                             columnNumber: 25
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1364,
+                                                        lineNumber: 1376,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                lineNumber: 1362,
-                                                columnNumber: 21
-                                            }, ("TURBOPACK compile-time value", void 0)),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
-                                                className: "h-8",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
-                                                        className: "w-10"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1383,
-                                                        columnNumber: 23
-                                                    }, ("TURBOPACK compile-time value", void 0)),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
-                                                        className: " border-gray-500"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1384,
-                                                        columnNumber: 23
-                                                    }, ("TURBOPACK compile-time value", void 0))
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                lineNumber: 1382,
-                                                columnNumber: 21
-                                            }, ("TURBOPACK compile-time value", void 0)),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
-                                                className: "h-8",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
-                                                        className: "w-10"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1387,
-                                                        columnNumber: 23
-                                                    }, ("TURBOPACK compile-time value", void 0)),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
-                                                        className: " border-gray-500"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1388,
-                                                        columnNumber: 23
-                                                    }, ("TURBOPACK compile-time value", void 0))
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                lineNumber: 1386,
-                                                columnNumber: 21
-                                            }, ("TURBOPACK compile-time value", void 0)),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
-                                                className: "h-8",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
-                                                        className: "w-10"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1391,
-                                                        columnNumber: 23
-                                                    }, ("TURBOPACK compile-time value", void 0)),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
-                                                        className: " border-gray-500"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1392,
-                                                        columnNumber: 23
-                                                    }, ("TURBOPACK compile-time value", void 0))
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                lineNumber: 1390,
+                                                lineNumber: 1374,
                                                 columnNumber: 21
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -2170,52 +2110,121 @@ const CustomDressDashboard = ()=>{
                                                         className: "w-10"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1400,
+                                                        lineNumber: 1399,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                         className: " border-gray-500"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                        lineNumber: 1401,
+                                                        lineNumber: 1400,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                lineNumber: 1399,
+                                                lineNumber: 1398,
+                                                columnNumber: 21
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
+                                                className: "h-8",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                                        className: "w-10"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
+                                                        lineNumber: 1403,
+                                                        columnNumber: 23
+                                                    }, ("TURBOPACK compile-time value", void 0)),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                                        className: " border-gray-500"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
+                                                        lineNumber: 1404,
+                                                        columnNumber: 23
+                                                    }, ("TURBOPACK compile-time value", void 0))
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
+                                                lineNumber: 1402,
+                                                columnNumber: 21
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
+                                                className: "h-8",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                                        className: "w-10"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
+                                                        lineNumber: 1407,
+                                                        columnNumber: 23
+                                                    }, ("TURBOPACK compile-time value", void 0)),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                                        className: " border-gray-500"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
+                                                        lineNumber: 1408,
+                                                        columnNumber: 23
+                                                    }, ("TURBOPACK compile-time value", void 0))
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
+                                                lineNumber: 1406,
+                                                columnNumber: 21
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
+                                                className: "h-8",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                                        className: "w-10"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
+                                                        lineNumber: 1412,
+                                                        columnNumber: 23
+                                                    }, ("TURBOPACK compile-time value", void 0)),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                                        className: " border-gray-500"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
+                                                        lineNumber: 1413,
+                                                        columnNumber: 23
+                                                    }, ("TURBOPACK compile-time value", void 0))
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
+                                                lineNumber: 1411,
                                                 columnNumber: 21
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                        lineNumber: 966,
+                                        lineNumber: 977,
                                         columnNumber: 19
                                     }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                    lineNumber: 962,
+                                    lineNumber: 973,
                                     columnNumber: 17
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                            lineNumber: 953,
+                            lineNumber: 964,
                             columnNumber: 15
                         }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                        lineNumber: 952,
+                        lineNumber: 963,
                         columnNumber: 13
                     }, ("TURBOPACK compile-time value", void 0))
                 }, void 0, false, {
                     fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                    lineNumber: 948,
+                    lineNumber: 959,
                     columnNumber: 11
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "min-h-screen flex items-center justify-center bg-[#1a1c23] p-4",
+                    className: "min-h-screen mt-13 flex items-center justify-center bg-[#1a1c23] p-4",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "max-w-md w-full text-center space-y-8 p-10 rounded-2xl border border-[#4a4e69] bg-[#1a1c23] shadow-[0_20px_50px_rgba(0,0,0,0.5)]",
                         children: [
@@ -2226,7 +2235,7 @@ const CustomDressDashboard = ()=>{
                                         className: "absolute inset-0 bg-[#d4af37] opacity-10 blur-2xl rounded-full"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                        lineNumber: 1415,
+                                        lineNumber: 1427,
                                         columnNumber: 17
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2250,31 +2259,31 @@ const CustomDressDashboard = ()=>{
                                                     ry: "2"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                    lineNumber: 1427,
+                                                    lineNumber: 1439,
                                                     columnNumber: 21
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                                                     d: "M7 11V7a5 5 0 0 1 10 0v4"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                    lineNumber: 1428,
+                                                    lineNumber: 1440,
                                                     columnNumber: 21
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                            lineNumber: 1417,
+                                            lineNumber: 1429,
                                             columnNumber: 19
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                        lineNumber: 1416,
+                                        lineNumber: 1428,
                                         columnNumber: 17
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                lineNumber: 1414,
+                                lineNumber: 1426,
                                 columnNumber: 15
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2285,7 +2294,7 @@ const CustomDressDashboard = ()=>{
                                         children: "Restricted Access"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                        lineNumber: 1435,
+                                        lineNumber: 1447,
                                         columnNumber: 17
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2293,13 +2302,13 @@ const CustomDressDashboard = ()=>{
                                         children: "It looks like you don’t have administrator privileges. This area is reserved for the management team."
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                        lineNumber: 1438,
+                                        lineNumber: 1450,
                                         columnNumber: 17
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                lineNumber: 1434,
+                                lineNumber: 1446,
                                 columnNumber: 15
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2322,12 +2331,12 @@ const CustomDressDashboard = ()=>{
                                                 d: "M10 19l-7-7m0 0l7-7m-7 7h18"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                                lineNumber: 1465,
+                                                lineNumber: 1477,
                                                 columnNumber: 21
                                             }, ("TURBOPACK compile-time value", void 0))
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                            lineNumber: 1457,
+                                            lineNumber: 1469,
                                             columnNumber: 19
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2335,36 +2344,36 @@ const CustomDressDashboard = ()=>{
                                             children: "Back to User Dashboard"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                            lineNumber: 1472,
+                                            lineNumber: 1484,
                                             columnNumber: 19
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                    lineNumber: 1446,
+                                    lineNumber: 1458,
                                     columnNumber: 17
                                 }, ("TURBOPACK compile-time value", void 0))
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                                lineNumber: 1445,
+                                lineNumber: 1457,
                                 columnNumber: 15
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                        lineNumber: 1412,
+                        lineNumber: 1424,
                         columnNumber: 13
                     }, ("TURBOPACK compile-time value", void 0))
                 }, void 0, false, {
                     fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-                    lineNumber: 1411,
+                    lineNumber: 1423,
                     columnNumber: 11
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false)
         ]
     }, void 0, true, {
         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-        lineNumber: 234,
+        lineNumber: 245,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
@@ -2374,17 +2383,17 @@ function Page() {
             children: "Loading..."
         }, void 0, false, {
             fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-            lineNumber: 1495,
+            lineNumber: 1507,
             columnNumber: 25
         }, this),
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(CustomDressDashboard, {}, void 0, false, {
             fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-            lineNumber: 1496,
+            lineNumber: 1508,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
-        lineNumber: 1495,
+        lineNumber: 1507,
         columnNumber: 5
     }, this);
 }

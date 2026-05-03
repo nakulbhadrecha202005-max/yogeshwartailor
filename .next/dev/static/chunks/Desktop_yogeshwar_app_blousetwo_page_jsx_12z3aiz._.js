@@ -40,6 +40,7 @@ const BlouseCustomDashboard = ()=>{
     const searchParams = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSearchParams"])();
     const id = searchParams.get("id"); // customer id
     const type = searchParams.get("type");
+    const [ContactNumber, setContactNumber] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
     //authetication
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "BlouseCustomDashboard.useEffect": ()=>{
@@ -150,7 +151,6 @@ const BlouseCustomDashboard = ()=>{
                 createdAt: new Date()
             });
             alert("Saved successfully");
-            clearForm();
         } catch (error) {
             console.log(error);
             alert("Error saving data");
@@ -227,6 +227,13 @@ const BlouseCustomDashboard = ()=>{
                                         _19: ""
                                     })
                             }["BlouseCustomDashboard.useEffect.fetchData"]);
+                        }
+                        const customerSnap = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f40$firebase$2f$firestore$2f$dist$2f$index$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["getDoc"])(ref);
+                        if (customerSnap.exists()) {
+                            const data = customerSnap.data();
+                            const phone = data._19.replace(/\D/g, "");
+                            console.log("Phone:", phone);
+                            setContactNumber(data?._19); // adjust field name if needed
                         }
                     } catch (error) {
                         console.log(error);
@@ -430,7 +437,7 @@ const BlouseCustomDashboard = ()=>{
               `
             }, void 0, false, {
                 fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                lineNumber: 238,
+                lineNumber: 247,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -451,7 +458,7 @@ const BlouseCustomDashboard = ()=>{
                                 onChange: handleChange
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                lineNumber: 432,
+                                lineNumber: 441,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("table", {
@@ -466,7 +473,7 @@ const BlouseCustomDashboard = ()=>{
                                                     className: "w-10"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 447,
+                                                    lineNumber: 456,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -481,7 +488,7 @@ const BlouseCustomDashboard = ()=>{
                                                                 children: "Dress"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                                lineNumber: 452,
+                                                                lineNumber: 461,
                                                                 columnNumber: 23
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -491,31 +498,31 @@ const BlouseCustomDashboard = ()=>{
                                                                 children: "blouse"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                                lineNumber: 462,
+                                                                lineNumber: 471,
                                                                 columnNumber: 23
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                        lineNumber: 451,
+                                                        lineNumber: 460,
                                                         columnNumber: 21
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 450,
+                                                    lineNumber: 459,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                     className: "w-10"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 475,
+                                                    lineNumber: 484,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                            lineNumber: 445,
+                                            lineNumber: 454,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -525,7 +532,7 @@ const BlouseCustomDashboard = ()=>{
                                                     className: "w-10"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 479,
+                                                    lineNumber: 488,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -540,23 +547,23 @@ const BlouseCustomDashboard = ()=>{
                                                             className: "textInput "
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                            lineNumber: 482,
+                                                            lineNumber: 491,
                                                             columnNumber: 23
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                        lineNumber: 481,
+                                                        lineNumber: 490,
                                                         columnNumber: 21
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 480,
+                                                    lineNumber: 489,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                            lineNumber: 478,
+                                            lineNumber: 487,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -566,7 +573,7 @@ const BlouseCustomDashboard = ()=>{
                                                     className: "w-10"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 494,
+                                                    lineNumber: 503,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -577,35 +584,35 @@ const BlouseCustomDashboard = ()=>{
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                             className: "textInputWrapper secondinput ",
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                                type: "text",
+                                                                type: "number",
                                                                 name: "_2",
                                                                 value: formData._2,
                                                                 onChange: handleChange,
                                                                 className: "textInput "
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                                lineNumber: 498,
+                                                                lineNumber: 507,
                                                                 columnNumber: 25
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                            lineNumber: 497,
+                                                            lineNumber: 506,
                                                             columnNumber: 23
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                        lineNumber: 496,
+                                                        lineNumber: 505,
                                                         columnNumber: 21
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 495,
+                                                    lineNumber: 504,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                            lineNumber: 493,
+                                            lineNumber: 502,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -615,7 +622,7 @@ const BlouseCustomDashboard = ()=>{
                                                     className: "w-10"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 510,
+                                                    lineNumber: 519,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -627,23 +634,23 @@ const BlouseCustomDashboard = ()=>{
                                                             className: "textInput"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                            lineNumber: 513,
+                                                            lineNumber: 522,
                                                             columnNumber: 23
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                        lineNumber: 512,
+                                                        lineNumber: 521,
                                                         columnNumber: 21
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 511,
+                                                    lineNumber: 520,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                            lineNumber: 509,
+                                            lineNumber: 518,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -653,7 +660,7 @@ const BlouseCustomDashboard = ()=>{
                                                     className: "w-10"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 518,
+                                                    lineNumber: 527,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -664,54 +671,54 @@ const BlouseCustomDashboard = ()=>{
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                 className: "textInputWrapper secondinput_2 ",
                                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                                    type: "text",
+                                                                    type: "number",
                                                                     name: "_3",
                                                                     value: formData._3,
                                                                     onChange: handleChange,
                                                                     className: "textInput "
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                                    lineNumber: 522,
+                                                                    lineNumber: 531,
                                                                     columnNumber: 25
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                                lineNumber: 521,
+                                                                lineNumber: 530,
                                                                 columnNumber: 23
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                 className: "textInputWrapper secondinput_3 ",
                                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                                    type: "text",
+                                                                    type: "number",
                                                                     name: "_4",
                                                                     value: formData._4,
                                                                     onChange: handleChange,
                                                                     className: "textInput "
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                                    lineNumber: 532,
+                                                                    lineNumber: 541,
                                                                     columnNumber: 25
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                                lineNumber: 531,
+                                                                lineNumber: 540,
                                                                 columnNumber: 23
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                        lineNumber: 520,
+                                                        lineNumber: 529,
                                                         columnNumber: 21
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 519,
+                                                    lineNumber: 528,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                            lineNumber: 517,
+                                            lineNumber: 526,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -721,7 +728,7 @@ const BlouseCustomDashboard = ()=>{
                                                     className: "w-10"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 544,
+                                                    lineNumber: 553,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -732,35 +739,35 @@ const BlouseCustomDashboard = ()=>{
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                             className: "textInputWrapper fourtosix",
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                                type: "text",
+                                                                type: "number",
                                                                 name: "_5",
                                                                 value: formData._5,
                                                                 onChange: handleChange,
                                                                 className: "textInput"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                                lineNumber: 549,
+                                                                lineNumber: 558,
                                                                 columnNumber: 25
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                            lineNumber: 548,
+                                                            lineNumber: 557,
                                                             columnNumber: 23
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                        lineNumber: 547,
+                                                        lineNumber: 556,
                                                         columnNumber: 21
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 546,
+                                                    lineNumber: 555,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                            lineNumber: 543,
+                                            lineNumber: 552,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -770,7 +777,7 @@ const BlouseCustomDashboard = ()=>{
                                                     className: "w-10"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 564,
+                                                    lineNumber: 573,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -778,30 +785,30 @@ const BlouseCustomDashboard = ()=>{
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         className: "textInputWrapper fourtosix",
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                            type: "text",
+                                                            type: "number",
                                                             name: "_6",
                                                             value: formData._6,
                                                             onChange: handleChange,
                                                             className: "textInput "
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                            lineNumber: 567,
+                                                            lineNumber: 576,
                                                             columnNumber: 23
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                        lineNumber: 566,
+                                                        lineNumber: 575,
                                                         columnNumber: 21
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 565,
+                                                    lineNumber: 574,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                            lineNumber: 563,
+                                            lineNumber: 572,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -811,7 +818,7 @@ const BlouseCustomDashboard = ()=>{
                                                     className: "w-10"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 578,
+                                                    lineNumber: 587,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -822,35 +829,35 @@ const BlouseCustomDashboard = ()=>{
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                             className: "textInputWrapper five",
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                                type: "text",
+                                                                type: "number",
                                                                 name: "_7",
                                                                 value: formData._7,
                                                                 onChange: handleChange,
                                                                 className: "textInput"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                                lineNumber: 583,
+                                                                lineNumber: 592,
                                                                 columnNumber: 25
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                            lineNumber: 582,
+                                                            lineNumber: 591,
                                                             columnNumber: 23
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                        lineNumber: 581,
+                                                        lineNumber: 590,
                                                         columnNumber: 21
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 580,
+                                                    lineNumber: 589,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                            lineNumber: 577,
+                                            lineNumber: 586,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -860,7 +867,7 @@ const BlouseCustomDashboard = ()=>{
                                                     className: "w-10"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 599,
+                                                    lineNumber: 608,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -872,27 +879,9 @@ const BlouseCustomDashboard = ()=>{
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                 className: "textInputWrapper six",
                                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                                    type: "text",
+                                                                    type: "number",
                                                                     name: "_8",
                                                                     value: formData._8,
-                                                                    onChange: handleChange,
-                                                                    className: "textInput"
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                                    lineNumber: 604,
-                                                                    columnNumber: 25
-                                                                }, ("TURBOPACK compile-time value", void 0))
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                                lineNumber: 603,
-                                                                columnNumber: 23
-                                                            }, ("TURBOPACK compile-time value", void 0)),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "textInputWrapper seven",
-                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                                    type: "text",
-                                                                    name: "_9",
-                                                                    value: formData._9,
                                                                     onChange: handleChange,
                                                                     className: "textInput"
                                                                 }, void 0, false, {
@@ -906,38 +895,56 @@ const BlouseCustomDashboard = ()=>{
                                                                 columnNumber: 23
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "textInputWrapper seven",
+                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                                                    type: "number",
+                                                                    name: "_9",
+                                                                    value: formData._9,
+                                                                    onChange: handleChange,
+                                                                    className: "textInput"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
+                                                                    lineNumber: 622,
+                                                                    columnNumber: 25
+                                                                }, ("TURBOPACK compile-time value", void 0))
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
+                                                                lineNumber: 621,
+                                                                columnNumber: 23
+                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                 className: "textInputWrapper eight",
                                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                                    type: "text",
+                                                                    type: "number",
                                                                     name: "_10",
                                                                     value: formData._10,
                                                                     onChange: handleChange,
                                                                     className: "textInput"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                                    lineNumber: 623,
+                                                                    lineNumber: 632,
                                                                     columnNumber: 25
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                                lineNumber: 622,
+                                                                lineNumber: 631,
                                                                 columnNumber: 23
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                        lineNumber: 602,
+                                                        lineNumber: 611,
                                                         columnNumber: 21
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 601,
+                                                    lineNumber: 610,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                            lineNumber: 598,
+                                            lineNumber: 607,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -947,20 +954,20 @@ const BlouseCustomDashboard = ()=>{
                                                     className: "w-10"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 635,
+                                                    lineNumber: 644,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                     className: " border-gray-500"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 636,
+                                                    lineNumber: 645,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                            lineNumber: 634,
+                                            lineNumber: 643,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -970,7 +977,7 @@ const BlouseCustomDashboard = ()=>{
                                                     className: "w-10"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 639,
+                                                    lineNumber: 648,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -980,31 +987,31 @@ const BlouseCustomDashboard = ()=>{
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                             className: "textInputWrapper ten",
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                                type: "text",
+                                                                type: "number",
                                                                 name: "_11",
                                                                 value: formData._11,
                                                                 onChange: handleChange,
                                                                 className: "textInput"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                                lineNumber: 643,
+                                                                lineNumber: 652,
                                                                 columnNumber: 23
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                            lineNumber: 642,
+                                                            lineNumber: 651,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 640,
+                                                    lineNumber: 649,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                            lineNumber: 638,
+                                            lineNumber: 647,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -1014,7 +1021,7 @@ const BlouseCustomDashboard = ()=>{
                                                     className: "w-10"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 655,
+                                                    lineNumber: 664,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1026,27 +1033,9 @@ const BlouseCustomDashboard = ()=>{
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                 className: "textInputWrapper eleven",
                                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                                    type: "text",
+                                                                    type: "number",
                                                                     name: "_12",
                                                                     value: formData._12,
-                                                                    onChange: handleChange,
-                                                                    className: "textInput"
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                                    lineNumber: 660,
-                                                                    columnNumber: 25
-                                                                }, ("TURBOPACK compile-time value", void 0))
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                                lineNumber: 659,
-                                                                columnNumber: 23
-                                                            }, ("TURBOPACK compile-time value", void 0)),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "textInputWrapper twelve",
-                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                                    type: "text",
-                                                                    name: "_13",
-                                                                    value: formData._13,
                                                                     onChange: handleChange,
                                                                     className: "textInput"
                                                                 }, void 0, false, {
@@ -1060,11 +1049,11 @@ const BlouseCustomDashboard = ()=>{
                                                                 columnNumber: 23
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "textInputWrapper fifteen",
+                                                                className: "textInputWrapper twelve",
                                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                                    type: "text",
-                                                                    name: "_14",
-                                                                    value: formData._14,
+                                                                    type: "number",
+                                                                    name: "_13",
+                                                                    value: formData._13,
                                                                     onChange: handleChange,
                                                                     className: "textInput"
                                                                 }, void 0, false, {
@@ -1076,22 +1065,40 @@ const BlouseCustomDashboard = ()=>{
                                                                 fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
                                                                 lineNumber: 677,
                                                                 columnNumber: 23
+                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "textInputWrapper fifteen",
+                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                                                    type: "number",
+                                                                    name: "_14",
+                                                                    value: formData._14,
+                                                                    onChange: handleChange,
+                                                                    className: "textInput"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
+                                                                    lineNumber: 687,
+                                                                    columnNumber: 25
+                                                                }, ("TURBOPACK compile-time value", void 0))
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
+                                                                lineNumber: 686,
+                                                                columnNumber: 23
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                        lineNumber: 658,
+                                                        lineNumber: 667,
                                                         columnNumber: 21
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 657,
+                                                    lineNumber: 666,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                            lineNumber: 654,
+                                            lineNumber: 663,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -1101,20 +1108,20 @@ const BlouseCustomDashboard = ()=>{
                                                     className: "w-10"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 690,
+                                                    lineNumber: 699,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                     className: " border-gray-500"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 691,
+                                                    lineNumber: 700,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                            lineNumber: 689,
+                                            lineNumber: 698,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -1124,7 +1131,7 @@ const BlouseCustomDashboard = ()=>{
                                                     className: "w-10"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 694,
+                                                    lineNumber: 703,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1136,27 +1143,9 @@ const BlouseCustomDashboard = ()=>{
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                 className: "textInputWrapper thirteen",
                                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                                    type: "text",
+                                                                    type: "number",
                                                                     name: "_15",
                                                                     value: formData._15,
-                                                                    onChange: handleChange,
-                                                                    className: "textInput"
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                                    lineNumber: 699,
-                                                                    columnNumber: 25
-                                                                }, ("TURBOPACK compile-time value", void 0))
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                                lineNumber: 698,
-                                                                columnNumber: 23
-                                                            }, ("TURBOPACK compile-time value", void 0)),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "textInputWrapper fourteen",
-                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                                    type: "text",
-                                                                    name: "_16",
-                                                                    value: formData._16,
                                                                     onChange: handleChange,
                                                                     className: "textInput"
                                                                 }, void 0, false, {
@@ -1168,22 +1157,40 @@ const BlouseCustomDashboard = ()=>{
                                                                 fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
                                                                 lineNumber: 707,
                                                                 columnNumber: 23
+                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "textInputWrapper fourteen",
+                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                                                    type: "number",
+                                                                    name: "_16",
+                                                                    value: formData._16,
+                                                                    onChange: handleChange,
+                                                                    className: "textInput"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
+                                                                    lineNumber: 717,
+                                                                    columnNumber: 25
+                                                                }, ("TURBOPACK compile-time value", void 0))
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
+                                                                lineNumber: 716,
+                                                                columnNumber: 23
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                        lineNumber: 697,
+                                                        lineNumber: 706,
                                                         columnNumber: 21
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 696,
+                                                    lineNumber: 705,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                            lineNumber: 693,
+                                            lineNumber: 702,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -1193,20 +1200,20 @@ const BlouseCustomDashboard = ()=>{
                                                     className: "w-10"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 720,
+                                                    lineNumber: 729,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                     className: " border-gray-500"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 721,
+                                                    lineNumber: 730,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                            lineNumber: 719,
+                                            lineNumber: 728,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -1216,7 +1223,7 @@ const BlouseCustomDashboard = ()=>{
                                                     className: "w-10"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 724,
+                                                    lineNumber: 733,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1227,35 +1234,35 @@ const BlouseCustomDashboard = ()=>{
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                             className: "textInputWrapper sixteen",
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                                type: "text",
+                                                                type: "tel",
                                                                 name: "_17",
                                                                 value: formData._17,
                                                                 onChange: handleChange,
                                                                 className: "textInput"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                                lineNumber: 729,
+                                                                lineNumber: 738,
                                                                 columnNumber: 25
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                            lineNumber: 728,
+                                                            lineNumber: 737,
                                                             columnNumber: 23
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                        lineNumber: 727,
+                                                        lineNumber: 736,
                                                         columnNumber: 21
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 726,
+                                                    lineNumber: 735,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                            lineNumber: 723,
+                                            lineNumber: 732,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -1265,20 +1272,20 @@ const BlouseCustomDashboard = ()=>{
                                                     className: "w-10"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 741,
+                                                    lineNumber: 750,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                     className: " border-gray-500"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 742,
+                                                    lineNumber: 751,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                            lineNumber: 740,
+                                            lineNumber: 749,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -1288,20 +1295,20 @@ const BlouseCustomDashboard = ()=>{
                                                     className: "w-10"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 745,
+                                                    lineNumber: 754,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                     className: " border-gray-500"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 746,
+                                                    lineNumber: 755,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                            lineNumber: 744,
+                                            lineNumber: 753,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -1311,7 +1318,7 @@ const BlouseCustomDashboard = ()=>{
                                                     className: "w-10"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 749,
+                                                    lineNumber: 758,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1325,18 +1332,18 @@ const BlouseCustomDashboard = ()=>{
                                                         className: "resize-none border-2 rounded-xl outline-none px-4 py-2 border-[#d4af37] w-80 bg-[#252525] text-[#e8e8e8] transition-colors duration-200 focus:bg-[#353535] focus:border-[#a3e583] focus:ring-1 focus:ring-[#a3e583]"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                        lineNumber: 751,
+                                                        lineNumber: 760,
                                                         columnNumber: 21
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 750,
+                                                    lineNumber: 759,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                            lineNumber: 748,
+                                            lineNumber: 757,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -1346,20 +1353,20 @@ const BlouseCustomDashboard = ()=>{
                                                     className: "w-10"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 762,
+                                                    lineNumber: 771,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                     className: " border-gray-500"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 763,
+                                                    lineNumber: 772,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                            lineNumber: 761,
+                                            lineNumber: 770,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -1369,7 +1376,7 @@ const BlouseCustomDashboard = ()=>{
                                                     className: "w-10"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 766,
+                                                    lineNumber: 775,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1377,30 +1384,30 @@ const BlouseCustomDashboard = ()=>{
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         className: "textInputWrapper contact",
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                            type: "text",
+                                                            type: "number",
                                                             name: "_19",
-                                                            value: formData._19,
+                                                            value: formData._19 || "",
                                                             onChange: handleChange,
-                                                            className: "textInput  "
+                                                            className: "textInput"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                            lineNumber: 769,
+                                                            lineNumber: 778,
                                                             columnNumber: 23
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                        lineNumber: 768,
+                                                        lineNumber: 777,
                                                         columnNumber: 21
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 767,
+                                                    lineNumber: 776,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                            lineNumber: 765,
+                                            lineNumber: 774,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -1410,7 +1417,7 @@ const BlouseCustomDashboard = ()=>{
                                                     className: "w-10"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 780,
+                                                    lineNumber: 789,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1431,7 +1438,7 @@ const BlouseCustomDashboard = ()=>{
                                                                                 d: "M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8c-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4C12.955 4 4 12.955 4 24s8.955 20 20 20s20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                                                lineNumber: 790,
+                                                                                lineNumber: 799,
                                                                                 columnNumber: 27
                                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1439,7 +1446,7 @@ const BlouseCustomDashboard = ()=>{
                                                                                 d: "m6.306 14.691l6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4C16.318 4 9.656 8.337 6.306 14.691z"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                                                lineNumber: 794,
+                                                                                lineNumber: 803,
                                                                                 columnNumber: 27
                                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1447,7 +1454,7 @@ const BlouseCustomDashboard = ()=>{
                                                                                 d: "M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238A11.91 11.91 0 0 1 24 36c-5.202 0-9.619-3.317-11.283-7.946l-6.522 5.025C9.505 39.556 16.227 44 24 44z"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                                                lineNumber: 798,
+                                                                                lineNumber: 807,
                                                                                 columnNumber: 27
                                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1455,26 +1462,26 @@ const BlouseCustomDashboard = ()=>{
                                                                                 d: "M43.611 20.083H42V20H24v8h11.303a12.04 12.04 0 0 1-4.087 5.571l.003-.002l6.19 5.238C36.971 39.205 44 34 44 24c0-1.341-.138-2.65-.389-3.917z"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                                                lineNumber: 802,
+                                                                                lineNumber: 811,
                                                                                 columnNumber: 27
                                                                             }, ("TURBOPACK compile-time value", void 0))
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                                        lineNumber: 789,
+                                                                        lineNumber: 798,
                                                                         columnNumber: 25
                                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                        children: "Save with Google"
+                                                                        children: "Save Record"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                                        lineNumber: 807,
+                                                                        lineNumber: 816,
                                                                         columnNumber: 25
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                                lineNumber: 785,
+                                                                lineNumber: 794,
                                                                 columnNumber: 23
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1484,24 +1491,24 @@ const BlouseCustomDashboard = ()=>{
                                                                 children: "Reset"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                                lineNumber: 811,
+                                                                lineNumber: 820,
                                                                 columnNumber: 23
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                        lineNumber: 783,
+                                                        lineNumber: 792,
                                                         columnNumber: 21
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 782,
+                                                    lineNumber: 791,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                            lineNumber: 779,
+                                            lineNumber: 788,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -1511,7 +1518,7 @@ const BlouseCustomDashboard = ()=>{
                                                     className: "w-10"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 822,
+                                                    lineNumber: 831,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1531,58 +1538,59 @@ const BlouseCustomDashboard = ()=>{
                                                                         children: "shortcut"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                                        lineNumber: 832,
+                                                                        lineNumber: 841,
                                                                         columnNumber: 27
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                                    lineNumber: 826,
+                                                                    lineNumber: 835,
                                                                     columnNumber: 25
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                                lineNumber: 825,
+                                                                lineNumber: 834,
                                                                 columnNumber: 23
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                 className: "rounded-lg ml-50",
                                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                                    href: "https://wa.me/919998453537",
+                                                                    href: `${`https://wa.me/${ContactNumber}`}`,
                                                                     target: "_blank",
+                                                                    rel: "noopener noreferrer",
                                                                     className: "transition-all duration-200 active:scale-90 no-underline inline-flex hover:opacity-80",
                                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                         className: "material-symbols-outlined text-[#ddac38] !text-[42px]",
                                                                         children: "send"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                                        lineNumber: 844,
+                                                                        lineNumber: 854,
                                                                         columnNumber: 27
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                                    lineNumber: 839,
+                                                                    lineNumber: 848,
                                                                     columnNumber: 25
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                                lineNumber: 838,
+                                                                lineNumber: 847,
                                                                 columnNumber: 23
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                        lineNumber: 824,
+                                                        lineNumber: 833,
                                                         columnNumber: 21
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 823,
+                                                    lineNumber: 832,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                            lineNumber: 821,
+                                            lineNumber: 830,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -1592,7 +1600,7 @@ const BlouseCustomDashboard = ()=>{
                                                     className: "w-10"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 853,
+                                                    lineNumber: 863,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1610,23 +1618,23 @@ const BlouseCustomDashboard = ()=>{
                                                             children: "Back to User Dashboard"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                            lineNumber: 868,
+                                                            lineNumber: 878,
                                                             columnNumber: 23
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                        lineNumber: 855,
+                                                        lineNumber: 865,
                                                         columnNumber: 21
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 854,
+                                                    lineNumber: 864,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                            lineNumber: 852,
+                                            lineNumber: 862,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -1636,7 +1644,7 @@ const BlouseCustomDashboard = ()=>{
                                                     className: "w-10"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 875,
+                                                    lineNumber: 885,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1652,18 +1660,18 @@ const BlouseCustomDashboard = ()=>{
                                                         children: "Update Record"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                        lineNumber: 877,
+                                                        lineNumber: 887,
                                                         columnNumber: 21
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 876,
+                                                    lineNumber: 886,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                            lineNumber: 874,
+                                            lineNumber: 884,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -1673,20 +1681,20 @@ const BlouseCustomDashboard = ()=>{
                                                     className: "w-10"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 895,
+                                                    lineNumber: 905,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                     className: " border-gray-500"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 896,
+                                                    lineNumber: 906,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                            lineNumber: 894,
+                                            lineNumber: 904,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -1696,20 +1704,20 @@ const BlouseCustomDashboard = ()=>{
                                                     className: "w-10"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 899,
+                                                    lineNumber: 909,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                     className: " border-gray-500"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 900,
+                                                    lineNumber: 910,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                            lineNumber: 898,
+                                            lineNumber: 908,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -1719,20 +1727,20 @@ const BlouseCustomDashboard = ()=>{
                                                     className: "w-10"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 903,
+                                                    lineNumber: 913,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                     className: " border-gray-500"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 904,
+                                                    lineNumber: 914,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                            lineNumber: 902,
+                                            lineNumber: 912,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -1742,20 +1750,20 @@ const BlouseCustomDashboard = ()=>{
                                                     className: "w-10"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 907,
+                                                    lineNumber: 917,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                     className: " border-gray-500"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 908,
+                                                    lineNumber: 918,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                            lineNumber: 906,
+                                            lineNumber: 916,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -1765,57 +1773,57 @@ const BlouseCustomDashboard = ()=>{
                                                     className: "w-10"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 911,
+                                                    lineNumber: 921,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                     className: " border-gray-500"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                                    lineNumber: 912,
+                                                    lineNumber: 922,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                            lineNumber: 910,
+                                            lineNumber: 920,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                    lineNumber: 444,
+                                    lineNumber: 453,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0))
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                                lineNumber: 440,
+                                lineNumber: 449,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                        lineNumber: 431,
+                        lineNumber: 440,
                         columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0))
                 }, void 0, false, {
                     fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                    lineNumber: 430,
+                    lineNumber: 439,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-                lineNumber: 426,
+                lineNumber: 435,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-        lineNumber: 237,
+        lineNumber: 246,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
-_s(BlouseCustomDashboard, "WKxWi4iZ3TFvvE6EdkEcwPkETCg=", false, function() {
+_s(BlouseCustomDashboard, "nfoqJmxxjLM0imhgRNJJXu8JIkA=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"],
         __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSearchParams"]
@@ -1828,17 +1836,17 @@ function Page() {
             children: "Loading..."
         }, void 0, false, {
             fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-            lineNumber: 925,
+            lineNumber: 935,
             columnNumber: 25
         }, this),
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(BlouseCustomDashboard, {}, void 0, false, {
             fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-            lineNumber: 926,
+            lineNumber: 936,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/Desktop/yogeshwar/app/blousetwo/page.jsx",
-        lineNumber: 925,
+        lineNumber: 935,
         columnNumber: 5
     }, this);
 }
