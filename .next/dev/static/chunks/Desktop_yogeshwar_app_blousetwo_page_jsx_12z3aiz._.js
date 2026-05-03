@@ -232,7 +232,7 @@ const BlouseCustomDashboard = ()=>{
                         if (customerSnap.exists()) {
                             const data = customerSnap.data();
                             const phone = data._19.replace(/\D/g, "");
-                            console.log("Phone:", phone);
+                            //console.log("Phone:", phone);
                             setContactNumber(data?._19); // adjust field name if needed
                         }
                     } catch (error) {

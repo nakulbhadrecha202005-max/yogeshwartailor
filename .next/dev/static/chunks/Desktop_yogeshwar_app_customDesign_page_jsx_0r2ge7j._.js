@@ -228,7 +228,7 @@ const CustomDressDashboard = ()=>{
                             if (customerSnap.exists()) {
                                 const data = customerSnap.data();
                                 const phone = data._17.replace(/\D/g, "");
-                                console.log("Phone:", phone);
+                                //console.log("Phone:", phone);
                                 setContactNumber(data?._17); // adjust field name if needed
                             }
                         }
