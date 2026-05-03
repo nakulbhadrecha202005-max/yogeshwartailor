@@ -227,8 +227,8 @@ const CustomDressDashboard = ()=>{
                             const customerSnap = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f40$firebase$2f$firestore$2f$dist$2f$index$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["getDoc"])(ref);
                             if (customerSnap.exists()) {
                                 const data = customerSnap.data();
-                                const phone = data._17.replace(/\D/g, "");
-                                //console.log("Phone:", phone);
+                                const phone = data?._17.replace(/\D/g, "");
+                                console.log("Phone:", phone);
                                 setContactNumber(phone); // adjust field name if needed
                             }
                         }
@@ -1816,11 +1816,11 @@ const CustomDressDashboard = ()=>{
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                             className: "textInputWrapper",
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                                type: "tel",
+                                                                type: "text",
                                                                 name: "_17",
                                                                 value: formData._17 || "",
                                                                 onChange: handleChange,
-                                                                className: "textInput "
+                                                                className: "textInput"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/yogeshwar/app/customDesign/page.jsx",
                                                                 lineNumber: 1265,

@@ -228,8 +228,8 @@ const CustomDressDashboard = () => {
 
           if (customerSnap.exists()) {
             const data = customerSnap.data();
-            const phone = data._17.replace(/\D/g, "");
-            //console.log("Phone:", phone);
+            const phone = data?._17.replace(/\D/g, "");
+            console.log("Phone:", phone);
             setContactNumber(phone); // adjust field name if needed
           }
         }
@@ -1263,11 +1263,11 @@ const CustomDressDashboard = () => {
                       <td className=" border-gray-500">
                         <div className="textInputWrapper">
                           <input
-                            type="tel"
+                            type="text"
                             name="_17"
                             value={formData._17 || ""}
                             onChange={handleChange}
-                            className="textInput "
+                            className="textInput"
                           />
                         </div>
                       </td>
