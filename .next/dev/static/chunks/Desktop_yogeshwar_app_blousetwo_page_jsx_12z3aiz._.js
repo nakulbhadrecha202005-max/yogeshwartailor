@@ -1554,7 +1554,7 @@ const BlouseCustomDashboard = ()=>{
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                 className: "rounded-lg ml-50",
                                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$yogeshwar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                                    href: `${`https://wa.me/${ContactNumber}`}`,
+                                                                    href: `https://wa.me/${ContactNumber?.replace(/\D/g, "")}`,
                                                                     target: "_blank",
                                                                     rel: "noopener noreferrer",
                                                                     className: "transition-all duration-200 active:scale-90 no-underline inline-flex hover:opacity-80",

@@ -1265,7 +1265,7 @@ const CustomDressDashboard = () => {
                           <input
                             type="tel"
                             name="_17"
-                            value={formData._17  || ""}
+                            value={formData._17 || ""}
                             onChange={handleChange}
                             className="textInput "
                           />
@@ -1335,7 +1335,7 @@ const CustomDressDashboard = () => {
 
                           <div className="rounded-lg ml-50">
                             <a
-                              href={`${`https://wa.me/${ContactNumber}`}`}
+                              href={`https://wa.me/${ContactNumber?.replace(/\D/g, "")}`}
                               target="_blank"
                               rel="noopener noreferrer"
                               className="transition-all duration-200 active:scale-90 no-underline inline-flex hover:opacity-80"
